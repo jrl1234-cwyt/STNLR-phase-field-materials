@@ -47,7 +47,7 @@ The target generator uses `seed + 1`, giving the documented target-data seed 202
 
 Track `*.pt` and `*.npz` with Git LFS. Publish the source repository as a versioned GitHub release, then archive the same release and complete datasets on Zenodo. Add the Zenodo DOI to this README, `CITATION.cff`, and the manuscript data-availability statement. GitHub alone provides access and version control; the Zenodo archive supplies the persistent identifier required for a complete FAIR deposit.
 
-Do not invent a repository address before publication. After the public repository exists, add its exact URL as `repository-code` and `url` in `CITATION.cff`. After Zenodo mints the DOI, add the DOI as `doi` in `CITATION.cff` and replace the provisional wording in the manuscript's data-and-code availability statement. The concrete upload sequence is recorded in `docs/GITHUB_RELEASE.md`.
+Repository: <https://github.com/jrl1234-cwyt/STNLR-phase-field-materials>. After Zenodo mints the archival DOI, add it as `doi` in `CITATION.cff` and replace the provisional wording in the manuscript's data-and-code availability statement. The concrete release sequence is recorded in `docs/GITHUB_RELEASE.md`.
 
 ## License and provenance
 

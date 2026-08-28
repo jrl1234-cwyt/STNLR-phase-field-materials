@@ -12,6 +12,8 @@ authors:
   - family-names: Li
     given-names: Houbiao
 license: CC-BY-NC-4.0
+repository-code: "https://github.com/jrl1234-cwyt/STNLR-phase-field-materials"
+url: "https://github.com/jrl1234-cwyt/STNLR-phase-field-materials"
 keywords:
   - phase-field model
   - microstructure evolution
