@@ -1,0 +1,50 @@
+{
+  "adalora": {
+    "completed_seeds": 3,
+    "trajectory_relative_l2_mean": {
+      "mean": 0.08836599501470725,
+      "std": 0.005665680610184136
+    },
+    "terminal_relative_l2_mean": {
+      "mean": 0.08004876660803954,
+      "std": 0.00540938415590185
+    },
+    "terminal_interface_fraction_mae": {
+      "mean": 0.00479990659126391,
+      "std": 0.0008892540322294441
+    },
+    "terminal_free_energy_relative_error_mean": {
+      "mean": 0.0073775408091023564,
+      "std": 0.00035951680957073444
+    },
+    "trajectory_pde_residual_relative_rms": {
+      "mean": 0.8048451890548071,
+      "std": 0.017959948537085244
+    },
+    "mean_active_rank": 4.359375
+  },
+  "timestep_expert": {
+    "completed_seeds": 3,
+    "trajectory_relative_l2_mean": {
+      "mean": 0.06644810891399781,
+      "std": 0.0029294570515966396
+    },
+    "terminal_relative_l2_mean": {
+      "mean": 0.06067104420314232,
+      "std": 0.001916607365871716
+    },
+    "terminal_interface_fraction_mae": {
+      "mean": 0.002990722695055107,
+      "std": 0.00041982472099413344
+    },
+    "terminal_free_energy_relative_error_mean": {
+      "mean": 0.006934336347815891,
+      "std": 0.001116066980432792
+    },
+    "trajectory_pde_residual_relative_rms": {
+      "mean": 0.7457471241553625,
+      "std": 0.010315849122212626
+    },
+    "mean_active_rank": 4.0
+  }
+}

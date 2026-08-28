@@ -1,0 +1,45 @@
+{
+  "protocol": {
+    "condition": "shifted",
+    "same_initial_condition": "exact radius-8 unperturbed seed, no temperature noise",
+    "fixed_physical_extent": 96.0,
+    "comparison_grid": "all fields bilinearly sampled to 96x96 by the production generator",
+    "terminal_time": 300.0,
+    "outputs": 9
+  },
+  "comparisons_to_reference": {
+    "production_192_dx05_dt005": {
+      "phase_trajectory_relative_l2": 0.025045420974493027,
+      "phase_terminal_relative_l2": 0.04198775067925453,
+      "temperature_trajectory_relative_l2": 0.004742133431136608,
+      "temperature_terminal_relative_l2": 0.0120177511125803,
+      "solid_fraction_mae": 0.0005931907217018306,
+      "free_energy_relative_error": 0.007492131553590298,
+      "tip_position_mae": 0.004678362049162388,
+      "tip_terminal_mae": 0.010526329278945923,
+      "terminal_interface_chamfer": 0.006425807252526283
+    },
+    "time_refined_192_dx05_dt0025": {
+      "phase_trajectory_relative_l2": 0.02674940787255764,
+      "phase_terminal_relative_l2": 0.045480698347091675,
+      "temperature_trajectory_relative_l2": 0.005608234088867903,
+      "temperature_terminal_relative_l2": 0.014417296275496483,
+      "solid_fraction_mae": 0.0006466585327871144,
+      "free_energy_relative_error": 0.008817779831588268,
+      "tip_position_mae": 0.004678362049162388,
+      "tip_terminal_mae": 0.010526329278945923,
+      "terminal_interface_chamfer": 0.007574393413960934
+    },
+    "grid_refined_256_dx0375_dt0025": {
+      "phase_trajectory_relative_l2": 0.0019535236060619354,
+      "phase_terminal_relative_l2": 0.004711234010756016,
+      "temperature_trajectory_relative_l2": 0.0005992287769913673,
+      "temperature_terminal_relative_l2": 0.0016904842341318727,
+      "solid_fraction_mae": 2.3533901185146533e-05,
+      "free_energy_relative_error": 0.00047890987480059266,
+      "tip_position_mae": 0.0,
+      "tip_terminal_mae": 0.0,
+      "terminal_interface_chamfer": 0.001970058772712946
+    }
+  }
+}

@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="1600" height="880" viewBox="0 0 1600 880">
+
+  <defs>
+    <style>
+      .title {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 31px;
+        font-weight: 700;
+        letter-spacing: 0.04px;
+        fill: #293945;
+      }
+
+      .section-title {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -0.08px;
+      }
+
+      .side-title {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: -0.10px;
+        fill: #293945;
+      }
+
+      .side-sub {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: -0.03px;
+      }
+
+      .box-title {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.08px;
+        fill: #293945;
+      }
+
+      .box-title-lg {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: -0.10px;
+        fill: #293945;
+      }
+
+      .box-sub {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: -0.03px;
+        fill: #465762;
+      }
+
+      .box-sub-compact {
+        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: -0.08px;
+        fill: #465762;
+      }
+
+      /* ======================================================= */
+      /* Unified mathematical typography                          */
+      /* ======================================================= */
+
+      .formula {
+        font-family:
+          "Cambria Math",
+          "STIX Two Math",
+          "STIXGeneral",
+          "Times New Roman",
+          serif;
+        font-size: 21px;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0;
+        fill: #46545d;
+      }
+
+      .math-inline {
+        font-family:
+          "Cambria Math",
+          "STIX Two Math",
+          "STIXGeneral",
+          "Times New Roman",
+          serif;
+        font-style: italic;
+        font-weight: 400;
+        letter-spacing: 0;
+        fill: #46545d;
+      }
+
+      /* Mathematical operators such as min are upright,
+         but use exactly the same family / weight / size. */
+      .math-op {
+        font-family:
+          "Cambria Math",
+          "STIX Two Math",
+          "STIXGeneral",
+          "Times New Roman",
+          serif;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+
+      .math-sub {
+        font-family: inherit;
+        font-size: 72%;
+        font-style: inherit;
+        font-weight: inherit;
+        baseline-shift: sub;
+      }
+
+      .math-sup {
+        font-family: inherit;
+        font-size: 72%;
+        font-style: inherit;
+        font-weight: inherit;
+        baseline-shift: super;
+      }
+
+      .number {
+        font-family: Arial, "Microsoft YaHei", sans-serif;
+        font-size: 21px;
+        font-weight: 700;
+        fill: #ffffff;
+      }
+
+      .arrow {
+        stroke: #6d96ad;
+        stroke-width: 3.8;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        fill: none;
+      }
+
+      .outer {
+        stroke-width: 2.3;
+      }
+
+      .inner {
+        stroke-width: 1.7;
+      }
+    </style>
+
+    <marker id="arrowhead"
+            markerWidth="7.5"
+            markerHeight="7.5"
+            refX="6.4"
+            refY="3.75"
+            orient="auto"
+            markerUnits="strokeWidth">
+      <path d="M 0 0 L 7.5 3.75 L 0 7.5 Z"
+            fill="#6d96ad"/>
+    </marker>
+  </defs>
+
+
+  <!-- ========================================================= -->
+  <!-- Main title -->
+  <!-- ========================================================= -->
+
+  <text x="800" y="48"
+        text-anchor="middle"
+        class="title">
+    Physical-time-adaptive nested low-rank transfer to unseen material conditions
+  </text>
+
+
+  <!-- ========================================================= -->
+  <!-- ROW 1 / STEP 1 -->
+  <!-- ========================================================= -->
+
+  <!-- Left step card -->
+  <rect x="55" y="80"
+        width="245" height="215"
+        rx="16"
+        fill="#C8D6EA"
+        stroke="#7C91B4"
+        class="outer"/>
+
+  <ellipse cx="105" cy="119"
+           rx="22" ry="13"
+           fill="#6680AC"/>
+
+  <text x="105" y="125"
+        text-anchor="middle"
+        class="number">
+    1
+  </text>
+
+  <text x="177.5" y="174"
+        text-anchor="middle"
+        class="side-title">
+    <tspan x="177.5" dy="0">Material</tspan>
+    <tspan x="177.5" dy="29">trajectory</tspan>
+  </text>
+
+  <text x="177.5" y="255"
+        text-anchor="middle"
+        class="side-sub"
+        fill="#59709B">
+    Define the problem
+  </text>
+
+
+  <!-- Main blue panel -->
+  <rect x="330" y="80"
+        width="1215" height="215"
+        rx="16"
+        fill="#CDD9EA"
+        stroke="#7C91B4"
+        class="outer"/>
+
+  <text x="362" y="122"
+        class="section-title"
+        fill="#526A92">
+    a. Material free energy defines phase-field evolution
+  </text>
+
+
+  <!-- Target condition -->
+  <rect x="360" y="145"
+        width="240" height="125"
+        rx="13"
+        fill="#E8EFF8"
+        stroke="#99AAC5"
+        class="inner"/>
+
+  <text x="480" y="193"
+        text-anchor="middle"
+        class="box-title">
+    Target condition
+  </text>
+
+  <text x="480" y="229"
+        text-anchor="middle"
+        class="formula">
+    u₀, θ = (ε, λ, …)
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="608" y1="208"
+        x2="646" y2="208"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Free-energy functional -->
+  <rect x="650" y="145"
+        width="260" height="125"
+        rx="13"
+        fill="#E8EFF8"
+        stroke="#99AAC5"
+        class="inner"/>
+
+  <text x="780" y="183"
+        text-anchor="middle"
+        class="box-title-lg">
+    <tspan x="780" dy="0">Free-energy</tspan>
+    <tspan x="780" dy="25">functional</tspan>
+  </text>
+
+  <text x="780" y="239"
+        text-anchor="middle"
+        class="formula">
+    E[u; θ]
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="918" y1="208"
+        x2="956" y2="208"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Phase-field dynamics -->
+  <rect x="960" y="145"
+        width="260" height="125"
+        rx="13"
+        fill="#E8EFF8"
+        stroke="#99AAC5"
+        class="inner"/>
+
+  <text x="1090" y="183"
+        text-anchor="middle"
+        class="box-title-lg">
+    <tspan x="1090" dy="0">Phase-field</tspan>
+    <tspan x="1090" dy="25">dynamics</tspan>
+  </text>
+
+  <text x="1090" y="242"
+        text-anchor="middle"
+        class="formula">
+    ∂q/∂τ = H(q; θ)
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="1228" y1="208"
+        x2="1266" y2="208"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Microstructure -->
+  <rect x="1270" y="145"
+        width="245" height="125"
+        rx="13"
+        fill="#E8EFF8"
+        stroke="#99AAC5"
+        class="inner"/>
+
+  <text x="1392.5" y="193"
+        text-anchor="middle"
+        class="box-title">
+    Microstructure
+  </text>
+
+  <text x="1392.5" y="229"
+        text-anchor="middle"
+        class="formula">
+    q(0) → q(τ₁) → q(τ₂)
+  </text>
+
+
+  <!-- Vertical arrow 1 -->
+  <line x1="177.5" y1="303"
+        x2="177.5" y2="336"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+
+  <!-- ========================================================= -->
+  <!-- ROW 2 / STEP 2 -->
+  <!-- ========================================================= -->
+
+  <!-- Left step card -->
+  <rect x="55" y="345"
+        width="245" height="215"
+        rx="16"
+        fill="#EBCDBB"
+        stroke="#BF8769"
+        class="outer"/>
+
+  <ellipse cx="105" cy="384"
+           rx="22" ry="13"
+           fill="#B67555"/>
+
+  <text x="105" y="390"
+        text-anchor="middle"
+        class="number">
+    2
+  </text>
+
+  <text x="177.5" y="439"
+        text-anchor="middle"
+        class="side-title">
+    <tspan x="177.5" dy="0">Nested low-rank</tspan>
+    <tspan x="177.5" dy="29">transfer</tspan>
+  </text>
+
+  <text x="177.5" y="520"
+        text-anchor="middle"
+        class="side-sub"
+        fill="#A16549">
+    Allocate capacity
+  </text>
+
+
+  <!-- Main orange panel -->
+  <rect x="330" y="345"
+        width="1215" height="215"
+        rx="16"
+        fill="#EFD3C2"
+        stroke="#BF8769"
+        class="outer"/>
+
+  <text x="362" y="387"
+        class="section-title"
+        fill="#945E45">
+    b. Nested residuals are injected into a frozen pretrained backbone
+  </text>
+
+
+  <!-- Trainable input projection -->
+  <rect x="360" y="410"
+        width="255" height="125"
+        rx="13"
+        fill="#F8E9DF"
+        stroke="#D1A78F"
+        class="inner"/>
+
+  <text x="487.5" y="447"
+        text-anchor="middle"
+        class="box-title-lg">
+    <tspan x="487.5" dy="0">Trainable input</tspan>
+    <tspan x="487.5" dy="25">projection</tspan>
+  </text>
+
+  <text x="487.5" y="510"
+        text-anchor="middle"
+        class="formula">
+    q₀, τ → features
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="623" y1="472.5"
+        x2="654" y2="472.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Frozen backbone with injected shared factor bank -->
+  <rect x="660" y="410"
+        width="350" height="125"
+        rx="13"
+        fill="#F8E9DF"
+        stroke="#D1A78F"
+        class="inner"/>
+
+  <text x="835" y="446"
+        text-anchor="middle"
+        class="box-title-lg">
+    Frozen multi-PDE
+  </text>
+
+  <text x="835" y="471"
+        text-anchor="middle"
+        class="box-title-lg">
+    backbone F0
+  </text>
+
+  <text x="835" y="500"
+        text-anchor="middle"
+        class="box-sub">
+    shared bank in attention / MLP maps
+  </text>
+
+  <text x="835" y="524"
+        text-anchor="middle"
+        class="box-sub">
+    r = {4, 8, 16}; τ ↦ r(τ)
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="1018" y1="472.5"
+        x2="1049" y2="472.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Trainable output projection -->
+  <rect x="1055" y="410"
+        width="220" height="125"
+        rx="13"
+        fill="#F8E9DF"
+        stroke="#D1A78F"
+        class="inner"/>
+
+  <text x="1165" y="447"
+        text-anchor="middle"
+        class="box-title-lg">
+    <tspan x="1165" dy="0">Trainable output</tspan>
+    <tspan x="1165" dy="25">projection</tspan>
+  </text>
+
+  <text x="1165" y="510"
+        text-anchor="middle"
+        class="formula">
+    features → q̂τ
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="1283" y1="472.5"
+        x2="1314" y2="472.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Output -->
+  <rect x="1320" y="410"
+        width="195" height="125"
+        rx="13"
+        fill="#F8E9DF"
+        stroke="#D1A78F"
+        class="inner"/>
+
+  <text x="1417.5" y="459"
+        text-anchor="middle"
+        class="box-title-lg">
+    Prediction
+  </text>
+
+  <text x="1417.5" y="500"
+        text-anchor="middle"
+        class="formula">
+    q̂τ
+  </text>
+
+
+  <!-- Vertical arrow 2 -->
+  <line x1="177.5" y1="568"
+        x2="177.5" y2="601"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+
+  <!-- ========================================================= -->
+  <!-- ROW 3 / STEP 3 -->
+  <!-- ========================================================= -->
+
+  <!-- Left step card -->
+  <rect x="55" y="610"
+        width="245" height="215"
+        rx="16"
+        fill="#C9DDBF"
+        stroke="#799969"
+        class="outer"/>
+
+  <ellipse cx="105" cy="649"
+           rx="22" ry="13"
+           fill="#628653"/>
+
+  <text x="105" y="655"
+        text-anchor="middle"
+        class="number">
+    3
+  </text>
+
+  <text x="177.5" y="687"
+        text-anchor="middle"
+        class="side-title">
+    <tspan x="177.5" dy="0">Material-constrained</tspan>
+    <tspan x="177.5" dy="28">deployment</tspan>
+  </text>
+
+  <text x="177.5" y="795"
+        text-anchor="middle"
+        class="side-sub"
+        fill="#557A49">
+    Select the prefix
+  </text>
+
+
+  <!-- Main green panel -->
+  <rect x="330" y="610"
+        width="1215" height="215"
+        rx="16"
+        fill="#CEDFC6"
+        stroke="#799969"
+        class="outer"/>
+
+  <text x="362" y="652"
+        class="section-title"
+        fill="#4E7344">
+    c. Smallest feasible prefix selected by material-quality tolerances
+  </text>
+
+
+  <!-- Material objectives -->
+  <rect x="360" y="675"
+        width="280" height="125"
+        rx="13"
+        fill="#E7F0E2"
+        stroke="#9CB794"
+        class="inner"/>
+
+  <text x="500" y="714"
+        text-anchor="middle"
+        class="box-title-lg">
+    Material objectives
+  </text>
+
+  <text x="500" y="744"
+        text-anchor="middle"
+        class="box-sub-compact">
+    field · interface · energy
+  </text>
+
+  <text x="500" y="764"
+        text-anchor="middle"
+        class="box-sub-compact">
+    conservation · structure factor
+  </text>
+
+  <text x="500" y="788"
+        text-anchor="middle"
+        class="box-sub-compact">
+    spectral distillation
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="648" y1="737.5"
+        x2="692" y2="737.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Joint calibration -->
+  <rect x="700" y="675"
+        width="250" height="125"
+        rx="13"
+        fill="#E7F0E2"
+        stroke="#9CB794"
+        class="inner"/>
+
+  <text x="825" y="714"
+        text-anchor="middle"
+        class="box-title-lg">
+    Joint calibration
+  </text>
+
+  <text x="825" y="746"
+        text-anchor="middle"
+        class="box-sub">
+    rank-16 anchor
+  </text>
+
+  <text x="825" y="770"
+        text-anchor="middle"
+        class="box-sub">
+    rank-4/8 distillation
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="958" y1="737.5"
+        x2="1002" y2="737.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- ========================================================= -->
+  <!-- Validation tolerance -->
+  <!-- Increased equation spacing -->
+  <!-- ========================================================= -->
+
+  <rect x="1010" y="675"
+        width="250" height="125"
+        rx="13"
+        fill="#E7F0E2"
+        stroke="#9CB794"
+        class="inner"/>
+
+  <!-- Title moved slightly upward -->
+  <text x="1135" y="701"
+        text-anchor="middle"
+        class="box-title-lg">
+    <tspan x="1135" dy="0">Validation</tspan>
+    <tspan x="1135" dy="24">tolerance</tspan>
+  </text>
+
+  <!-- First equation -->
+  <text x="1135" y="753"
+        text-anchor="middle"
+        class="formula">
+    Dⱼ,ₖ(r) ≤ εₖ
+  </text>
+
+  <!-- Second equation:
+       35 px below first equation -->
+  <text x="1135" y="788"
+        text-anchor="middle"
+        class="formula">
+    rⱼ⋆ = min Fⱼ
+  </text>
+
+
+  <!-- Arrow -->
+  <line x1="1268" y1="737.5"
+        x2="1312" y2="737.5"
+        class="arrow"
+        marker-end="url(#arrowhead)"/>
+
+
+  <!-- Material output -->
+  <rect x="1320" y="675"
+        width="195" height="125"
+        rx="13"
+        fill="#E7F0E2"
+        stroke="#9CB794"
+        class="inner"/>
+
+  <text x="1417.5" y="714"
+        text-anchor="middle"
+        class="box-title-lg">
+    Material output
+  </text>
+
+  <text x="1417.5" y="748"
+        text-anchor="middle"
+        class="box-sub">
+    preserved quality
+  </text>
+
+  <text x="1417.5" y="774"
+        text-anchor="middle"
+        class="box-sub">
+    lower active cost
+  </text>
+
+</svg>

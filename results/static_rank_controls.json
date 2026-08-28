@@ -1,0 +1,1503 @@
+{
+  "protocol": {
+    "targets": [
+      "eps0022_lam14",
+      "eps0022_lam16",
+      "eps0028_lam14",
+      "eps0028_lam16"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "static_ranks": [
+      4,
+      7,
+      8
+    ],
+    "pairs": 12,
+    "steps": 600,
+    "reporting": "all predeclared ranks, targets, seeds, and metrics"
+  },
+  "trainable_parameters": {
+    "static_rank4": 416330,
+    "static_rank7": 727370,
+    "static_rank8": 831050
+  },
+  "stnlr_mean_active_rank": {
+    "mean": 6.666666666666667,
+    "seed_sd": 0.68835252676367
+  },
+  "aggregate": {
+    "static_rank4": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.06488062348216772,
+        "sd": 0.0018404589282381872,
+        "per_seed_target_mean": [
+          0.06276946421712637,
+          0.06614725757390261,
+          0.06572514865547419
+        ]
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05856204032897949,
+        "sd": 0.0008992251475172676,
+        "per_seed_target_mean": [
+          0.05753461178392172,
+          0.05920575000345707,
+          0.05894575919955969
+        ]
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.003016662667505443,
+        "sd": 0.00028822156273169936,
+        "per_seed_target_mean": [
+          0.0026840210193768144,
+          0.003192138799931854,
+          0.003173828183207661
+        ]
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.006651555964102347,
+        "sd": 0.0003527244672882909,
+        "per_seed_target_mean": [
+          0.006628034985624254,
+          0.006311180652119219,
+          0.00701545225456357
+        ]
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.7262104998032252,
+        "sd": 0.01587354783773003,
+        "per_seed_target_mean": [
+          0.7221348434686661,
+          0.7437244802713394,
+          0.7127721756696701
+        ]
+      }
+    },
+    "static_rank7": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.063312953338027,
+        "sd": 0.002153532437625287,
+        "per_seed_target_mean": [
+          0.061352225951850414,
+          0.06296879332512617,
+          0.06561784073710442
+        ]
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05805658083409071,
+        "sd": 0.0016078267713600643,
+        "per_seed_target_mean": [
+          0.056346007622778416,
+          0.058286918327212334,
+          0.05953681655228138
+        ]
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.002950032571485887,
+        "sd": 0.0003931628499417109,
+        "per_seed_target_mean": [
+          0.0025146484840661287,
+          0.003056335437577218,
+          0.0032791137928143144
+        ]
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.006441561000732084,
+        "sd": 0.00052368787326926,
+        "per_seed_target_mean": [
+          0.006090393289923668,
+          0.00619081174954772,
+          0.0070434779627248645
+        ]
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.7204320480426153,
+        "sd": 0.01003187665155737,
+        "per_seed_target_mean": [
+          0.7098123580217361,
+          0.7297487854957581,
+          0.7217350006103516
+        ]
+      }
+    },
+    "static_rank8": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.06290784105658531,
+        "sd": 0.0015883583152450878,
+        "per_seed_target_mean": [
+          0.061374835669994354,
+          0.06280239019542933,
+          0.06454629730433226
+        ]
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05797340255230665,
+        "sd": 0.0015202108102761673,
+        "per_seed_target_mean": [
+          0.05625931732356548,
+          0.058502611704170704,
+          0.05915827862918377
+        ]
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.00295918786044543,
+        "sd": 0.00041555015289059335,
+        "per_seed_target_mean": [
+          0.002487182675395161,
+          0.003120422421488911,
+          0.003269958484452218
+        ]
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.006445519936581452,
+        "sd": 0.0005835310703710746,
+        "per_seed_target_mean": [
+          0.006065868423320353,
+          0.006153259542770684,
+          0.007117431843653321
+        ]
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.7163100192944208,
+        "sd": 0.010036802557742332,
+        "per_seed_target_mean": [
+          0.7057799100875854,
+          0.7257673293352127,
+          0.7173828184604645
+        ]
+      }
+    },
+    "stnlr": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.05998728331178427,
+        "sd": 0.0015082926961519647,
+        "per_seed_target_mean": [
+          0.05855087377130985,
+          0.05985255632549524,
+          0.06155841983854771
+        ]
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05244270867357651,
+        "sd": 0.0008598121419747636,
+        "per_seed_target_mean": [
+          0.05150871444493532,
+          0.053201284259557724,
+          0.052618127316236496
+        ]
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.0026977539528161287,
+        "sd": 0.00017203227997400234,
+        "per_seed_target_mean": [
+          0.0025070190895348787,
+          0.0027450561756268144,
+          0.002841186593286693
+        ]
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.005470331214989225,
+        "sd": 0.0003619538609661325,
+        "per_seed_target_mean": [
+          0.005354858236387372,
+          0.005180202657356858,
+          0.005875932751223445
+        ]
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.6593995839357376,
+        "sd": 0.015895716363252564,
+        "per_seed_target_mean": [
+          0.65829898416996,
+          0.675816997885704,
+          0.6440827697515488
+        ]
+      }
+    }
+  },
+  "comparisons": {
+    "static_rank4": {
+      "trajectory_relative_l2_mean": {
+        "stnlr_relative_change_percent": -7.54206711920451,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_relative_l2_mean": {
+        "stnlr_relative_change_percent": -10.449314301596868,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_interface_fraction_mae": {
+        "stnlr_relative_change_percent": -10.571573617577478,
+        "stnlr_paired_wins_out_of_12": 10
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "stnlr_relative_change_percent": -17.75862302727438,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "stnlr_relative_change_percent": -9.199938018741216,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "all_five_paired_dominance_out_of_12": 10
+    },
+    "static_rank7": {
+      "trajectory_relative_l2_mean": {
+        "stnlr_relative_change_percent": -5.252748214866909,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_relative_l2_mean": {
+        "stnlr_relative_change_percent": -9.669656875862287,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_interface_fraction_mae": {
+        "stnlr_relative_change_percent": -8.551723160896806,
+        "stnlr_paired_wins_out_of_12": 11
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "stnlr_relative_change_percent": -15.077553183653436,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "stnlr_relative_change_percent": -8.471647572134033,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "all_five_paired_dominance_out_of_12": 11
+    },
+    "static_rank8": {
+      "trajectory_relative_l2_mean": {
+        "stnlr_relative_change_percent": -4.642597322921982,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_relative_l2_mean": {
+        "stnlr_relative_change_percent": -9.540053947566829,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "terminal_interface_fraction_mae": {
+        "stnlr_relative_change_percent": -8.834650585176062,
+        "stnlr_paired_wins_out_of_12": 10
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "stnlr_relative_change_percent": -15.129713835148628,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "stnlr_relative_change_percent": -7.944944762149375,
+        "stnlr_paired_wins_out_of_12": 12
+      },
+      "all_five_paired_dominance_out_of_12": 10
+    }
+  },
+  "rows": {
+    "static_rank4": [
+      {
+        "target": "eps0022_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06196760758757591,
+          "terminal_relative_l2_mean": 0.05522271618247032,
+          "terminal_interface_fraction_mae": 0.0023315430153161287,
+          "terminal_free_energy_relative_error_mean": 0.0059351990930736065,
+          "trajectory_pde_residual_relative_rms": 0.6371250748634338,
+          "trajectory_relative_l2_per_time": [
+            0.18327461183071136,
+            0.061863310635089874,
+            0.05413103103637695,
+            0.04906020313501358,
+            0.04591946303844452,
+            0.044503550976514816,
+            0.0444723516702652,
+            0.04536980018019676,
+            0.04726959392428398,
+            0.050557106733322144,
+            0.05522271618247032
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06652712821960449,
+          "terminal_relative_l2_mean": 0.05807853862643242,
+          "terminal_interface_fraction_mae": 0.003240966936573386,
+          "terminal_free_energy_relative_error_mean": 0.006432780530303717,
+          "trajectory_pde_residual_relative_rms": 0.6895079016685486,
+          "trajectory_relative_l2_per_time": [
+            0.20372502505779266,
+            0.0648350715637207,
+            0.05759583041071892,
+            0.052726875990629196,
+            0.04927046224474907,
+            0.04719763994216919,
+            0.046649981290102005,
+            0.04782722517848015,
+            0.050273921340703964,
+            0.053617943078279495,
+            0.05807853862643242
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06774801760911942,
+          "terminal_relative_l2_mean": 0.05817052349448204,
+          "terminal_interface_fraction_mae": 0.003759765764698386,
+          "terminal_free_energy_relative_error_mean": 0.0069547356106340885,
+          "trajectory_pde_residual_relative_rms": 0.6437104344367981,
+          "trajectory_relative_l2_per_time": [
+            0.2277829945087433,
+            0.06378298252820969,
+            0.054883379489183426,
+            0.050100572407245636,
+            0.04751374199986458,
+            0.046393074095249176,
+            0.04638122394680977,
+            0.04735209047794342,
+            0.0496554858982563,
+            0.05321216583251953,
+            0.058170534670352936
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06469983607530594,
+          "terminal_relative_l2_mean": 0.05863986164331436,
+          "terminal_interface_fraction_mae": 0.0030090331565588713,
+          "terminal_free_energy_relative_error_mean": 0.008009292185306549,
+          "trajectory_pde_residual_relative_rms": 0.5947952270507812,
+          "trajectory_relative_l2_per_time": [
+            0.18500342965126038,
+            0.06652777642011642,
+            0.057864684611558914,
+            0.051766108721494675,
+            0.04808519780635834,
+            0.046439580619335175,
+            0.046453118324279785,
+            0.04755597189068794,
+            0.04984153434634209,
+            0.05352097749710083,
+            0.05863986164331436
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.08067543804645538,
+          "terminal_relative_l2_mean": 0.06080588325858116,
+          "terminal_interface_fraction_mae": 0.0027099610306322575,
+          "terminal_free_energy_relative_error_mean": 0.007686867844313383,
+          "trajectory_pde_residual_relative_rms": 0.5979655385017395,
+          "trajectory_relative_l2_per_time": [
+            0.35598787665367126,
+            0.06731989234685898,
+            0.05542653426527977,
+            0.04992348700761795,
+            0.047604769468307495,
+            0.046770352870225906,
+            0.04726593196392059,
+            0.048965077847242355,
+            0.051758088171482086,
+            0.05560189485549927,
+            0.060805875808000565
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.07031115144491196,
+          "terminal_relative_l2_mean": 0.06017061695456505,
+          "terminal_interface_fraction_mae": 0.003570556640625,
+          "terminal_free_energy_relative_error_mean": 0.008255312219262123,
+          "trajectory_pde_residual_relative_rms": 0.5853384137153625,
+          "trajectory_relative_l2_per_time": [
+            0.24424543976783752,
+            0.06556747108697891,
+            0.05648596212267876,
+            0.05114100128412247,
+            0.04825105518102646,
+            0.0469508171081543,
+            0.0469164103269577,
+            0.048086781054735184,
+            0.05079004168510437,
+            0.054817136377096176,
+            0.06017060950398445
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06190764904022217,
+          "terminal_relative_l2_mean": 0.057572852820158005,
+          "terminal_interface_fraction_mae": 0.002685546875,
+          "terminal_free_energy_relative_error_mean": 0.005656645633280277,
+          "trajectory_pde_residual_relative_rms": 0.8796933889389038,
+          "trajectory_relative_l2_per_time": [
+            0.18514104187488556,
+            0.060666777193546295,
+            0.05194703862071037,
+            0.047568924725055695,
+            0.04447723180055618,
+            0.04341854527592659,
+            0.04393880441784859,
+            0.045565295964479446,
+            0.04836597666144371,
+            0.05232170224189758,
+            0.057572852820158005
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.059722743928432465,
+          "terminal_relative_l2_mean": 0.058262456208467484,
+          "terminal_interface_fraction_mae": 0.003637695452198386,
+          "terminal_free_energy_relative_error_mean": 0.005053674802184105,
+          "trajectory_pde_residual_relative_rms": 0.8965022563934326,
+          "trajectory_relative_l2_per_time": [
+            0.15874339640140533,
+            0.059366729110479355,
+            0.051212310791015625,
+            0.04722864180803299,
+            0.04506843537092209,
+            0.04411003366112709,
+            0.044521186500787735,
+            0.04623408988118172,
+            0.04914150759577751,
+            0.05306139588356018,
+            0.058262456208467484
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06164463981986046,
+          "terminal_relative_l2_mean": 0.05733075365424156,
+          "terminal_interface_fraction_mae": 0.0025634765625,
+          "terminal_free_energy_relative_error_mean": 0.005835528485476971,
+          "trajectory_pde_residual_relative_rms": 0.8392001986503601,
+          "trajectory_relative_l2_per_time": [
+            0.18996909260749817,
+            0.058516617864370346,
+            0.050733186304569244,
+            0.04611887410283089,
+            0.043915726244449615,
+            0.043049152940511703,
+            0.04349987953901291,
+            0.04512772336602211,
+            0.047933053225278854,
+            0.05189695954322815,
+            0.05733075365424156
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06250276416540146,
+          "terminal_relative_l2_mean": 0.058703016489744186,
+          "terminal_interface_fraction_mae": 0.0027099610306322575,
+          "terminal_free_energy_relative_error_mean": 0.006911003030836582,
+          "trajectory_pde_residual_relative_rms": 0.7769256830215454,
+          "trajectory_relative_l2_per_time": [
+            0.18296554684638977,
+            0.0620797835290432,
+            0.05320205166935921,
+            0.04838532209396362,
+            0.04536209627985954,
+            0.044112566858530045,
+            0.04446304962038994,
+            0.04608187824487686,
+            0.04898862913250923,
+            0.05318645387887955,
+            0.058703016489744186
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05766372010111809,
+          "terminal_relative_l2_mean": 0.059676121920347214,
+          "terminal_interface_fraction_mae": 0.003179931780323386,
+          "terminal_free_energy_relative_error_mean": 0.0060713994316756725,
+          "trajectory_pde_residual_relative_rms": 0.790922224521637,
+          "trajectory_relative_l2_per_time": [
+            0.12616269290447235,
+            0.06158822774887085,
+            0.052903033792972565,
+            0.04810658097267151,
+            0.04543774947524071,
+            0.0443970263004303,
+            0.04491276666522026,
+            0.04687919467687607,
+            0.05002888664603233,
+            0.05420864745974541,
+            0.059676121920347214
+          ]
+        },
+        "trainable_parameters": 416330
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06319678574800491,
+          "terminal_relative_l2_mean": 0.060111142694950104,
+          "terminal_interface_fraction_mae": 0.0028015137650072575,
+          "terminal_free_energy_relative_error_mean": 0.007016232702881098,
+          "trajectory_pde_residual_relative_rms": 0.7828396558761597,
+          "trajectory_relative_l2_per_time": [
+            0.18760959804058075,
+            0.06108207628130913,
+            0.05259082838892937,
+            0.047928113490343094,
+            0.04543282836675644,
+            0.04447876289486885,
+            0.04497170075774193,
+            0.04676028713583946,
+            0.04991121217608452,
+            0.05428817868232727,
+            0.060111142694950104
+          ]
+        },
+        "trainable_parameters": 416330
+      }
+    ],
+    "static_rank7": [
+      {
+        "target": "eps0022_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06141611561179161,
+          "terminal_relative_l2_mean": 0.05462321266531944,
+          "terminal_interface_fraction_mae": 0.0022399902809411287,
+          "terminal_free_energy_relative_error_mean": 0.005822914186865091,
+          "trajectory_pde_residual_relative_rms": 0.6275900602340698,
+          "trajectory_relative_l2_per_time": [
+            0.18373677134513855,
+            0.0615311823785305,
+            0.05358380079269409,
+            0.04839624837040901,
+            0.04520229250192642,
+            0.04375774785876274,
+            0.04371558874845505,
+            0.04460938647389412,
+            0.04653667286038399,
+            0.04988443851470947,
+            0.05462321266531944
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06135176122188568,
+          "terminal_relative_l2_mean": 0.05660834535956383,
+          "terminal_interface_fraction_mae": 0.0029174804221838713,
+          "terminal_free_energy_relative_error_mean": 0.006174770183861256,
+          "trajectory_pde_residual_relative_rms": 0.6760134696960449,
+          "trajectory_relative_l2_per_time": [
+            0.1617952585220337,
+            0.06307458132505417,
+            0.055974818766117096,
+            0.05118584260344505,
+            0.04776063188910484,
+            0.04573768377304077,
+            0.04524252563714981,
+            0.04644494131207466,
+            0.048863060772418976,
+            0.052181731909513474,
+            0.05660834535956383
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.0673905536532402,
+          "terminal_relative_l2_mean": 0.05877881124615669,
+          "terminal_interface_fraction_mae": 0.0037841796875,
+          "terminal_free_energy_relative_error_mean": 0.006943598389625549,
+          "trajectory_pde_residual_relative_rms": 0.6557568311691284,
+          "trajectory_relative_l2_per_time": [
+            0.21757149696350098,
+            0.06424138695001602,
+            0.05545510724186897,
+            0.05079605057835579,
+            0.04816248267889023,
+            0.04708334058523178,
+            0.0470627062022686,
+            0.04802626371383667,
+            0.05028422549366951,
+            0.05383419990539551,
+            0.05877881124615669
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06275869160890579,
+          "terminal_relative_l2_mean": 0.05695483833551407,
+          "terminal_interface_fraction_mae": 0.0028198242653161287,
+          "terminal_free_energy_relative_error_mean": 0.00703370152041316,
+          "trajectory_pde_residual_relative_rms": 0.5777261853218079,
+          "trajectory_relative_l2_per_time": [
+            0.1814642995595932,
+            0.06404450535774231,
+            0.055849578231573105,
+            0.05005543306469917,
+            0.04645445942878723,
+            0.04490308463573456,
+            0.04488047584891319,
+            0.04587638005614281,
+            0.04807942360639572,
+            0.05178316310048103,
+            0.05695483833551407
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.0769536942243576,
+          "terminal_relative_l2_mean": 0.060466885566711426,
+          "terminal_interface_fraction_mae": 0.00286865234375,
+          "terminal_free_energy_relative_error_mean": 0.007667216006666422,
+          "trajectory_pde_residual_relative_rms": 0.5947655439376831,
+          "trajectory_relative_l2_per_time": [
+            0.31920912861824036,
+            0.06679781526327133,
+            0.05494171008467674,
+            0.049452364444732666,
+            0.0470849834382534,
+            0.046336185187101364,
+            0.04688733443617821,
+            0.04861566051840782,
+            0.05142625793814659,
+            0.055272381752729416,
+            0.06046689301729202
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.07054612785577774,
+          "terminal_relative_l2_mean": 0.06121206283569336,
+          "terminal_interface_fraction_mae": 0.0036499022971838713,
+          "terminal_free_energy_relative_error_mean": 0.008341647684574127,
+          "trajectory_pde_residual_relative_rms": 0.6002769470214844,
+          "trajectory_relative_l2_per_time": [
+            0.23617644608020782,
+            0.06676812469959259,
+            0.057440806180238724,
+            0.052186012268066406,
+            0.04932093620300293,
+            0.04804687574505806,
+            0.04801655933260918,
+            0.04917403310537338,
+            0.051821302622556686,
+            0.05584433302283287,
+            0.061212070286273956
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05992061272263527,
+          "terminal_relative_l2_mean": 0.05634497478604317,
+          "terminal_interface_fraction_mae": 0.0026733397971838713,
+          "terminal_free_energy_relative_error_mean": 0.0051537142135202885,
+          "trajectory_pde_residual_relative_rms": 0.8572424650192261,
+          "trajectory_relative_l2_per_time": [
+            0.17477039992809296,
+            0.05967466160655022,
+            0.05069087818264961,
+            0.04644472151994705,
+            0.04339511692523956,
+            0.04238946735858917,
+            0.042872097343206406,
+            0.04439353197813034,
+            0.04710496589541435,
+            0.05104595050215721,
+            0.05634497478604317
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05734708905220032,
+          "terminal_relative_l2_mean": 0.05703923851251602,
+          "terminal_interface_fraction_mae": 0.0033142089378088713,
+          "terminal_free_energy_relative_error_mean": 0.004816734232008457,
+          "trajectory_pde_residual_relative_rms": 0.8602936267852783,
+          "trajectory_relative_l2_per_time": [
+            0.14647714793682098,
+            0.0579645037651062,
+            0.0496947281062603,
+            0.04567870497703552,
+            0.043568387627601624,
+            0.042667169123888016,
+            0.04313771054148674,
+            0.044895246624946594,
+            0.04785647615790367,
+            0.05183869227766991,
+            0.05703923851251602
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06144016981124878,
+          "terminal_relative_l2_mean": 0.05765761062502861,
+          "terminal_interface_fraction_mae": 0.002722168108448386,
+          "terminal_free_energy_relative_error_mean": 0.005765213165432215,
+          "trajectory_pde_residual_relative_rms": 0.8421210646629333,
+          "trajectory_relative_l2_per_time": [
+            0.18645833432674408,
+            0.05890096351504326,
+            0.05082784965634346,
+            0.04612359032034874,
+            0.043898485600948334,
+            0.04306590184569359,
+            0.043574314564466476,
+            0.045202698558568954,
+            0.04804222658276558,
+            0.05208994820713997,
+            0.05765761062502861
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.061313483864068985,
+          "terminal_relative_l2_mean": 0.057461004704236984,
+          "terminal_interface_fraction_mae": 0.002325439592823386,
+          "terminal_free_energy_relative_error_mean": 0.0063512432388961315,
+          "trajectory_pde_residual_relative_rms": 0.7766907215118408,
+          "trajectory_relative_l2_per_time": [
+            0.17967894673347473,
+            0.06027280166745186,
+            0.05189476162195206,
+            0.04748046398162842,
+            0.04481322690844536,
+            0.04365142807364464,
+            0.04395269230008125,
+            0.04536048695445061,
+            0.04794924333691597,
+            0.05193331465125084,
+            0.057461000978946686
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05622262880206108,
+          "terminal_relative_l2_mean": 0.05903320387005806,
+          "terminal_interface_fraction_mae": 0.0031250000465661287,
+          "terminal_free_energy_relative_error_mean": 0.006104526575654745,
+          "trajectory_pde_residual_relative_rms": 0.7879225015640259,
+          "trajectory_relative_l2_per_time": [
+            0.1152607798576355,
+            0.061543434858322144,
+            0.052461493760347366,
+            0.047591328620910645,
+            0.04483317211270332,
+            0.04384282976388931,
+            0.04438219591975212,
+            0.04635860398411751,
+            0.0494999997317791,
+            0.05364188179373741,
+            0.05903320387005806
+          ]
+        },
+        "trainable_parameters": 727370
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06309451162815094,
+          "terminal_relative_l2_mean": 0.06049878150224686,
+          "terminal_interface_fraction_mae": 0.002960205078125,
+          "terminal_free_energy_relative_error_mean": 0.007123452611267567,
+          "trajectory_pde_residual_relative_rms": 0.7887851595878601,
+          "trajectory_relative_l2_per_time": [
+            0.1837853193283081,
+            0.0613589882850647,
+            0.05278390273451805,
+            0.0480961836874485,
+            0.045632850378751755,
+            0.04474774748086929,
+            0.04528502747416496,
+            0.04705362394452095,
+            0.05019811913371086,
+            0.054599083960056305,
+            0.06049878150224686
+          ]
+        },
+        "trainable_parameters": 727370
+      }
+    ],
+    "static_rank8": [
+      {
+        "target": "eps0022_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.0612427294254303,
+          "terminal_relative_l2_mean": 0.0544501431286335,
+          "terminal_interface_fraction_mae": 0.0022521973587572575,
+          "terminal_free_energy_relative_error_mean": 0.0057752192951738834,
+          "trajectory_pde_residual_relative_rms": 0.624437153339386,
+          "trajectory_relative_l2_per_time": [
+            0.1831737607717514,
+            0.06141556426882744,
+            0.05343741178512573,
+            0.048277389258146286,
+            0.04508976265788078,
+            0.04364170879125595,
+            0.043585844337940216,
+            0.04447025805711746,
+            0.04639990255236626,
+            0.04972831532359123,
+            0.0544501356780529
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.060237303376197815,
+          "terminal_relative_l2_mean": 0.05709126591682434,
+          "terminal_interface_fraction_mae": 0.0031066895462572575,
+          "terminal_free_energy_relative_error_mean": 0.006349492818117142,
+          "trajectory_pde_residual_relative_rms": 0.6723062992095947,
+          "trajectory_relative_l2_per_time": [
+            0.1434168815612793,
+            0.0638199970126152,
+            0.056633640080690384,
+            0.051857005804777145,
+            0.048450395464897156,
+            0.046418916434049606,
+            0.04586821794509888,
+            0.04700096324086189,
+            0.04938725754618645,
+            0.052665818482637405,
+            0.05709126219153404
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06649201363325119,
+          "terminal_relative_l2_mean": 0.058673083782196045,
+          "terminal_interface_fraction_mae": 0.0035827637184411287,
+          "terminal_free_energy_relative_error_mean": 0.0070162019692361355,
+          "trajectory_pde_residual_relative_rms": 0.6570724844932556,
+          "trajectory_relative_l2_per_time": [
+            0.2075648158788681,
+            0.06459187716245651,
+            0.05554661899805069,
+            0.05077479034662247,
+            0.048121675848960876,
+            0.047056615352630615,
+            0.04705174267292023,
+            0.048013586550951004,
+            0.050259437412023544,
+            0.05375795438885689,
+            0.058673083782196045
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.062787264585495,
+          "terminal_relative_l2_mean": 0.05687597021460533,
+          "terminal_interface_fraction_mae": 0.002752685686573386,
+          "terminal_free_energy_relative_error_mean": 0.006888020783662796,
+          "trajectory_pde_residual_relative_rms": 0.5768423676490784,
+          "trajectory_relative_l2_per_time": [
+            0.18191061913967133,
+            0.06397344917058945,
+            0.05581096559762955,
+            0.05006600543856621,
+            0.046459853649139404,
+            0.04490232095122337,
+            0.044886376708745956,
+            0.04590612277388573,
+            0.04810245707631111,
+            0.0517657995223999,
+            0.05687597021460533
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.07849018275737762,
+          "terminal_relative_l2_mean": 0.06061697006225586,
+          "terminal_interface_fraction_mae": 0.0028930664993822575,
+          "terminal_free_energy_relative_error_mean": 0.007733470294624567,
+          "trajectory_pde_residual_relative_rms": 0.5960577130317688,
+          "trajectory_relative_l2_per_time": [
+            0.3353743553161621,
+            0.06680561602115631,
+            0.0549466609954834,
+            0.04951734468340874,
+            0.04718664288520813,
+            0.04641251638531685,
+            0.04694680497050285,
+            0.04868387058377266,
+            0.051513731479644775,
+            0.05538748577237129,
+            0.06061697006225586
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06934136897325516,
+          "terminal_relative_l2_mean": 0.060698818415403366,
+          "terminal_interface_fraction_mae": 0.0035888671409338713,
+          "terminal_free_energy_relative_error_mean": 0.008501047268509865,
+          "trajectory_pde_residual_relative_rms": 0.597866415977478,
+          "trajectory_relative_l2_per_time": [
+            0.2267630398273468,
+            0.06638815253973007,
+            0.05712641403079033,
+            0.05185658484697342,
+            0.04894937574863434,
+            0.04770182818174362,
+            0.04767468199133873,
+            0.04881392791867256,
+            0.05141451582312584,
+            0.055367786437273026,
+            0.060698818415403366
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05985357612371445,
+          "terminal_relative_l2_mean": 0.055999018251895905,
+          "terminal_interface_fraction_mae": 0.00250244140625,
+          "terminal_free_energy_relative_error_mean": 0.005154196172952652,
+          "trajectory_pde_residual_relative_rms": 0.8493906855583191,
+          "trajectory_relative_l2_per_time": [
+            0.17707020044326782,
+            0.05929623171687126,
+            0.05032952502369881,
+            0.04609580710530281,
+            0.043117016553878784,
+            0.0421425998210907,
+            0.042632389813661575,
+            0.04414563998579979,
+            0.04683251306414604,
+            0.05072847008705139,
+            0.055999018251895905
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05650601536035538,
+          "terminal_relative_l2_mean": 0.057298220694065094,
+          "terminal_interface_fraction_mae": 0.003387451171875,
+          "terminal_free_energy_relative_error_mean": 0.004818178713321686,
+          "trajectory_pde_residual_relative_rms": 0.8581048250198364,
+          "trajectory_relative_l2_per_time": [
+            0.13335874676704407,
+            0.058416735380887985,
+            0.050137437880039215,
+            0.04609866440296173,
+            0.04399945214390755,
+            0.04307376593351364,
+            0.04353540018200874,
+            0.04527558386325836,
+            0.0482211634516716,
+            0.052151020616292953,
+            0.057298220694065094
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.060215987265110016,
+          "terminal_relative_l2_mean": 0.05717049166560173,
+          "terminal_interface_fraction_mae": 0.002838134765625,
+          "terminal_free_energy_relative_error_mean": 0.005785522982478142,
+          "trajectory_pde_residual_relative_rms": 0.8299759030342102,
+          "trajectory_relative_l2_per_time": [
+            0.17766034603118896,
+            0.058434970676898956,
+            0.05040217190980911,
+            0.04560820758342743,
+            0.043418023735284805,
+            0.042609985917806625,
+            0.043118882924318314,
+            0.04475262388586998,
+            0.04757928475737572,
+            0.05162087082862854,
+            0.05717049166560173
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06161577254533768,
+          "terminal_relative_l2_mean": 0.0577121376991272,
+          "terminal_interface_fraction_mae": 0.00244140625,
+          "terminal_free_energy_relative_error_mean": 0.006446037441492081,
+          "trajectory_pde_residual_relative_rms": 0.7724494338035583,
+          "trajectory_relative_l2_per_time": [
+            0.18104730546474457,
+            0.06101736053824425,
+            0.052149590104818344,
+            0.04746288061141968,
+            0.04482929781079292,
+            0.04369455203413963,
+            0.04404320940375328,
+            0.045496512204408646,
+            0.04815147444605827,
+            0.052169229835271835,
+            0.0577121339738369
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.055976059287786484,
+          "terminal_relative_l2_mean": 0.05900399014353752,
+          "terminal_interface_fraction_mae": 0.0030944824684411287,
+          "terminal_free_energy_relative_error_mean": 0.0057118963450193405,
+          "trajectory_pde_residual_relative_rms": 0.7766004800796509,
+          "trajectory_relative_l2_per_time": [
+            0.11221583932638168,
+            0.06151612475514412,
+            0.052458684891462326,
+            0.04758632928133011,
+            0.04492425546050072,
+            0.04394128918647766,
+            0.04447847232222557,
+            0.046425264328718185,
+            0.049536850303411484,
+            0.05364958196878433,
+            0.05900399014353752
+          ]
+        },
+        "trainable_parameters": 831050
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06213581934571266,
+          "terminal_relative_l2_mean": 0.060090720653533936,
+          "terminal_interface_fraction_mae": 0.0030700683128088713,
+          "terminal_free_energy_relative_error_mean": 0.007166955154389143,
+          "trajectory_pde_residual_relative_rms": 0.7846164703369141,
+          "trajectory_relative_l2_per_time": [
+            0.17688563466072083,
+            0.06103283911943436,
+            0.052472639828920364,
+            0.04770653322339058,
+            0.04525222256779671,
+            0.044412966817617416,
+            0.044958021491765976,
+            0.046699050813913345,
+            0.049802012741565704,
+            0.05418144538998604,
+            0.060090720653533936
+          ]
+        },
+        "trainable_parameters": 831050
+      }
+    ],
+    "stnlr": [
+      {
+        "target": "eps0022_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05832141265273094,
+          "terminal_relative_l2_mean": 0.04982594773173332,
+          "terminal_interface_fraction_mae": 0.002142334124073386,
+          "terminal_free_energy_relative_error_mean": 0.004993529058992863,
+          "trajectory_pde_residual_relative_rms": 0.5863771438598633,
+          "trajectory_relative_l2_per_time": [
+            0.19127987325191498,
+            0.05702328681945801,
+            0.04961901903152466,
+            0.04423707351088524,
+            0.04130940139293671,
+            0.03983931243419647,
+            0.03977574408054352,
+            0.04069134220480919,
+            0.042672332376241684,
+            0.045262232422828674,
+            0.04982594773173332
+          ]
+        },
+        "mean_active_rank": 5.818181818181818
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05831931531429291,
+          "terminal_relative_l2_mean": 0.05178961902856827,
+          "terminal_interface_fraction_mae": 0.002630615374073386,
+          "terminal_free_energy_relative_error_mean": 0.004817736800760031,
+          "trajectory_pde_residual_relative_rms": 0.6479321718215942,
+          "trajectory_relative_l2_per_time": [
+            0.1786513328552246,
+            0.05652880668640137,
+            0.0505051426589489,
+            0.046443965286016464,
+            0.043318647891283035,
+            0.04152164235711098,
+            0.040159452706575394,
+            0.04112401232123375,
+            0.0441359281539917,
+            0.04733390733599663,
+            0.05178961902856827
+          ]
+        },
+        "mean_active_rank": 6.181818181818182
+      },
+      {
+        "target": "eps0022_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06438606232404709,
+          "terminal_relative_l2_mean": 0.05227900296449661,
+          "terminal_interface_fraction_mae": 0.0029724121559411287,
+          "terminal_free_energy_relative_error_mean": 0.005757954902946949,
+          "trajectory_pde_residual_relative_rms": 0.6037831902503967,
+          "trajectory_relative_l2_per_time": [
+            0.24031122028827667,
+            0.05903936177492142,
+            0.05025165155529976,
+            0.045777302235364914,
+            0.04305603355169296,
+            0.041115257889032364,
+            0.04165637493133545,
+            0.04247556999325752,
+            0.044554684311151505,
+            0.04773024842143059,
+            0.05227900296449661
+          ]
+        },
+        "mean_active_rank": 4.363636363636363
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06057460233569145,
+          "terminal_relative_l2_mean": 0.0525185763835907,
+          "terminal_interface_fraction_mae": 0.0026977539528161287,
+          "terminal_free_energy_relative_error_mean": 0.0063364566303789616,
+          "trajectory_pde_residual_relative_rms": 0.5528803467750549,
+          "trajectory_relative_l2_per_time": [
+            0.1904420107603073,
+            0.06106124073266983,
+            0.052597422152757645,
+            0.0471663773059845,
+            0.04338189586997032,
+            0.04197840765118599,
+            0.04189183935523033,
+            0.04279161989688873,
+            0.044820841401815414,
+            0.047670427709817886,
+            0.0525185763835907
+          ]
+        },
+        "mean_active_rank": 6.909090909090909
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.07566311210393906,
+          "terminal_relative_l2_mean": 0.05700758844614029,
+          "terminal_interface_fraction_mae": 0.002777099609375,
+          "terminal_free_energy_relative_error_mean": 0.006812734063714743,
+          "trajectory_pde_residual_relative_rms": 0.5767533183097839,
+          "trajectory_relative_l2_per_time": [
+            0.34160634875297546,
+            0.06318497657775879,
+            0.051808279007673264,
+            0.04571407660841942,
+            0.04344874247908592,
+            0.04251593351364136,
+            0.04293794557452202,
+            0.044626299291849136,
+            0.048237286508083344,
+            0.0512067936360836,
+            0.05700758844614029
+          ]
+        },
+        "mean_active_rank": 6.909090909090909
+      },
+      {
+        "target": "eps0022_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.06721778213977814,
+          "terminal_relative_l2_mean": 0.05356975272297859,
+          "terminal_interface_fraction_mae": 0.003240966936573386,
+          "terminal_free_energy_relative_error_mean": 0.006639394443482161,
+          "trajectory_pde_residual_relative_rms": 0.5566398501396179,
+          "trajectory_relative_l2_per_time": [
+            0.2575053870677948,
+            0.06092395260930061,
+            0.05220574140548706,
+            0.04722215607762337,
+            0.044188883155584335,
+            0.042764563113451004,
+            0.042453229427337646,
+            0.04339445382356644,
+            0.045806635171175,
+            0.04936094209551811,
+            0.05356976017355919
+          ]
+        },
+        "mean_active_rank": 5.090909090909091
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05677594244480133,
+          "terminal_relative_l2_mean": 0.0514182411134243,
+          "terminal_interface_fraction_mae": 0.0025207519065588713,
+          "terminal_free_energy_relative_error_mean": 0.004666165914386511,
+          "trajectory_pde_residual_relative_rms": 0.784015953540802,
+          "trajectory_relative_l2_per_time": [
+            0.1818293333053589,
+            0.05487515404820442,
+            0.04649337753653526,
+            0.042501144111156464,
+            0.03939039632678032,
+            0.03844233974814415,
+            0.038964319974184036,
+            0.040474582463502884,
+            0.04316077381372452,
+            0.0469856821000576,
+            0.0514182411134243
+          ]
+        },
+        "mean_active_rank": 5.454545454545454
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.0527980774641037,
+          "terminal_relative_l2_mean": 0.051025670021772385,
+          "terminal_interface_fraction_mae": 0.0029296875,
+          "terminal_free_energy_relative_error_mean": 0.004381417762488127,
+          "trajectory_pde_residual_relative_rms": 0.7725106477737427,
+          "trajectory_relative_l2_per_time": [
+            0.15083108842372894,
+            0.05154569819569588,
+            0.04395817592740059,
+            0.04083790257573128,
+            0.038914795964956284,
+            0.03728412464261055,
+            0.03757708892226219,
+            0.03989153727889061,
+            0.04257594048976898,
+            0.046336863189935684,
+            0.051025670021772385
+          ]
+        },
+        "mean_active_rank": 6.545454545454546
+      },
+      {
+        "target": "eps0028_lam14",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05614370107650757,
+          "terminal_relative_l2_mean": 0.05099440738558769,
+          "terminal_interface_fraction_mae": 0.0025634765625,
+          "terminal_free_energy_relative_error_mean": 0.004935964476317167,
+          "trajectory_pde_residual_relative_rms": 0.7257723808288574,
+          "trajectory_relative_l2_per_time": [
+            0.1867799013853073,
+            0.053665485233068466,
+            0.04616251215338707,
+            0.04023600369691849,
+            0.03792655095458031,
+            0.03709631785750389,
+            0.03760211169719696,
+            0.03902694210410118,
+            0.04250088706612587,
+            0.0455896370112896,
+            0.05099440738558769
+          ]
+        },
+        "mean_active_rank": 8.727272727272727
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 0,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.058531537652015686,
+          "terminal_relative_l2_mean": 0.052272092550992966,
+          "terminal_interface_fraction_mae": 0.0026672363746911287,
+          "terminal_free_energy_relative_error_mean": 0.005423281341791153,
+          "trajectory_pde_residual_relative_rms": 0.7099224925041199,
+          "trajectory_relative_l2_per_time": [
+            0.1892380565404892,
+            0.056550849229097366,
+            0.048288922756910324,
+            0.04396091029047966,
+            0.04072805121541023,
+            0.03989550471305847,
+            0.03998647257685661,
+            0.04161902517080307,
+            0.04420028254389763,
+            0.04710680618882179,
+            0.05227210000157356
+          ]
+        },
+        "mean_active_rank": 7.2727272727272725
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 1,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05262972041964531,
+          "terminal_relative_l2_mean": 0.052982259541749954,
+          "terminal_interface_fraction_mae": 0.0026428222190588713,
+          "terminal_free_energy_relative_error_mean": 0.004708922002464533,
+          "trajectory_pde_residual_relative_rms": 0.7060718536376953,
+          "trajectory_relative_l2_per_time": [
+            0.1305212825536728,
+            0.055940933525562286,
+            0.04662860184907913,
+            0.04138585180044174,
+            0.039785709232091904,
+            0.038225989788770676,
+            0.03988838568329811,
+            0.04151817783713341,
+            0.04433678835630417,
+            0.04771297052502632,
+            0.052982259541749954
+          ]
+        },
+        "mean_active_rank": 10.181818181818182
+      },
+      {
+        "target": "eps0028_lam16",
+        "seed": 2,
+        "metrics": {
+          "trajectory_relative_l2_mean": 0.05848613381385803,
+          "terminal_relative_l2_mean": 0.05362934619188309,
+          "terminal_interface_fraction_mae": 0.0025878907181322575,
+          "terminal_free_energy_relative_error_mean": 0.006170417182147503,
+          "trajectory_pde_residual_relative_rms": 0.690135657787323,
+          "trajectory_relative_l2_per_time": [
+            0.19042301177978516,
+            0.05618057772517204,
+            0.0472998283803463,
+            0.04311209172010422,
+            0.040412768721580505,
+            0.03935162350535393,
+            0.039640750735998154,
+            0.040756676346063614,
+            0.04420073702931404,
+            0.048340123146772385,
+            0.05362934619188309
+          ]
+        },
+        "mean_active_rank": 6.545454545454546
+      }
+    ]
+  }
+}

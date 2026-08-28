@@ -1,0 +1,1643 @@
+{
+  "pairs": 12,
+  "summary": {
+    "static": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.24569442744056383,
+        "std": 0.0029110447156310195
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.26136992623408634,
+        "std": 0.009326505494073616
+      },
+      "trajectory_mass_drift_mae": {
+        "mean": 0.005711425677873194,
+        "std": 0.0005905836779103162
+      },
+      "maximum_mass_drift_mean": {
+        "mean": 0.04116570126886169,
+        "std": 0.0070419168809498405
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.04699194097581009,
+        "std": 0.006449383763514752
+      },
+      "terminal_structure_factor_centroid_relative_error_mean": {
+        "mean": 0.01264392836795499,
+        "std": 0.0020379684836800962
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 15.272402683893839,
+        "std": 0.3204095850477061
+      }
+    },
+    "stnlr_rank16": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.20848979304234186,
+        "std": 0.002911101043884991
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.21860318258404732,
+        "std": 0.0040524718777505755
+      },
+      "trajectory_mass_drift_mae": {
+        "mean": 0.005145497270859778,
+        "std": 0.0005278054555572679
+      },
+      "maximum_mass_drift_mean": {
+        "mean": 0.03641414254282912,
+        "std": 0.005851408146415367
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.02968327351845801,
+        "std": 0.001491696164124766
+      },
+      "terminal_structure_factor_centroid_relative_error_mean": {
+        "mean": 0.009941849547127882,
+        "std": 0.0006830326160083929
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 14.06300155321757,
+        "std": 0.24496126944549784
+      }
+    },
+    "stnlr": {
+      "trajectory_relative_l2_mean": {
+        "mean": 0.20873177175720534,
+        "std": 0.00516866809508254
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.2203919750948747,
+        "std": 0.0037372474777772995
+      },
+      "trajectory_mass_drift_mae": {
+        "mean": 0.005120410060044378,
+        "std": 0.0006462448449059353
+      },
+      "maximum_mass_drift_mean": {
+        "mean": 0.035859663505107164,
+        "std": 0.00675392522827827
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.030164442646006744,
+        "std": 0.0015276917435200514
+      },
+      "terminal_structure_factor_centroid_relative_error_mean": {
+        "mean": 0.009776637656614184,
+        "std": 0.0005865839541429158
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 14.130862712860107,
+        "std": 0.2625406177471445
+      }
+    }
+  },
+  "stnlr_vs_static": {
+    "trajectory_relative_l2_mean": {
+      "relative_change_percent": -15.044157113534926,
+      "paired_wins": 12
+    },
+    "terminal_relative_l2_mean": {
+      "relative_change_percent": -15.678143132087522,
+      "paired_wins": 12
+    },
+    "trajectory_mass_drift_mae": {
+      "relative_change_percent": -10.34795252818377,
+      "paired_wins": 12
+    },
+    "maximum_mass_drift_mean": {
+      "relative_change_percent": -12.889462829989697,
+      "paired_wins": 11
+    },
+    "terminal_free_energy_relative_error_mean": {
+      "relative_change_percent": -35.80932811110226,
+      "paired_wins": 12
+    },
+    "terminal_structure_factor_centroid_relative_error_mean": {
+      "relative_change_percent": -22.677214137085123,
+      "paired_wins": 12
+    },
+    "trajectory_pde_residual_relative_rms": {
+      "relative_change_percent": -7.474527712902639,
+      "paired_wins": 12
+    }
+  },
+  "mean_active_rank": {
+    "mean": 5.363636363636363,
+    "std": 0.9447549859466604
+  },
+  "rows": [
+    {
+      "target": "eps0020_lam10",
+      "seed": 0,
+      "static": {
+        "trajectory_relative_l2_mean": 0.24144192039966583,
+        "terminal_relative_l2_mean": 0.2821598947048187,
+        "trajectory_mass_drift_mae": 0.004770414438098669,
+        "maximum_mass_drift_mean": 0.03467332199215889,
+        "terminal_free_energy_relative_error_mean": 0.04049016162753105,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.014936396852135658,
+        "trajectory_pde_residual_relative_rms": 9.941560745239258,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.5698227286338806,
+          0.1892583817243576,
+          0.17674478888511658,
+          0.18446509540081024,
+          0.19208936393260956,
+          0.19210970401763916,
+          0.19545400142669678,
+          0.20353654026985168,
+          0.22125907242298126,
+          0.24896179139614105,
+          0.2821598947048187
+        ],
+        "mass_drift_per_time": [
+          0.03466872498393059,
+          0.0010653490899130702,
+          0.0020662525203078985,
+          0.0018435856327414513,
+          0.0018376143416389823,
+          0.001820937148295343,
+          0.0018135408172383904,
+          0.0016270083142444491,
+          0.0017555452650412917,
+          0.00191361119505018,
+          0.0020623882301151752
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.193260058760643,
+        "terminal_relative_l2_mean": 0.22707977890968323,
+        "trajectory_mass_drift_mae": 0.0037280868273228407,
+        "maximum_mass_drift_mean": 0.025437647476792336,
+        "terminal_free_energy_relative_error_mean": 0.026619398966431618,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.009919499978423119,
+        "trajectory_pde_residual_relative_rms": 9.399564743041992,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.42575332522392273,
+          0.16472212970256805,
+          0.15384136140346527,
+          0.15451259911060333,
+          0.15378205478191376,
+          0.1516190618276596,
+          0.15462107956409454,
+          0.16205960512161255,
+          0.1776091456413269,
+          0.20026074349880219,
+          0.22707977890968323
+        ],
+        "mass_drift_per_time": [
+          0.0252994354814291,
+          0.0010479682823643088,
+          0.0010658520041033626,
+          0.0012237703194841743,
+          0.0012093757977709174,
+          0.0016778657445684075,
+          0.0018402893329039216,
+          0.0016825568163767457,
+          0.0016084769740700722,
+          0.0018689088756218553,
+          0.0024844538420438766
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.1961013674736023,
+        "terminal_relative_l2_mean": 0.2253827601671219,
+        "trajectory_mass_drift_mae": 0.0038943644613027573,
+        "maximum_mass_drift_mean": 0.02792568877339363,
+        "terminal_free_energy_relative_error_mean": 0.026871060952544212,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010477028787136078,
+        "trajectory_pde_residual_relative_rms": 9.289341926574707,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.4673466682434082,
+          0.16523614525794983,
+          0.15105560421943665,
+          0.1524982750415802,
+          0.15338347852230072,
+          0.15157388150691986,
+          0.15425899624824524,
+          0.16117779910564423,
+          0.17640352249145508,
+          0.1987980306148529,
+          0.2253827601671219
+        ],
+        "mass_drift_per_time": [
+          0.027780575677752495,
+          0.001085702097043395,
+          0.0010025156661868095,
+          0.0012354677310213447,
+          0.0011340983910486102,
+          0.0015582150081172585,
+          0.0016136796912178397,
+          0.001419041189365089,
+          0.001500876503996551,
+          0.0019204482669010758,
+          0.0025873894337564707
+        ]
+      },
+      "rank_trace": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 4.0
+    },
+    {
+      "target": "eps0020_lam10",
+      "seed": 1,
+      "static": {
+        "trajectory_relative_l2_mean": 0.2324918657541275,
+        "terminal_relative_l2_mean": 0.27235448360443115,
+        "trajectory_mass_drift_mae": 0.004557018633931875,
+        "maximum_mass_drift_mean": 0.036167245358228683,
+        "terminal_free_energy_relative_error_mean": 0.044332120567560196,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.013212385587394238,
+        "trajectory_pde_residual_relative_rms": 9.857686996459961,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.5944554805755615,
+          0.18742822110652924,
+          0.1710256040096283,
+          0.1709459275007248,
+          0.170845627784729,
+          0.1720251739025116,
+          0.17668180167675018,
+          0.1895962655544281,
+          0.21154189109802246,
+          0.24051018059253693,
+          0.27235445380210876
+        ],
+        "mass_drift_per_time": [
+          0.03609839454293251,
+          0.0011003679828718305,
+          0.0007881989586167037,
+          0.0014312496641650796,
+          0.0011355155147612095,
+          0.0011817952618002892,
+          0.0016616529319435358,
+          0.0014580440474674106,
+          0.0013643779093399644,
+          0.0016662292182445526,
+          0.002241386566311121
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.20115971565246582,
+        "terminal_relative_l2_mean": 0.23385730385780334,
+        "trajectory_mass_drift_mae": 0.00413880730047822,
+        "maximum_mass_drift_mean": 0.029817888513207436,
+        "terminal_free_energy_relative_error_mean": 0.033987533301115036,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010519850067794323,
+        "trajectory_pde_residual_relative_rms": 9.285615921020508,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.515204906463623,
+          0.16220878064632416,
+          0.14957349002361298,
+          0.1497838944196701,
+          0.14825564622879028,
+          0.14875061810016632,
+          0.15279825031757355,
+          0.16368907690048218,
+          0.18208402395248413,
+          0.2065509408712387,
+          0.23385730385780334
+        ],
+        "mass_drift_per_time": [
+          0.029659325256943703,
+          0.0005453955382108688,
+          0.0012653490994125605,
+          0.0011346169048920274,
+          0.00116329500451684,
+          0.0011039597447961569,
+          0.001384145230986178,
+          0.0016852085245773196,
+          0.0020763271022588015,
+          0.002444688230752945,
+          0.0030645651277154684
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.1993924230337143,
+        "terminal_relative_l2_mean": 0.23159627616405487,
+        "trajectory_mass_drift_mae": 0.004156213253736496,
+        "maximum_mass_drift_mean": 0.029803091660141945,
+        "terminal_free_energy_relative_error_mean": 0.033390022814273834,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010601728223264217,
+        "trajectory_pde_residual_relative_rms": 9.265432357788086,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.5093408823013306,
+          0.16220878064632416,
+          0.14911453425884247,
+          0.14908115565776825,
+          0.14721381664276123,
+          0.1471879482269287,
+          0.1511695384979248,
+          0.1619916707277298,
+          0.18009202182292938,
+          0.20432011783123016,
+          0.23159627616405487
+        ],
+        "mass_drift_per_time": [
+          0.029573028907179832,
+          0.0005453955382108688,
+          0.001060792594216764,
+          0.0011935553047806025,
+          0.0011667348444461823,
+          0.0011321277124807239,
+          0.0015218487242236733,
+          0.0017868202412500978,
+          0.002105147112160921,
+          0.0024534983094781637,
+          0.0031793953385204077
+        ]
+      },
+      "rank_trace": [
+        4,
+        16,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 5.090909090909091
+    },
+    {
+      "target": "eps0020_lam10",
+      "seed": 2,
+      "static": {
+        "trajectory_relative_l2_mean": 0.248301163315773,
+        "terminal_relative_l2_mean": 0.2703388035297394,
+        "trajectory_mass_drift_mae": 0.005771931726485491,
+        "maximum_mass_drift_mean": 0.04737969487905502,
+        "terminal_free_energy_relative_error_mean": 0.04403914138674736,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.011853461153805256,
+        "trajectory_pde_residual_relative_rms": 9.883752822875977,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.7787476778030396,
+          0.2013106793165207,
+          0.17231790721416473,
+          0.16576504707336426,
+          0.16742265224456787,
+          0.16845718026161194,
+          0.17312796413898468,
+          0.18679888546466827,
+          0.20891952514648438,
+          0.23810656368732452,
+          0.2703388035297394
+        ],
+        "mass_drift_per_time": [
+          0.04722222313284874,
+          0.0017929148161783814,
+          0.0017792050493881106,
+          0.001301485812291503,
+          0.0012428797781467438,
+          0.001166483387351036,
+          0.0014069563476368785,
+          0.001736416481435299,
+          0.0015745476121082902,
+          0.0017226102063432336,
+          0.0025455262511968613
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.20515160262584686,
+        "terminal_relative_l2_mean": 0.21993117034435272,
+        "trajectory_mass_drift_mae": 0.004893501289188862,
+        "maximum_mass_drift_mean": 0.03682206943631172,
+        "terminal_free_energy_relative_error_mean": 0.029158243909478188,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.009407423436641693,
+        "trajectory_pde_residual_relative_rms": 9.247264862060547,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.6160961985588074,
+          0.1770513355731964,
+          0.15216504037380219,
+          0.1436080038547516,
+          0.14208923280239105,
+          0.1408013105392456,
+          0.14392820000648499,
+          0.153758242726326,
+          0.17183563113212585,
+          0.19540326297283173,
+          0.21993117034435272
+        ],
+        "mass_drift_per_time": [
+          0.03680535778403282,
+          0.001323920558206737,
+          0.0012185722589492798,
+          0.0011908127926290035,
+          0.0010833957931026816,
+          0.0012273188913241029,
+          0.0016996663762256503,
+          0.002195819281041622,
+          0.0023792702704668045,
+          0.002298247069120407,
+          0.002406129613518715
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.20419710874557495,
+        "terminal_relative_l2_mean": 0.22030119597911835,
+        "trajectory_mass_drift_mae": 0.004870378877967596,
+        "maximum_mass_drift_mean": 0.03754086419939995,
+        "terminal_free_energy_relative_error_mean": 0.02953222207725048,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.009774026460945606,
+        "trajectory_pde_residual_relative_rms": 9.140814781188965,
+        "reference_discretization_residual_relative_rms": 0.2202906310558319,
+        "trajectory_relative_l2_per_time": [
+          0.6241429448127747,
+          0.174906924366951,
+          0.14757291972637177,
+          0.1405765265226364,
+          0.13955073058605194,
+          0.13921646773815155,
+          0.14263305068016052,
+          0.1530235856771469,
+          0.17042891681194305,
+          0.19381509721279144,
+          0.22030118107795715
+        ],
+        "mass_drift_per_time": [
+          0.03739496320486069,
+          0.0012689894065260887,
+          0.0012125220382586122,
+          0.0012664491077885032,
+          0.0009843792067840695,
+          0.0011431125458329916,
+          0.0015474914107471704,
+          0.0020068553276360035,
+          0.0022258523385971785,
+          0.0022171156015247107,
+          0.0023064392153173685
+        ]
+      },
+      "rank_trace": [
+        8,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8,
+        4,
+        4,
+        8
+      ],
+      "mean_active_rank": 5.818181818181818
+    },
+    {
+      "target": "eps0020_lam14",
+      "seed": 0,
+      "static": {
+        "trajectory_relative_l2_mean": 0.30603304505348206,
+        "terminal_relative_l2_mean": 0.3329090476036072,
+        "trajectory_mass_drift_mae": 0.008426939137279987,
+        "maximum_mass_drift_mean": 0.04782615974545479,
+        "terminal_free_energy_relative_error_mean": 0.1094539687037468,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.017395202070474625,
+        "trajectory_pde_residual_relative_rms": 15.885618209838867,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          0.8130648732185364,
+          0.24291038513183594,
+          0.21889019012451172,
+          0.20349033176898956,
+          0.19819799065589905,
+          0.22124119102954865,
+          0.2512713074684143,
+          0.27556896209716797,
+          0.29544511437416077,
+          0.3133746087551117,
+          0.33290907740592957
+        ],
+        "mass_drift_per_time": [
+          0.0467253178358078,
+          0.0030067942570894957,
+          0.0037227508146315813,
+          0.003922122064977884,
+          0.0031819113064557314,
+          0.0038956839125603437,
+          0.00545359356328845,
+          0.005938911344856024,
+          0.005584571044892073,
+          0.005372926127165556,
+          0.005891747307032347
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.2654309868812561,
+        "terminal_relative_l2_mean": 0.28517356514930725,
+        "trajectory_mass_drift_mae": 0.00815550982952118,
+        "maximum_mass_drift_mean": 0.047985367476940155,
+        "terminal_free_energy_relative_error_mean": 0.06416290253400803,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.012074830941855907,
+        "trajectory_pde_residual_relative_rms": 14.06958293914795,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          0.7675181031227112,
+          0.21258027851581573,
+          0.17438898980617523,
+          0.16864822804927826,
+          0.16915921866893768,
+          0.18594729900360107,
+          0.21064312756061554,
+          0.23117470741271973,
+          0.24886679649353027,
+          0.26564064621925354,
+          0.28517356514930725
+        ],
+        "mass_drift_per_time": [
+          0.04648717865347862,
+          0.004218032583594322,
+          0.0013374177506193519,
+          0.0027496200054883957,
+          0.002404841361567378,
+          0.0032208908814936876,
+          0.004765988793224096,
+          0.0054752700962126255,
+          0.0056182341650128365,
+          0.006051424890756607,
+          0.007381714414805174
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.27057233452796936,
+        "terminal_relative_l2_mean": 0.28244444727897644,
+        "trajectory_mass_drift_mae": 0.008383402600884438,
+        "maximum_mass_drift_mean": 0.050448693335056305,
+        "terminal_free_energy_relative_error_mean": 0.06181073188781738,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.012576833367347717,
+        "trajectory_pde_residual_relative_rms": 13.950898170471191,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          0.8383434414863586,
+          0.21170726418495178,
+          0.17438898980617523,
+          0.16864822804927826,
+          0.16915921866893768,
+          0.184745654463768,
+          0.20870399475097656,
+          0.22885529696941376,
+          0.246170312166214,
+          0.26312893629074097,
+          0.28244444727897644
+        ],
+        "mass_drift_per_time": [
+          0.05034952238202095,
+          0.004778554197400808,
+          0.0013374177506193519,
+          0.0027496200054883957,
+          0.002404841361567378,
+          0.003124665003269911,
+          0.004520362243056297,
+          0.005147978663444519,
+          0.005317098926752806,
+          0.005615910980850458,
+          0.006871456746011972
+        ]
+      },
+      "rank_trace": [
+        4,
+        8,
+        16,
+        16,
+        16,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 7.636363636363637
+    },
+    {
+      "target": "eps0020_lam14",
+      "seed": 1,
+      "static": {
+        "trajectory_relative_l2_mean": 0.29681843519210815,
+        "terminal_relative_l2_mean": 0.2827324867248535,
+        "trajectory_mass_drift_mae": 0.009670981205999851,
+        "maximum_mass_drift_mean": 0.06437836587429047,
+        "terminal_free_energy_relative_error_mean": 0.06101026013493538,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010902664624154568,
+        "trajectory_pde_residual_relative_rms": 14.352737426757812,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          1.0267796516418457,
+          0.2524550259113312,
+          0.19508251547813416,
+          0.18099576234817505,
+          0.18530809879302979,
+          0.19425168633460999,
+          0.21208146214485168,
+          0.22873683273792267,
+          0.24448251724243164,
+          0.26209667325019836,
+          0.2827324867248535
+        ],
+        "mass_drift_per_time": [
+          0.06419076770544052,
+          0.002784651005640626,
+          0.0024970408994704485,
+          0.0031612098682671785,
+          0.0028296851087361574,
+          0.003260008292272687,
+          0.00377773679792881,
+          0.004527428187429905,
+          0.0053307362832129,
+          0.005911859218031168,
+          0.0081096813082695
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.26343652606010437,
+        "terminal_relative_l2_mean": 0.2531108558177948,
+        "trajectory_mass_drift_mae": 0.008961930871009827,
+        "maximum_mass_drift_mean": 0.06121399626135826,
+        "terminal_free_energy_relative_error_mean": 0.04393218085169792,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010403293184936047,
+        "trajectory_pde_residual_relative_rms": 13.025835990905762,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          0.9499141573905945,
+          0.21296334266662598,
+          0.16812960803508759,
+          0.1517000049352646,
+          0.15815508365631104,
+          0.16742341220378876,
+          0.18479090929031372,
+          0.2013329714536667,
+          0.2167012244462967,
+          0.23358049988746643,
+          0.2531108558177948
+        ],
+        "mass_drift_per_time": [
+          0.06110159307718277,
+          0.0026770164258778095,
+          0.0010776141425594687,
+          0.002608461072668433,
+          0.0024170007091015577,
+          0.0024079938884824514,
+          0.0034362226724624634,
+          0.00483679911121726,
+          0.005721930414438248,
+          0.005789824295789003,
+          0.006506789475679398
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.26006266474723816,
+        "terminal_relative_l2_mean": 0.2509903013706207,
+        "trajectory_mass_drift_mae": 0.009029848501086235,
+        "maximum_mass_drift_mean": 0.059921640902757645,
+        "terminal_free_energy_relative_error_mean": 0.04239937290549278,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.01085414458066225,
+        "trajectory_pde_residual_relative_rms": 13.009744644165039,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          0.9298180937767029,
+          0.21296334266662598,
+          0.16704127192497253,
+          0.14847742021083832,
+          0.1561332494020462,
+          0.16629429161548615,
+          0.18336087465286255,
+          0.1995134949684143,
+          0.2146630734205246,
+          0.23143403232097626,
+          0.2509903013706207
+        ],
+        "mass_drift_per_time": [
+          0.05977674946188927,
+          0.0026770164258778095,
+          0.001055243774317205,
+          0.002660633297637105,
+          0.002417126903310418,
+          0.0026666265912353992,
+          0.0036612420808523893,
+          0.004968822933733463,
+          0.005887392442673445,
+          0.0061466931365430355,
+          0.007410799153149128
+        ]
+      },
+      "rank_trace": [
+        8,
+        16,
+        8,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 5.818181818181818
+    },
+    {
+      "target": "eps0020_lam14",
+      "seed": 2,
+      "static": {
+        "trajectory_relative_l2_mean": 0.3110917806625366,
+        "terminal_relative_l2_mean": 0.29090386629104614,
+        "trajectory_mass_drift_mae": 0.010080981068313122,
+        "maximum_mass_drift_mean": 0.06986333429813385,
+        "terminal_free_energy_relative_error_mean": 0.0726240873336792,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010127945803105831,
+        "trajectory_pde_residual_relative_rms": 14.467084884643555,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          1.1356738805770874,
+          0.2399219274520874,
+          0.1959047168493271,
+          0.18934489786624908,
+          0.18802423775196075,
+          0.19852189719676971,
+          0.21953259408473969,
+          0.23786520957946777,
+          0.2546694576740265,
+          0.271647185087204,
+          0.29090386629104614
+        ],
+        "mass_drift_per_time": [
+          0.06881940364837646,
+          0.002697722055017948,
+          0.0031257004011422396,
+          0.0043623680248856544,
+          0.003468584967777133,
+          0.0031734115909785032,
+          0.0037992813158780336,
+          0.004716706927865744,
+          0.004919772036373615,
+          0.0050930362194776535,
+          0.006714820861816406
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.2794784903526306,
+        "terminal_relative_l2_mean": 0.26087790727615356,
+        "trajectory_mass_drift_mae": 0.009719778783619404,
+        "maximum_mass_drift_mean": 0.0674748420715332,
+        "terminal_free_energy_relative_error_mean": 0.0462973527610302,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.009570324793457985,
+        "trajectory_pde_residual_relative_rms": 13.091793060302734,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          1.0887070894241333,
+          0.20782382786273956,
+          0.16757793724536896,
+          0.15858148038387299,
+          0.16082628071308136,
+          0.17041873931884766,
+          0.18905986845493317,
+          0.20663829147815704,
+          0.2231399565935135,
+          0.24061183631420135,
+          0.26087790727615356
+        ],
+        "mass_drift_per_time": [
+          0.06662391871213913,
+          0.002245391486212611,
+          0.0007710563368164003,
+          0.0024840007536113262,
+          0.0025767702609300613,
+          0.002715662820264697,
+          0.0037611760199069977,
+          0.0050449310801923275,
+          0.005991307087242603,
+          0.006544069387018681,
+          0.00815929938107729
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.2769051790237427,
+        "terminal_relative_l2_mean": 0.2571183145046234,
+        "trajectory_mass_drift_mae": 0.009473324753344059,
+        "maximum_mass_drift_mean": 0.06774241477251053,
+        "terminal_free_energy_relative_error_mean": 0.04603803902864456,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.009525726549327374,
+        "trajectory_pde_residual_relative_rms": 12.905221939086914,
+        "reference_discretization_residual_relative_rms": 1.3118021488189697,
+        "trajectory_relative_l2_per_time": [
+          1.0896185636520386,
+          0.20922712981700897,
+          0.16757793724536896,
+          0.15225017070770264,
+          0.15631520748138428,
+          0.1669626533985138,
+          0.18604640662670135,
+          0.2036675661802292,
+          0.22000236809253693,
+          0.23717081546783447,
+          0.2571183145046234
+        ],
+        "mass_drift_per_time": [
+          0.06684280931949615,
+          0.002298603532835841,
+          0.0007710563368164003,
+          0.002621231833472848,
+          0.002427378436550498,
+          0.0024760731030255556,
+          0.003398492932319641,
+          0.0044510867446660995,
+          0.005236015189439058,
+          0.006029150448739529,
+          0.007654683198779821
+        ]
+      },
+      "rank_trace": [
+        4,
+        8,
+        16,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 5.454545454545454
+    },
+    {
+      "target": "eps0026_lam10",
+      "seed": 0,
+      "static": {
+        "trajectory_relative_l2_mean": 0.1854366809129715,
+        "terminal_relative_l2_mean": 0.18172971904277802,
+        "trajectory_mass_drift_mae": 0.003235230455175042,
+        "maximum_mass_drift_mean": 0.02651580236852169,
+        "terminal_free_energy_relative_error_mean": 0.00503517547622323,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.007402635645121336,
+        "trajectory_pde_residual_relative_rms": 21.012727737426758,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.46406322717666626,
+          0.18120251595973969,
+          0.15508636832237244,
+          0.15350118279457092,
+          0.1551440954208374,
+          0.1483723521232605,
+          0.1453457623720169,
+          0.14549808204174042,
+          0.14978551864624023,
+          0.16007481515407562,
+          0.18172971904277802
+        ],
+        "mass_drift_per_time": [
+          0.026441100984811783,
+          0.001871831133030355,
+          0.0007022169302217662,
+          0.0007208443130366504,
+          0.000677150150295347,
+          0.0005940893897786736,
+          0.0005802092491649091,
+          0.0006361185805872083,
+          0.0007859100587666035,
+          0.0010107195703312755,
+          0.001567348139360547
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.1563599407672882,
+        "terminal_relative_l2_mean": 0.15851990878582,
+        "trajectory_mass_drift_mae": 0.002434816909953952,
+        "maximum_mass_drift_mean": 0.020377710461616516,
+        "terminal_free_energy_relative_error_mean": 0.004645518958568573,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.006325535476207733,
+        "trajectory_pde_residual_relative_rms": 19.610275268554688,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.36569944024086,
+          0.15727925300598145,
+          0.13500851392745972,
+          0.13155169785022736,
+          0.13181425631046295,
+          0.12593095004558563,
+          0.12337952107191086,
+          0.1236816868185997,
+          0.12809635698795319,
+          0.1389978975057602,
+          0.1585198938846588
+        ],
+        "mass_drift_per_time": [
+          0.020365627482533455,
+          0.0008403141400776803,
+          0.0005659270682372153,
+          0.0004142585676163435,
+          0.0005773433949798346,
+          0.00047710054786875844,
+          0.00047021987847983837,
+          0.0005660325405187905,
+          0.0006125810905359685,
+          0.0007249453337863088,
+          0.0011686384677886963
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.15666785836219788,
+        "terminal_relative_l2_mean": 0.15909405052661896,
+        "trajectory_mass_drift_mae": 0.0024942418094724417,
+        "maximum_mass_drift_mean": 0.020843757316470146,
+        "terminal_free_energy_relative_error_mean": 0.004634371027350426,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.006307929754257202,
+        "trajectory_pde_residual_relative_rms": 19.45106315612793,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.373928040266037,
+          0.1584615260362625,
+          0.13146355748176575,
+          0.13007593154907227,
+          0.13076311349868774,
+          0.12555119395256042,
+          0.12312968075275421,
+          0.12349025160074234,
+          0.1282547563314438,
+          0.13913457095623016,
+          0.15909405052661896
+        ],
+        "mass_drift_per_time": [
+          0.020830407738685608,
+          0.0008871929603628814,
+          0.0006307816365733743,
+          0.0005388249992392957,
+          0.0005690911202691495,
+          0.00047547416761517525,
+          0.00048280396731570363,
+          0.0005430037272162735,
+          0.0006065276102162898,
+          0.0007662312127649784,
+          0.00110632146243006
+        ]
+      },
+      "rank_trace": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        4,
+        4,
+        8,
+        4
+      ],
+      "mean_active_rank": 5.090909090909091
+    },
+    {
+      "target": "eps0026_lam10",
+      "seed": 1,
+      "static": {
+        "trajectory_relative_l2_mean": 0.1899275928735733,
+        "terminal_relative_l2_mean": 0.1964564323425293,
+        "trajectory_mass_drift_mae": 0.00301147042773664,
+        "maximum_mass_drift_mean": 0.025116993114352226,
+        "terminal_free_energy_relative_error_mean": 0.005595685448497534,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.00933848973363638,
+        "trajectory_pde_residual_relative_rms": 21.285070419311523,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.43375787138938904,
+          0.19315080344676971,
+          0.16170594096183777,
+          0.160695418715477,
+          0.16041630506515503,
+          0.15364804863929749,
+          0.1500449925661087,
+          0.1509358137845993,
+          0.15705424547195435,
+          0.17133770883083344,
+          0.1964564323425293
+        ],
+        "mass_drift_per_time": [
+          0.025085637345910072,
+          0.0005268582608550787,
+          0.0009005191968753934,
+          0.0005132214864715934,
+          0.0005658270674757659,
+          0.0005245879292488098,
+          0.0006225240067578852,
+          0.0009687106939963996,
+          0.0010447558015584946,
+          0.0010338708525523543,
+          0.0013396651484072208
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.16267597675323486,
+        "terminal_relative_l2_mean": 0.1669667363166809,
+        "trajectory_mass_drift_mae": 0.002796794520691037,
+        "maximum_mass_drift_mean": 0.022597981616854668,
+        "terminal_free_energy_relative_error_mean": 0.004700779914855957,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.007883699610829353,
+        "trajectory_pde_residual_relative_rms": 19.64679718017578,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.39306357502937317,
+          0.16965477168560028,
+          0.134712353348732,
+          0.1350719928741455,
+          0.1337652951478958,
+          0.12794454395771027,
+          0.12497540563344955,
+          0.12640123069286346,
+          0.1321593075990677,
+          0.14472074806690216,
+          0.1669667512178421
+        ],
+        "mass_drift_per_time": [
+          0.022597981616854668,
+          0.0006173006258904934,
+          0.0013016000157222152,
+          0.0007943075033836067,
+          0.0008345685782842338,
+          0.0006038777646608651,
+          0.0006098290323279798,
+          0.0006669443682767451,
+          0.0007356295827776194,
+          0.0008929208852350712,
+          0.0011097778333351016
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.16173958778381348,
+        "terminal_relative_l2_mean": 0.16675648093223572,
+        "trajectory_mass_drift_mae": 0.0027710299473255873,
+        "maximum_mass_drift_mean": 0.022654812783002853,
+        "terminal_free_energy_relative_error_mean": 0.004903832916170359,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.008180650882422924,
+        "trajectory_pde_residual_relative_rms": 19.789897918701172,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.393297404050827,
+          0.16646821796894073,
+          0.13500253856182098,
+          0.1333218812942505,
+          0.13179434835910797,
+          0.12650886178016663,
+          0.12383216619491577,
+          0.1257106065750122,
+          0.13184963166713715,
+          0.14459338784217834,
+          0.1667564958333969
+        ],
+        "mass_drift_per_time": [
+          0.022654812783002853,
+          0.0005569571512751281,
+          0.0011164596071466804,
+          0.0006984148640185595,
+          0.0007622556877322495,
+          0.0005643441691063344,
+          0.0005708399112336338,
+          0.0006904689944349229,
+          0.0007556599448435009,
+          0.0008924644789658487,
+          0.001218650140799582
+        ]
+      },
+      "rank_trace": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "mean_active_rank": 4.363636363636363
+    },
+    {
+      "target": "eps0026_lam10",
+      "seed": 2,
+      "static": {
+        "trajectory_relative_l2_mean": 0.17429140210151672,
+        "terminal_relative_l2_mean": 0.18416760861873627,
+        "trajectory_mass_drift_mae": 0.0030014491640031338,
+        "maximum_mass_drift_mean": 0.024037448689341545,
+        "terminal_free_energy_relative_error_mean": 0.0052182311192154884,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.008583894930779934,
+        "trajectory_pde_residual_relative_rms": 20.5937442779541,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.4190618097782135,
+          0.17949561774730682,
+          0.1425783932209015,
+          0.14266890287399292,
+          0.14131194353103638,
+          0.13634100556373596,
+          0.13357333838939667,
+          0.13625282049179077,
+          0.14345796406269073,
+          0.1582958847284317,
+          0.18416760861873627
+        ],
+        "mass_drift_per_time": [
+          0.023948226124048233,
+          0.0005673053092323244,
+          0.0015132216503843665,
+          0.0005839491495862603,
+          0.0007267146720550954,
+          0.0005470192991197109,
+          0.0006626597023569047,
+          0.0008629394578747451,
+          0.0008466625586152077,
+          0.0009742259862832725,
+          0.0017830204451456666
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.14865338802337646,
+        "terminal_relative_l2_mean": 0.16086505353450775,
+        "trajectory_mass_drift_mae": 0.0024751261807978153,
+        "maximum_mass_drift_mean": 0.020435763522982597,
+        "terminal_free_energy_relative_error_mean": 0.0045124925673007965,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.006910649128258228,
+        "trajectory_pde_residual_relative_rms": 19.1539249420166,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.36676451563835144,
+          0.16001461446285248,
+          0.12098684161901474,
+          0.1177637130022049,
+          0.11487095803022385,
+          0.11084719747304916,
+          0.1098565086722374,
+          0.11445682495832443,
+          0.12216319143772125,
+          0.13659797608852386,
+          0.16086505353450775
+        ],
+        "mass_drift_per_time": [
+          0.020399365574121475,
+          0.00041646361933089793,
+          0.0007129576406441629,
+          0.0005563338636420667,
+          0.0004943673848174512,
+          0.0005561854341067374,
+          0.0006439294666051865,
+          0.000581571483053267,
+          0.0006729456945322454,
+          0.0008190892986021936,
+          0.0013731801882386208
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.14925390481948853,
+        "terminal_relative_l2_mean": 0.15889722108840942,
+        "trajectory_mass_drift_mae": 0.0025771986693143845,
+        "maximum_mass_drift_mean": 0.02133759669959545,
+        "terminal_free_energy_relative_error_mean": 0.004547020886093378,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.007201050408184528,
+        "trajectory_pde_residual_relative_rms": 19.185216903686523,
+        "reference_discretization_residual_relative_rms": 0.10200672596693039,
+        "trajectory_relative_l2_per_time": [
+          0.37881362438201904,
+          0.15684188902378082,
+          0.12000273913145065,
+          0.11884107440710068,
+          0.11632062494754791,
+          0.11185901612043381,
+          0.11000963300466537,
+          0.11340253800153732,
+          0.1213153526186943,
+          0.1354892998933792,
+          0.15889722108840942
+        ],
+        "mass_drift_per_time": [
+          0.021266110241413116,
+          0.00037154421443119645,
+          0.0009063415345735848,
+          0.0005406866548582911,
+          0.0005534905358217657,
+          0.0006396350800059736,
+          0.0006277445354498923,
+          0.0005893810885027051,
+          0.0006562657072208822,
+          0.0008289713296107948,
+          0.0013690147316083312
+        ]
+      },
+      "rank_trace": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        4,
+        4
+      ],
+      "mean_active_rank": 4.7272727272727275
+    },
+    {
+      "target": "eps0026_lam14",
+      "seed": 0,
+      "static": {
+        "trajectory_relative_l2_mean": 0.24643054604530334,
+        "terminal_relative_l2_mean": 0.29168859124183655,
+        "trajectory_mass_drift_mae": 0.004097762051969767,
+        "maximum_mass_drift_mean": 0.026357948780059814,
+        "terminal_free_energy_relative_error_mean": 0.059518393129110336,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.019501758739352226,
+        "trajectory_pde_residual_relative_rms": 15.689882278442383,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.46956944465637207,
+          0.222162127494812,
+          0.20517872273921967,
+          0.21357479691505432,
+          0.21016888320446014,
+          0.19949813187122345,
+          0.1978641003370285,
+          0.20900678634643555,
+          0.23174217343330383,
+          0.2602822482585907,
+          0.29168859124183655
+        ],
+        "mass_drift_per_time": [
+          0.026089340448379517,
+          0.0009079535375349224,
+          0.0012633822625502944,
+          0.0015261312946677208,
+          0.001759501057676971,
+          0.0019680929835885763,
+          0.002061494393274188,
+          0.0020558771211653948,
+          0.00216504349373281,
+          0.002350553637370467,
+          0.002928010420873761
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.19730307161808014,
+        "terminal_relative_l2_mean": 0.22766481339931488,
+        "trajectory_mass_drift_mae": 0.00356273353099823,
+        "maximum_mass_drift_mean": 0.021143926307559013,
+        "terminal_free_energy_relative_error_mean": 0.03224097937345505,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.011985964141786098,
+        "trajectory_pde_residual_relative_rms": 14.607341766357422,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.3843350112438202,
+          0.1925523728132248,
+          0.17461885511875153,
+          0.17532719671726227,
+          0.16518065333366394,
+          0.15440796315670013,
+          0.15304915606975555,
+          0.16159851849079132,
+          0.17931132018566132,
+          0.20228791236877441,
+          0.2276647835969925
+        ],
+        "mass_drift_per_time": [
+          0.02091461792588234,
+          0.0007519578794017434,
+          0.0008473677444271743,
+          0.0010874872095882893,
+          0.001492421026341617,
+          0.001746428431943059,
+          0.0018599986797198653,
+          0.0019183959811925888,
+          0.0022917555179446936,
+          0.002829956356436014,
+          0.0034496821463108063
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.20050817728042603,
+        "terminal_relative_l2_mean": 0.22498224675655365,
+        "trajectory_mass_drift_mae": 0.0037944884970784187,
+        "maximum_mass_drift_mean": 0.023905117064714432,
+        "terminal_free_energy_relative_error_mean": 0.03218917176127434,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.01221791934221983,
+        "trajectory_pde_residual_relative_rms": 14.543928146362305,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.42721840739250183,
+          0.1925523728132248,
+          0.1734531968832016,
+          0.17509280145168304,
+          0.166200652718544,
+          0.15478327870368958,
+          0.15285475552082062,
+          0.16062089800834656,
+          0.1776707023382187,
+          0.20016057789325714,
+          0.22498224675655365
+        ],
+        "mass_drift_per_time": [
+          0.023640407249331474,
+          0.0007519578794017434,
+          0.000809471879620105,
+          0.0010668233735486865,
+          0.0014158040285110474,
+          0.0016918157925829291,
+          0.0017781670903787017,
+          0.00178581103682518,
+          0.002289170166477561,
+          0.0029386740643531084,
+          0.0035712725948542356
+        ]
+      },
+      "rank_trace": [
+        4,
+        16,
+        8,
+        8,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 5.818181818181818
+    },
+    {
+      "target": "eps0026_lam14",
+      "seed": 1,
+      "static": {
+        "trajectory_relative_l2_mean": 0.2539999186992645,
+        "terminal_relative_l2_mean": 0.270310640335083,
+        "trajectory_mass_drift_mae": 0.005514923948794603,
+        "maximum_mass_drift_mean": 0.041397202759981155,
+        "terminal_free_energy_relative_error_mean": 0.0520329475402832,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.015986202284693718,
+        "trajectory_pde_residual_relative_rms": 15.169004440307617,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.6723544001579285,
+          0.2139044553041458,
+          0.21354129910469055,
+          0.21077561378479004,
+          0.19488975405693054,
+          0.179313063621521,
+          0.18305976688861847,
+          0.19582724571228027,
+          0.2174243927001953,
+          0.24259856343269348,
+          0.2703106105327606
+        ],
+        "mass_drift_per_time": [
+          0.041330523788928986,
+          0.0010178573429584503,
+          0.0010301506845280528,
+          0.0011508595198392868,
+          0.0012609203113242984,
+          0.0014561781426891685,
+          0.0019256271189078689,
+          0.0028938406612724066,
+          0.0026562840212136507,
+          0.0024162763729691505,
+          0.0035256564151495695
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.21221190690994263,
+        "terminal_relative_l2_mean": 0.2223634272813797,
+        "trajectory_mass_drift_mae": 0.004615419544279575,
+        "maximum_mass_drift_mean": 0.03305956348776817,
+        "terminal_free_energy_relative_error_mean": 0.033842142671346664,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.011804013513028622,
+        "trajectory_pde_residual_relative_rms": 14.27996826171875,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.5530239343643188,
+          0.189218208193779,
+          0.17821107804775238,
+          0.17732426524162292,
+          0.16551533341407776,
+          0.15340490639209747,
+          0.1543067991733551,
+          0.16241304576396942,
+          0.17914681136608124,
+          0.19940339028835297,
+          0.2223634272813797
+        ],
+        "mass_drift_per_time": [
+          0.032966870814561844,
+          0.0005783961969427764,
+          0.0010466774692758918,
+          0.0012118594022467732,
+          0.0011463046539574862,
+          0.0010478961048647761,
+          0.0015121059259399772,
+          0.0017468100413680077,
+          0.00243515451438725,
+          0.0031002929899841547,
+          0.003977246582508087
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.2101418673992157,
+        "terminal_relative_l2_mean": 0.22209620475769043,
+        "trajectory_mass_drift_mae": 0.0044449553824961185,
+        "maximum_mass_drift_mean": 0.03162040933966637,
+        "terminal_free_energy_relative_error_mean": 0.03355598449707031,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.011461049318313599,
+        "trajectory_pde_residual_relative_rms": 14.180135726928711,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.5288981795310974,
+          0.19005087018013,
+          0.1841168850660324,
+          0.17716355621814728,
+          0.16312675178050995,
+          0.15207785367965698,
+          0.15344685316085815,
+          0.16214150190353394,
+          0.1790226250886917,
+          0.1994195133447647,
+          0.22209620475769043
+        ],
+        "mass_drift_per_time": [
+          0.03154110535979271,
+          0.0005760197527706623,
+          0.0012008898193016648,
+          0.0010051541030406952,
+          0.0010603454429656267,
+          0.0011335598537698388,
+          0.001339081209152937,
+          0.001904881908558309,
+          0.002296638209372759,
+          0.0029564162250608206,
+          0.0038804158102720976
+        ]
+      },
+      "rank_trace": [
+        4,
+        8,
+        4,
+        4,
+        4,
+        4,
+        4,
+        8,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 4.7272727272727275
+    },
+    {
+      "target": "eps0026_lam14",
+      "seed": 2,
+      "static": {
+        "trajectory_relative_l2_mean": 0.2620687782764435,
+        "terminal_relative_l2_mean": 0.280687540769577,
+        "trajectory_mass_drift_mae": 0.006398005876690149,
+        "maximum_mass_drift_mean": 0.05027489736676216,
+        "terminal_free_energy_relative_error_mean": 0.06455311924219131,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.012486102990806103,
+        "trajectory_pde_residual_relative_rms": 15.129961967468262,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.8216612935066223,
+          0.23702488839626312,
+          0.19064122438430786,
+          0.1795499324798584,
+          0.16836611926555634,
+          0.16526587307453156,
+          0.17396730184555054,
+          0.1941596120595932,
+          0.22086086869239807,
+          0.2505722641944885,
+          0.28068751096725464
+        ],
+        "mass_drift_per_time": [
+          0.05014660581946373,
+          0.001296274014748633,
+          0.0014928050804883242,
+          0.0013754608808085322,
+          0.001244445564225316,
+          0.0014655975392088294,
+          0.0018351601902395487,
+          0.0022154764737933874,
+          0.002311376854777336,
+          0.0028238152153789997,
+          0.004171049688011408
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.21965959668159485,
+        "terminal_relative_l2_mean": 0.22829318046569824,
+        "trajectory_mass_drift_mae": 0.005962415132671595,
+        "maximum_mass_drift_mean": 0.04394920542836189,
+        "terminal_free_energy_relative_error_mean": 0.03787378594279289,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010514567606151104,
+        "trajectory_pde_residual_relative_rms": 14.152387619018555,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.7157248258590698,
+          0.20061199367046356,
+          0.1636037826538086,
+          0.15193915367126465,
+          0.1399608999490738,
+          0.13679885864257812,
+          0.1418219655752182,
+          0.15614084899425507,
+          0.17843139171600342,
+          0.2029288113117218,
+          0.22829318046569824
+        ],
+        "mass_drift_per_time": [
+          0.04385914281010628,
+          0.0012623495422303677,
+          0.0009316921350546181,
+          0.0014554014196619391,
+          0.0013313947711139917,
+          0.001843578414991498,
+          0.0021948381327092648,
+          0.0025745404418557882,
+          0.002959392499178648,
+          0.0032615268137305975,
+          0.003912712913006544
+        ]
+      },
+      "stnlr_rank16": {
+        "trajectory_relative_l2_mean": 0.21633504331111908,
+        "terminal_relative_l2_mean": 0.22357869148254395,
+        "trajectory_mass_drift_mae": 0.0058565204963088036,
+        "maximum_mass_drift_mean": 0.04322562366724014,
+        "terminal_free_energy_relative_error_mean": 0.03632745146751404,
+        "terminal_structure_factor_centroid_relative_error_mean": 0.010124106891453266,
+        "trajectory_pde_residual_relative_rms": 14.044322967529297,
+        "reference_discretization_residual_relative_rms": 0.2948763966560364,
+        "trajectory_relative_l2_per_time": [
+          0.7050307393074036,
+          0.20061199367046356,
+          0.160149484872818,
+          0.1500312089920044,
+          0.13864409923553467,
+          0.13469703495502472,
+          0.1394439935684204,
+          0.15376713871955872,
+          0.17483985424041748,
+          0.19889125227928162,
+          0.22357869148254395
+        ],
+        "mass_drift_per_time": [
+          0.04307837784290314,
+          0.0012623495422303677,
+          0.0008827787241898477,
+          0.0014838690403848886,
+          0.0015290499432012439,
+          0.0017271366668865085,
+          0.0020921737886965275,
+          0.002458561211824417,
+          0.002867894247174263,
+          0.0032645859755575657,
+          0.003774945391342044
+        ]
+      },
+      "rank_trace": [
+        4,
+        16,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        4,
+        4,
+        4
+      ],
+      "mean_active_rank": 5.818181818181818
+    }
+  ]
+}

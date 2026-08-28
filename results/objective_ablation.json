@@ -1,0 +1,299 @@
+{
+  "protocol": "PROTOCOL.md#experiment-2",
+  "summary": {
+    "full_stnlr": {
+      "mean_active_rank": {
+        "mean": 4.363636363636363,
+        "std": 0.6298366572977735
+      },
+      "trajectory_relative_l2_mean": {
+        "mean": 0.06115367884437243,
+        "std": 0.003549508560013646
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05272109930713972,
+        "std": 0.0009203811616014032
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.0020833334031825266,
+        "std": 0.0005076325581419534
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.005480441575249036,
+        "std": 0.0006872787867374468
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.6383212208747864,
+        "std": 0.030186756165322924
+      }
+    },
+    "no_field_distillation": {
+      "mean_active_rank": {
+        "mean": 8.0,
+        "std": 2.9764919170445268
+      },
+      "trajectory_relative_l2_mean": {
+        "mean": 0.06105369205276171,
+        "std": 0.003642042773281564
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05296262974540392,
+        "std": 0.0010680582291971515
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.0022827148592720428,
+        "std": 0.00024322342599077717
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.005613855241487424,
+        "std": 0.0006139620556788797
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.6411033471425375,
+        "std": 0.024876563456817165
+      }
+    },
+    "no_spectral_distillation": {
+      "mean_active_rank": {
+        "mean": 5.454545454545454,
+        "std": 0.9620913858416694
+      },
+      "trajectory_relative_l2_mean": {
+        "mean": 0.060987234115600586,
+        "std": 0.003664528153593996
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.05247252807021141,
+        "std": 0.0013592745615373782
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.002307128976099193,
+        "std": 0.00040338659501565116
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.0052403501855830354,
+        "std": 0.0009937244550164248
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.6368346810340881,
+        "std": 0.031311078020432925
+      }
+    },
+    "no_material_objectives": {
+      "mean_active_rank": {
+        "mean": 5.575757575757575,
+        "std": 1.513938908702642
+      },
+      "trajectory_relative_l2_mean": {
+        "mean": 0.0588949682811896,
+        "std": 0.0030251962176970535
+      },
+      "terminal_relative_l2_mean": {
+        "mean": 0.04899871597687403,
+        "std": 0.0012583324371662906
+      },
+      "terminal_interface_fraction_mae": {
+        "mean": 0.002616373666872581,
+        "std": 0.000375320736926184
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "mean": 0.005302750583117207,
+        "std": 0.0013745545650854505
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "mean": 0.6010621388753256,
+        "std": 0.032739990390546043
+      }
+    }
+  },
+  "comparisons": {
+    "full_stnlr_vs_no_field_distillation": {
+      "trajectory_relative_l2_mean": {
+        "relative_reduction_percent": -0.16376862438443052,
+        "paired_wins_out_of_3": 1
+      },
+      "terminal_relative_l2_mean": {
+        "relative_reduction_percent": 0.45603936100844233,
+        "paired_wins_out_of_3": 2
+      },
+      "terminal_interface_fraction_mae": {
+        "relative_reduction_percent": 8.734400412721666,
+        "paired_wins_out_of_3": 2
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "relative_reduction_percent": 2.376507061536548,
+        "paired_wins_out_of_3": 1
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "relative_reduction_percent": 0.43395909257865073,
+        "paired_wins_out_of_3": 2
+      }
+    },
+    "full_stnlr_vs_no_spectral_distillation": {
+      "trajectory_relative_l2_mean": {
+        "relative_reduction_percent": -0.2729173263643192,
+        "paired_wins_out_of_3": 0
+      },
+      "terminal_relative_l2_mean": {
+        "relative_reduction_percent": -0.4737169068654401,
+        "paired_wins_out_of_3": 1
+      },
+      "terminal_interface_fraction_mae": {
+        "relative_reduction_percent": 9.700176073166556,
+        "paired_wins_out_of_3": 3
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "relative_reduction_percent": -4.581590564816196,
+        "paired_wins_out_of_3": 0
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "relative_reduction_percent": -0.23342633260556855,
+        "paired_wins_out_of_3": 1
+      }
+    },
+    "full_stnlr_vs_no_material_objectives": {
+      "trajectory_relative_l2_mean": {
+        "relative_reduction_percent": -3.835150317763625,
+        "paired_wins_out_of_3": 0
+      },
+      "terminal_relative_l2_mean": {
+        "relative_reduction_percent": -7.596899747378161,
+        "paired_wins_out_of_3": 0
+      },
+      "terminal_interface_fraction_mae": {
+        "relative_reduction_percent": 20.373246774311525,
+        "paired_wins_out_of_3": 3
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "relative_reduction_percent": -3.3509211747118295,
+        "paired_wins_out_of_3": 1
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "relative_reduction_percent": -6.198873558926521,
+        "paired_wins_out_of_3": 0
+      }
+    }
+  },
+  "rows": [
+    {
+      "seed": 0,
+      "variant": "full_stnlr",
+      "mean_active_rank": 4.0,
+      "trajectory_relative_l2_mean": 0.05925428122282028,
+      "terminal_relative_l2_mean": 0.051669586449861526,
+      "terminal_interface_fraction_mae": 0.001708984375,
+      "terminal_free_energy_relative_error_mean": 0.004993590991944075,
+      "trajectory_pde_residual_relative_rms": 0.6131688952445984
+    },
+    {
+      "seed": 0,
+      "variant": "no_field_distillation",
+      "mean_active_rank": 4.7272727272727275,
+      "trajectory_relative_l2_mean": 0.060093704611063004,
+      "terminal_relative_l2_mean": 0.051931459456682205,
+      "terminal_interface_fraction_mae": 0.002416992327198386,
+      "terminal_free_energy_relative_error_mean": 0.004947881679981947,
+      "trajectory_pde_residual_relative_rms": 0.6196377277374268
+    },
+    {
+      "seed": 0,
+      "variant": "no_spectral_distillation",
+      "mean_active_rank": 5.818181818181818,
+      "trajectory_relative_l2_mean": 0.05910744145512581,
+      "terminal_relative_l2_mean": 0.05091221258044243,
+      "terminal_interface_fraction_mae": 0.0022827149368822575,
+      "terminal_free_energy_relative_error_mean": 0.004279337823390961,
+      "trajectory_pde_residual_relative_rms": 0.6092565655708313
+    },
+    {
+      "seed": 0,
+      "variant": "no_material_objectives",
+      "mean_active_rank": 5.090909090909091,
+      "trajectory_relative_l2_mean": 0.05672966316342354,
+      "terminal_relative_l2_mean": 0.04770423099398613,
+      "terminal_interface_fraction_mae": 0.0027954101096838713,
+      "terminal_free_energy_relative_error_mean": 0.0037176029291003942,
+      "trajectory_pde_residual_relative_rms": 0.5759281516075134
+    },
+    {
+      "seed": 1,
+      "variant": "full_stnlr",
+      "mean_active_rank": 5.090909090909091,
+      "trajectory_relative_l2_mean": 0.0589580275118351,
+      "terminal_relative_l2_mean": 0.05311328172683716,
+      "terminal_interface_fraction_mae": 0.002661132952198386,
+      "terminal_free_energy_relative_error_mean": 0.005181110464036465,
+      "trajectory_pde_residual_relative_rms": 0.6717962026596069
+    },
+    {
+      "seed": 1,
+      "variant": "no_field_distillation",
+      "mean_active_rank": 8.727272727272727,
+      "trajectory_relative_l2_mean": 0.05798780173063278,
+      "terminal_relative_l2_mean": 0.052892327308654785,
+      "terminal_interface_fraction_mae": 0.0024291991721838713,
+      "terminal_free_energy_relative_error_mean": 0.005736345425248146,
+      "trajectory_pde_residual_relative_rms": 0.6683668494224548
+    },
+    {
+      "seed": 1,
+      "variant": "no_spectral_distillation",
+      "mean_active_rank": 6.181818181818182,
+      "trajectory_relative_l2_mean": 0.05864406004548073,
+      "terminal_relative_l2_mean": 0.05310541391372681,
+      "terminal_interface_fraction_mae": 0.002722168108448386,
+      "terminal_free_energy_relative_error_mean": 0.005177874118089676,
+      "trajectory_pde_residual_relative_rms": 0.6708714365959167
+    },
+    {
+      "seed": 1,
+      "variant": "no_material_objectives",
+      "mean_active_rank": 7.2727272727272725,
+      "trajectory_relative_l2_mean": 0.05760372057557106,
+      "terminal_relative_l2_mean": 0.0490744411945343,
+      "terminal_interface_fraction_mae": 0.00286865234375,
+      "terminal_free_energy_relative_error_mean": 0.006025464273989201,
+      "trajectory_pde_residual_relative_rms": 0.6380856037139893
+    },
+    {
+      "seed": 2,
+      "variant": "full_stnlr",
+      "mean_active_rank": 4.0,
+      "trajectory_relative_l2_mean": 0.06524872779846191,
+      "terminal_relative_l2_mean": 0.05338042974472046,
+      "terminal_interface_fraction_mae": 0.001879882882349193,
+      "terminal_free_energy_relative_error_mean": 0.006266623269766569,
+      "trajectory_pde_residual_relative_rms": 0.6299985647201538
+    },
+    {
+      "seed": 2,
+      "variant": "no_field_distillation",
+      "mean_active_rank": 10.545454545454545,
+      "trajectory_relative_l2_mean": 0.06507956981658936,
+      "terminal_relative_l2_mean": 0.054064102470874786,
+      "terminal_interface_fraction_mae": 0.0020019530784338713,
+      "terminal_free_energy_relative_error_mean": 0.006157338619232178,
+      "trajectory_pde_residual_relative_rms": 0.6353054642677307
+    },
+    {
+      "seed": 2,
+      "variant": "no_spectral_distillation",
+      "mean_active_rank": 4.363636363636363,
+      "trajectory_relative_l2_mean": 0.06521020084619522,
+      "terminal_relative_l2_mean": 0.053399957716464996,
+      "terminal_interface_fraction_mae": 0.0019165038829669356,
+      "terminal_free_energy_relative_error_mean": 0.006263838615268469,
+      "trajectory_pde_residual_relative_rms": 0.6303760409355164
+    },
+    {
+      "seed": 2,
+      "variant": "no_material_objectives",
+      "mean_active_rank": 4.363636363636363,
+      "trajectory_relative_l2_mean": 0.062351521104574203,
+      "terminal_relative_l2_mean": 0.05021747574210167,
+      "terminal_interface_fraction_mae": 0.0021850585471838713,
+      "terminal_free_energy_relative_error_mean": 0.006165184546262026,
+      "trajectory_pde_residual_relative_rms": 0.5891726613044739
+    }
+  ]
+}

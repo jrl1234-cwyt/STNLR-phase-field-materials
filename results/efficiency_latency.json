@@ -1,0 +1,60 @@
+{
+  "continued_static_rank16": {
+    "kind": "static",
+    "nested_schedule": null,
+    "u_mid_rank": null,
+    "physical_time_nodes": 11,
+    "rank_trace": [
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0,
+      16.0
+    ],
+    "mean_active_rank": 16.0,
+    "stored_adapter_parameters": 1658880,
+    "always_active_task_head_parameters": 1610,
+    "mean_active_adapter_factor_parameters": 1658880.0,
+    "adapter_gmac_per_11_time_trajectory": 2.33570304,
+    "profiled_gflop_per_11_time_trajectory": 37.094535665,
+    "latency_ms_per_11_time_trajectory_batch1": 1295.94033203125,
+    "latency_ms_per_field_batch1": 117.81275745738635,
+    "peak_inference_memory_mib": 115.08642578125,
+    "repeats": 5
+  },
+  "strict_stnlr_representative": {
+    "kind": "stnlr",
+    "nested_schedule": null,
+    "u_mid_rank": null,
+    "physical_time_nodes": 11,
+    "rank_trace": [
+      16.0,
+      8.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0,
+      8.0,
+      4.0,
+      4.0,
+      4.0,
+      8.0
+    ],
+    "mean_active_rank": 6.545454545454546,
+    "stored_adapter_parameters": 1658880,
+    "always_active_task_head_parameters": 1610,
+    "mean_active_adapter_factor_parameters": 678632.7272727273,
+    "adapter_gmac_per_11_time_trajectory": 0.95551488,
+    "profiled_gflop_per_11_time_trajectory": 34.334159345,
+    "latency_ms_per_11_time_trajectory_batch1": 1378.144140625,
+    "latency_ms_per_field_batch1": 125.2858309659091,
+    "peak_inference_memory_mib": 113.96142578125,
+    "repeats": 5
+  }
+}

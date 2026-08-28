@@ -1,0 +1,49 @@
+{
+  "equation": "u_tau = epsilon^2 Laplacian(u) + reaction*(u-u^3)",
+  "boundary": "periodic",
+  "grid": 64,
+  "times": [
+    0.0,
+    0.06,
+    0.12,
+    0.18,
+    0.24,
+    0.3,
+    0.36,
+    0.42,
+    0.48,
+    0.54,
+    0.6
+  ],
+  "solver_dt": 0.005,
+  "source_count": 512,
+  "target_count": 160,
+  "source_parameters": {
+    "epsilon": [
+      0.035,
+      0.055
+    ],
+    "reaction": [
+      0.8,
+      1.2
+    ]
+  },
+  "target_parameters": {
+    "epsilon": 0.022,
+    "reaction": 1.6
+  },
+  "target_split": {
+    "adapt": [
+      0,
+      100
+    ],
+    "validation": [
+      100,
+      120
+    ],
+    "test": [
+      120,
+      160
+    ]
+  }
+}

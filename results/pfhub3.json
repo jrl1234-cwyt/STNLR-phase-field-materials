@@ -1,0 +1,284 @@
+{
+  "protocol": {
+    "targets": [
+      "PFHub-3 standard",
+      "parameter-shifted anisotropic dendrite"
+    ],
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "pairs": 6,
+    "comparison": "same static checkpoint plus matched 600-step material calibration"
+  },
+  "metrics": {
+    "phase_trajectory_relative_l2": {
+      "continued_static_mean": 0.20868069926897684,
+      "continued_static_sd": 0.003955471837104458,
+      "stnlr_mean": 0.20726527025302252,
+      "stnlr_sd": 0.003765601808159391,
+      "relative_change_percent": -0.6782750014316941,
+      "paired_wins_out_of_6": 4
+    },
+    "phase_terminal_relative_l2": {
+      "continued_static_mean": 0.3347410609324773,
+      "continued_static_sd": 0.00600891287166807,
+      "stnlr_mean": 0.3284766525030136,
+      "stnlr_sd": 0.003619508152357024,
+      "relative_change_percent": -1.8714191835364158,
+      "paired_wins_out_of_6": 4
+    },
+    "temperature_trajectory_relative_l2": {
+      "continued_static_mean": 0.18984227875868478,
+      "continued_static_sd": 0.034486872718436125,
+      "stnlr_mean": 0.17935907716552416,
+      "stnlr_sd": 0.02542140771578345,
+      "relative_change_percent": -5.522058448574674,
+      "paired_wins_out_of_6": 5
+    },
+    "temperature_terminal_relative_l2": {
+      "continued_static_mean": 0.30037189026673633,
+      "continued_static_sd": 0.037746849706350415,
+      "stnlr_mean": 0.28349880625804263,
+      "stnlr_sd": 0.015001411167362842,
+      "relative_change_percent": -5.617397817655323,
+      "paired_wins_out_of_6": 5
+    },
+    "solid_fraction_mae": {
+      "continued_static_mean": 0.005017676895173888,
+      "continued_static_sd": 0.0006633473223271264,
+      "stnlr_mean": 0.004995980920890967,
+      "stnlr_sd": 0.0008766973577532008,
+      "relative_change_percent": -0.4323908202177762,
+      "paired_wins_out_of_6": 3
+    },
+    "free_energy_relative_error": {
+      "continued_static_mean": 0.10426283068954945,
+      "continued_static_sd": 0.023043099055021547,
+      "stnlr_mean": 0.09454720746725798,
+      "stnlr_sd": 0.02348889728367605,
+      "relative_change_percent": -9.318395786913246,
+      "paired_wins_out_of_6": 4
+    },
+    "tip_position_mae": {
+      "continued_static_mean": 0.0900828546533982,
+      "continued_static_sd": 0.005669606623104619,
+      "stnlr_mean": 0.0886939608802398,
+      "stnlr_sd": 0.0018107155862472212,
+      "relative_change_percent": -1.5417959149965799,
+      "paired_wins_out_of_6": 4
+    }
+  },
+  "mean_active_rank": {
+    "mean": 11.481481481481481,
+    "sd": 2.1923923832516654,
+    "static": 16.0
+  },
+  "rows": [
+    {
+      "target": "standard",
+      "seed": 0,
+      "static": {
+        "phase_trajectory_relative_l2": 0.13119599223136902,
+        "phase_terminal_relative_l2": 0.22553658485412598,
+        "temperature_trajectory_relative_l2": 0.14006192982196808,
+        "temperature_terminal_relative_l2": 0.13042369484901428,
+        "solid_fraction_mae": 0.0017285400535911322,
+        "free_energy_relative_error": 0.05544823035597801,
+        "tip_position_mae": 0.06959065794944763
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.1314522922039032,
+        "phase_terminal_relative_l2": 0.23120006918907166,
+        "temperature_trajectory_relative_l2": 0.1369972676038742,
+        "temperature_terminal_relative_l2": 0.12992256879806519,
+        "solid_fraction_mae": 0.0018755067139863968,
+        "free_energy_relative_error": 0.0501159243285656,
+        "tip_position_mae": 0.06549707800149918
+      },
+      "rank_trace": [
+        4,
+        16,
+        16,
+        8,
+        8,
+        16,
+        8,
+        16,
+        16
+      ],
+      "mean_active_rank": 12.0
+    },
+    {
+      "target": "standard",
+      "seed": 1,
+      "static": {
+        "phase_trajectory_relative_l2": 0.1314709484577179,
+        "phase_terminal_relative_l2": 0.2228010594844818,
+        "temperature_trajectory_relative_l2": 0.09401297569274902,
+        "temperature_terminal_relative_l2": 0.1498136818408966,
+        "solid_fraction_mae": 0.0024660949129611254,
+        "free_energy_relative_error": 0.03647499158978462,
+        "tip_position_mae": 0.055701758712530136
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.13314394652843475,
+        "phase_terminal_relative_l2": 0.21985042095184326,
+        "temperature_trajectory_relative_l2": 0.09231094270944595,
+        "temperature_terminal_relative_l2": 0.14125962555408478,
+        "solid_fraction_mae": 0.003868752857670188,
+        "free_energy_relative_error": 0.02458321489393711,
+        "tip_position_mae": 0.06154971197247505
+      },
+      "rank_trace": [
+        4,
+        16,
+        8,
+        8,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "mean_active_rank": 10.222222222222221
+    },
+    {
+      "target": "standard",
+      "seed": 2,
+      "static": {
+        "phase_trajectory_relative_l2": 0.12829193472862244,
+        "phase_terminal_relative_l2": 0.22406619787216187,
+        "temperature_trajectory_relative_l2": 0.14598722755908966,
+        "temperature_terminal_relative_l2": 0.13125932216644287,
+        "solid_fraction_mae": 0.003811450907960534,
+        "free_energy_relative_error": 0.054741185158491135,
+        "tip_position_mae": 0.06681287288665771
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.12771326303482056,
+        "phase_terminal_relative_l2": 0.22112399339675903,
+        "temperature_trajectory_relative_l2": 0.1478060781955719,
+        "temperature_terminal_relative_l2": 0.12785184383392334,
+        "solid_fraction_mae": 0.0027074769604951143,
+        "free_energy_relative_error": 0.05911703780293465,
+        "tip_position_mae": 0.06652046740055084
+      },
+      "rank_trace": [
+        16,
+        16,
+        4,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "mean_active_rank": 14.666666666666666
+    },
+    {
+      "target": "shifted",
+      "seed": 0,
+      "static": {
+        "phase_trajectory_relative_l2": 0.29132142663002014,
+        "phase_terminal_relative_l2": 0.4544200599193573,
+        "temperature_trajectory_relative_l2": 0.3067363202571869,
+        "temperature_terminal_relative_l2": 0.5556840300559998,
+        "solid_fraction_mae": 0.007325645070523024,
+        "free_energy_relative_error": 0.20572133362293243,
+        "tip_position_mae": 0.11790936440229416
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.2820861041545868,
+        "phase_terminal_relative_l2": 0.43405842781066895,
+        "temperature_trajectory_relative_l2": 0.2601200342178345,
+        "temperature_terminal_relative_l2": 0.45985323190689087,
+        "solid_fraction_mae": 0.006269729230552912,
+        "free_energy_relative_error": 0.1824965626001358,
+        "tip_position_mae": 0.11206141114234924
+      },
+      "rank_trace": [
+        4,
+        8,
+        8,
+        4,
+        16,
+        8,
+        8,
+        8,
+        16
+      ],
+      "mean_active_rank": 8.88888888888889
+    },
+    {
+      "target": "shifted",
+      "seed": 1,
+      "static": {
+        "phase_trajectory_relative_l2": 0.28984272480010986,
+        "phase_terminal_relative_l2": 0.4335608184337616,
+        "temperature_trajectory_relative_l2": 0.21497726440429688,
+        "temperature_terminal_relative_l2": 0.423546701669693,
+        "solid_fraction_mae": 0.00907871499657631,
+        "free_energy_relative_error": 0.1389905959367752,
+        "tip_position_mae": 0.11140351742506027
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.28936469554901123,
+        "phase_terminal_relative_l2": 0.433769553899765,
+        "temperature_trajectory_relative_l2": 0.20874829590320587,
+        "temperature_terminal_relative_l2": 0.43695497512817383,
+        "solid_fraction_mae": 0.007765317801386118,
+        "free_energy_relative_error": 0.11470673233270645,
+        "tip_position_mae": 0.11213450878858566
+      },
+      "rank_trace": [
+        4,
+        8,
+        16,
+        16,
+        4,
+        4,
+        4,
+        16,
+        16
+      ],
+      "mean_active_rank": 9.777777777777779
+    },
+    {
+      "target": "shifted",
+      "seed": 2,
+      "static": {
+        "phase_trajectory_relative_l2": 0.27996116876602173,
+        "phase_terminal_relative_l2": 0.44806164503097534,
+        "temperature_trajectory_relative_l2": 0.23727795481681824,
+        "temperature_terminal_relative_l2": 0.4115039110183716,
+        "solid_fraction_mae": 0.0056956154294312,
+        "free_energy_relative_error": 0.13420064747333527,
+        "tip_position_mae": 0.11907895654439926
+      },
+      "stnlr": {
+        "phase_trajectory_relative_l2": 0.27983132004737854,
+        "phase_terminal_relative_l2": 0.43085744976997375,
+        "temperature_trajectory_relative_l2": 0.23017184436321259,
+        "temperature_terminal_relative_l2": 0.4051505923271179,
+        "solid_fraction_mae": 0.0074891019612550735,
+        "free_energy_relative_error": 0.13626377284526825,
+        "tip_position_mae": 0.11440058797597885
+      },
+      "rank_trace": [
+        16,
+        16,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16,
+        16
+      ],
+      "mean_active_rank": 13.333333333333334
+    }
+  ]
+}

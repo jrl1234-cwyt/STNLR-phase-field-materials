@@ -1,0 +1,185 @@
+{
+  "bootstrap_repetitions": 10000,
+  "cahn_hilliard": {
+    "hierarchy": "condition -> training seed; method pairing preserved",
+    "metrics": {
+      "trajectory_relative_l2_mean": {
+        "continued_static_mean": 0.19388852144281069,
+        "stnlr_mean": 0.1924420346816381,
+        "relative_reduction_percent": 0.746040431072785,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.5120124029144126,
+          1.8579985327022732
+        ],
+        "bootstrap_probability_of_reduction": 0.8877,
+        "paired_wins": 9,
+        "pairs": 12
+      },
+      "terminal_relative_l2_mean": {
+        "continued_static_mean": 0.19379343216617903,
+        "stnlr_mean": 0.19431637475887933,
+        "relative_reduction_percent": -0.2698453641359102,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -1.709045707045828,
+          1.1028205426619953
+        ],
+        "bootstrap_probability_of_reduction": 0.3367,
+        "paired_wins": 4,
+        "pairs": 12
+      },
+      "trajectory_mass_drift_mae": {
+        "continued_static_mean": 0.005573624473375578,
+        "stnlr_mean": 0.00546782153348128,
+        "relative_reduction_percent": 1.898278945768663,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.019550360483364726,
+          4.169927003459326
+        ],
+        "bootstrap_probability_of_reduction": 0.9736,
+        "paired_wins": 9,
+        "pairs": 12
+      },
+      "maximum_mass_drift_mean": {
+        "continued_static_mean": 0.0367020508274436,
+        "stnlr_mean": 0.03584730982159575,
+        "relative_reduction_percent": 2.3288644274033996,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -1.065524268287037,
+          6.1450580775060555
+        ],
+        "bootstrap_probability_of_reduction": 0.9113,
+        "paired_wins": 9,
+        "pairs": 12
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "continued_static_mean": 0.01909082963053758,
+        "stnlr_mean": 0.018899410769032936,
+        "relative_reduction_percent": 1.00267440027044,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -2.8181087726637934,
+          5.28513464665665
+        ],
+        "bootstrap_probability_of_reduction": 0.686,
+        "paired_wins": 7,
+        "pairs": 12
+      },
+      "terminal_structure_factor_centroid_relative_error_mean": {
+        "continued_static_mean": 0.009983512301308414,
+        "stnlr_mean": 0.010132399775708715,
+        "relative_reduction_percent": -1.4913336099239123,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -4.071356839867267,
+          0.48501357311128085
+        ],
+        "bootstrap_probability_of_reduction": 0.0733,
+        "paired_wins": 3,
+        "pairs": 12
+      },
+      "trajectory_pde_residual_relative_rms": {
+        "continued_static_mean": 13.680493911107382,
+        "stnlr_mean": 13.734590689341227,
+        "relative_reduction_percent": -0.39543000848765353,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -2.1407068295091416,
+          0.801378853892125
+        ],
+        "bootstrap_probability_of_reduction": 0.4008,
+        "paired_wins": 8,
+        "pairs": 12
+      }
+    },
+    "reference_discretization_residual_relative_rms": {
+      "mean": 0.4822439756244421,
+      "sd": 0.5053729387438315
+    }
+  },
+  "pfhub": {
+    "hierarchy": "condition -> training seed; method pairing preserved",
+    "metrics": {
+      "phase_trajectory_relative_l2": {
+        "continued_static_mean": 0.20868069926897684,
+        "stnlr_mean": 0.20726527025302252,
+        "relative_reduction_percent": 0.6782750014316917,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.7073326036255291,
+          2.164105408136255
+        ],
+        "bootstrap_probability_of_reduction": 0.695,
+        "paired_wins": 4,
+        "pairs": 6
+      },
+      "phase_terminal_relative_l2": {
+        "continued_static_mean": 0.3347410609324773,
+        "stnlr_mean": 0.3284766525030136,
+        "relative_reduction_percent": 1.8714191835364107,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.8909487082873798,
+          3.755068378681234
+        ],
+        "bootstrap_probability_of_reduction": 0.9061,
+        "paired_wins": 4,
+        "pairs": 6
+      },
+      "temperature_trajectory_relative_l2": {
+        "continued_static_mean": 0.18984227875868478,
+        "stnlr_mean": 0.17935907716552416,
+        "relative_reduction_percent": 5.52205844857467,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.048673980936836454,
+          11.794136035044366
+        ],
+        "bootstrap_probability_of_reduction": 0.9696,
+        "paired_wins": 5,
+        "pairs": 6
+      },
+      "temperature_terminal_relative_l2": {
+        "continued_static_mean": 0.30037189026673633,
+        "stnlr_mean": 0.28349880625804263,
+        "relative_reduction_percent": 5.617397817655325,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -0.9769405303641107,
+          13.002728971529523
+        ],
+        "bootstrap_probability_of_reduction": 0.9158,
+        "paired_wins": 5,
+        "pairs": 6
+      },
+      "solid_fraction_mae": {
+        "continued_static_mean": 0.005017676895173888,
+        "stnlr_mean": 0.004995980920890967,
+        "relative_reduction_percent": 0.432390820217779,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -30.20976714049676,
+          16.583948424271767
+        ],
+        "bootstrap_probability_of_reduction": 0.5491,
+        "paired_wins": 3,
+        "pairs": 6
+      },
+      "free_energy_relative_error": {
+        "continued_static_mean": 0.10426283068954945,
+        "stnlr_mean": 0.09454720746725798,
+        "relative_reduction_percent": 9.318395786913248,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          0.8467454323866438,
+          18.696930520504758
+        ],
+        "bootstrap_probability_of_reduction": 0.9777,
+        "paired_wins": 4,
+        "pairs": 6
+      },
+      "tip_position_mae": {
+        "continued_static_mean": 0.0900828546533982,
+        "stnlr_mean": 0.0886939608802398,
+        "relative_reduction_percent": 1.5417959149965805,
+        "paired_hierarchical_bootstrap_95ci_percent": [
+          -4.200315593698446,
+          4.441704884998551
+        ],
+        "bootstrap_probability_of_reduction": 0.7674,
+        "paired_wins": 4,
+        "pairs": 6
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this package, please cite the associated manuscript and archived release."
+title: "ST-NLR phase-field transfer: code, data, results, and representative checkpoints"
+type: software
+version: 1.0.0
+date-released: 2026-08-28
+authors:
+  - family-names: Jiang
+    given-names: Ruiling
+  - family-names: Zhang
+    given-names: Yong
+  - family-names: Li
+    given-names: Houbiao
+license: CC-BY-NC-4.0
+keywords:
+  - phase-field model
+  - microstructure evolution
+  - low-rank adaptation
+  - scientific foundation model
+  - computational materials science

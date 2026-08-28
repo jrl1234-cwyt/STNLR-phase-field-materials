@@ -1,0 +1,554 @@
+{
+  "protocol": "configs/experiment_protocols.yaml#allen_cahn",
+  "condition": {
+    "epsilon": 0.022,
+    "lambda": 1.4
+  },
+  "rows": [
+    {
+      "budget": 20,
+      "seed": 0,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05929868668317795,
+        "terminal_relative_l2_mean": 0.05076565966010094,
+        "terminal_interface_fraction_mae": 0.002838134765625,
+        "terminal_free_energy_relative_error_mean": 0.00687572592869401,
+        "trajectory_pde_residual_relative_rms": 0.5945748090744019,
+        "trajectory_relative_l2_per_time": [
+          0.18964576721191406,
+          0.06092477962374687,
+          0.051573265343904495,
+          0.0455329604446888,
+          0.04203253984451294,
+          0.04059310629963875,
+          0.040496643632650375,
+          0.04135679081082344,
+          0.043145909905433655,
+          0.04621817544102669,
+          0.05076565966010094
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.06097886711359024,
+        "terminal_relative_l2_mean": 0.05261215567588806,
+        "terminal_interface_fraction_mae": 0.0030395507346838713,
+        "terminal_free_energy_relative_error_mean": 0.007375400047749281,
+        "trajectory_pde_residual_relative_rms": 0.6178984045982361,
+        "trajectory_relative_l2_per_time": [
+          0.1904766708612442,
+          0.0629846528172493,
+          0.05315971374511719,
+          0.047501593828201294,
+          0.04358071833848953,
+          0.042597975581884384,
+          0.041860632598400116,
+          0.04341081902384758,
+          0.04467099905014038,
+          0.047911640256643295,
+          0.05261215567588806
+        ]
+      },
+      "mean_active_rank": 7.636363636363637
+    },
+    {
+      "budget": 20,
+      "seed": 1,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05433949455618858,
+        "terminal_relative_l2_mean": 0.052857208997011185,
+        "terminal_interface_fraction_mae": 0.00323486328125,
+        "terminal_free_energy_relative_error_mean": 0.005334662739187479,
+        "trajectory_pde_residual_relative_rms": 0.6123751401901245,
+        "trajectory_relative_l2_per_time": [
+          0.12862952053546906,
+          0.056037019938230515,
+          0.04966793954372406,
+          0.04627091437578201,
+          0.04404088482260704,
+          0.04243505746126175,
+          0.04186401143670082,
+          0.04277188703417778,
+          0.04493160918354988,
+          0.04822847619652748,
+          0.05285721644759178
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.05412672832608223,
+        "terminal_relative_l2_mean": 0.05202354118227959,
+        "terminal_interface_fraction_mae": 0.00311279296875,
+        "terminal_free_energy_relative_error_mean": 0.00510706752538681,
+        "trajectory_pde_residual_relative_rms": 0.620076060295105,
+        "trajectory_relative_l2_per_time": [
+          0.1329142302274704,
+          0.05493776872754097,
+          0.048496369272470474,
+          0.04559636116027832,
+          0.04354405030608177,
+          0.04197346791625023,
+          0.0413527674973011,
+          0.042277317494153976,
+          0.04445440694689751,
+          0.04782375320792198,
+          0.05202354118227959
+        ]
+      },
+      "mean_active_rank": 8.363636363636363
+    },
+    {
+      "budget": 20,
+      "seed": 2,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.060552943497896194,
+        "terminal_relative_l2_mean": 0.04879400134086609,
+        "terminal_interface_fraction_mae": 0.0029418945778161287,
+        "terminal_free_energy_relative_error_mean": 0.005190229509025812,
+        "trajectory_pde_residual_relative_rms": 0.5346868634223938,
+        "trajectory_relative_l2_per_time": [
+          0.2317596673965454,
+          0.055611979216337204,
+          0.04700425639748573,
+          0.0420743003487587,
+          0.03931932896375656,
+          0.03836643323302269,
+          0.038325097411870956,
+          0.03918212279677391,
+          0.041198793798685074,
+          0.04444636031985283,
+          0.04879399761557579
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.061794910579919815,
+        "terminal_relative_l2_mean": 0.05035914108157158,
+        "terminal_interface_fraction_mae": 0.0030944824684411287,
+        "terminal_free_energy_relative_error_mean": 0.005524125881493092,
+        "trajectory_pde_residual_relative_rms": 0.5460718274116516,
+        "trajectory_relative_l2_per_time": [
+          0.2306194305419922,
+          0.057323336601257324,
+          0.04922398924827576,
+          0.043836358934640884,
+          0.040816374123096466,
+          0.039551395922899246,
+          0.039473243057727814,
+          0.04041988402605057,
+          0.04214784875512123,
+          0.04597308859229088,
+          0.05035914108157158
+        ]
+      },
+      "mean_active_rank": 7.636363636363637
+    },
+    {
+      "budget": 50,
+      "seed": 0,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.06199806556105614,
+        "terminal_relative_l2_mean": 0.05300591140985489,
+        "terminal_interface_fraction_mae": 0.0023193359375,
+        "terminal_free_energy_relative_error_mean": 0.006282988470047712,
+        "trajectory_pde_residual_relative_rms": 0.6334130167961121,
+        "trajectory_relative_l2_per_time": [
+          0.2001112997531891,
+          0.06327786296606064,
+          0.053094953298568726,
+          0.04703359305858612,
+          0.04364248737692833,
+          0.04232087358832359,
+          0.04233153536915779,
+          0.04330835118889809,
+          0.04534612223505974,
+          0.04850580543279648,
+          0.05300590395927429
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.06117597222328186,
+        "terminal_relative_l2_mean": 0.05169941112399101,
+        "terminal_interface_fraction_mae": 0.00262451171875,
+        "terminal_free_energy_relative_error_mean": 0.006277013570070267,
+        "trajectory_pde_residual_relative_rms": 0.6084827184677124,
+        "trajectory_relative_l2_per_time": [
+          0.20568422973155975,
+          0.06193875893950462,
+          0.0516873300075531,
+          0.04587715491652489,
+          0.042024165391922,
+          0.04069426283240318,
+          0.0406605564057827,
+          0.04170912131667137,
+          0.04383441433310509,
+          0.04712632670998573,
+          0.05169941112399101
+        ]
+      },
+      "mean_active_rank": 8.727272727272727
+    },
+    {
+      "budget": 50,
+      "seed": 1,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05467940494418144,
+        "terminal_relative_l2_mean": 0.0520503893494606,
+        "terminal_interface_fraction_mae": 0.002874755999073386,
+        "terminal_free_energy_relative_error_mean": 0.005749273579567671,
+        "trajectory_pde_residual_relative_rms": 0.5896947383880615,
+        "trajectory_relative_l2_per_time": [
+          0.1364283412694931,
+          0.05807190015912056,
+          0.04967483505606651,
+          0.04586239531636238,
+          0.04299016669392586,
+          0.04144442453980446,
+          0.04105040058493614,
+          0.042075540870428085,
+          0.04430941119790077,
+          0.04751572385430336,
+          0.0520503893494606
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.05441897362470627,
+        "terminal_relative_l2_mean": 0.05111447721719742,
+        "terminal_interface_fraction_mae": 0.0026062012184411287,
+        "terminal_free_energy_relative_error_mean": 0.005044412333518267,
+        "trajectory_pde_residual_relative_rms": 0.568854033946991,
+        "trajectory_relative_l2_per_time": [
+          0.1423327773809433,
+          0.057425715029239655,
+          0.048498690128326416,
+          0.04441554471850395,
+          0.04214596748352051,
+          0.04003146290779114,
+          0.04053037613630295,
+          0.041555292904376984,
+          0.04371984675526619,
+          0.046838581562042236,
+          0.05111446976661682
+        ]
+      },
+      "mean_active_rank": 6.181818181818182
+    },
+    {
+      "budget": 50,
+      "seed": 2,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05741054192185402,
+        "terminal_relative_l2_mean": 0.04942650347948074,
+        "terminal_interface_fraction_mae": 0.0026733397971838713,
+        "terminal_free_energy_relative_error_mean": 0.005790026392787695,
+        "trajectory_pde_residual_relative_rms": 0.5686958432197571,
+        "trajectory_relative_l2_per_time": [
+          0.1911206990480423,
+          0.05792362242937088,
+          0.048370249569416046,
+          0.04303479939699173,
+          0.03974231332540512,
+          0.03830648213624954,
+          0.038251426070928574,
+          0.039227429777383804,
+          0.04136260226368904,
+          0.044749900698661804,
+          0.04942650347948074
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.05812323838472366,
+        "terminal_relative_l2_mean": 0.050591666251420975,
+        "terminal_interface_fraction_mae": 0.002752685686573386,
+        "terminal_free_energy_relative_error_mean": 0.005876308772712946,
+        "trajectory_pde_residual_relative_rms": 0.5792445540428162,
+        "trajectory_relative_l2_per_time": [
+          0.18978819251060486,
+          0.05949680879712105,
+          0.049052607268095016,
+          0.04363088682293892,
+          0.04049961268901825,
+          0.03907262533903122,
+          0.03903057798743248,
+          0.04004215821623802,
+          0.04231882840394974,
+          0.045831721276044846,
+          0.050591666251420975
+        ]
+      },
+      "mean_active_rank": 9.818181818181818
+    },
+    {
+      "budget": 100,
+      "seed": 0,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05934692546725273,
+        "terminal_relative_l2_mean": 0.05043838173151016,
+        "terminal_interface_fraction_mae": 0.0022094727028161287,
+        "terminal_free_energy_relative_error_mean": 0.006174597889184952,
+        "trajectory_pde_residual_relative_rms": 0.6010506749153137,
+        "trajectory_relative_l2_per_time": [
+          0.19951190054416656,
+          0.05735384300351143,
+          0.04961206391453743,
+          0.04477113485336304,
+          0.04166419804096222,
+          0.040197622030973434,
+          0.04003255069255829,
+          0.04083592817187309,
+          0.04265984892845154,
+          0.045738767832517624,
+          0.05043838173151016
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.05832141265273094,
+        "terminal_relative_l2_mean": 0.04982594773173332,
+        "terminal_interface_fraction_mae": 0.002142334124073386,
+        "terminal_free_energy_relative_error_mean": 0.004993529058992863,
+        "trajectory_pde_residual_relative_rms": 0.5863771438598633,
+        "trajectory_relative_l2_per_time": [
+          0.19127987325191498,
+          0.05702328681945801,
+          0.04961901903152466,
+          0.04423707351088524,
+          0.04130940139293671,
+          0.03983931243419647,
+          0.03977574408054352,
+          0.04069134220480919,
+          0.042672332376241684,
+          0.045262232422828674,
+          0.04982594773173332
+        ]
+      },
+      "mean_active_rank": 5.818181818181818
+    },
+    {
+      "budget": 100,
+      "seed": 1,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.05769360437989235,
+        "terminal_relative_l2_mean": 0.05278816819190979,
+        "terminal_interface_fraction_mae": 0.0030334473121911287,
+        "terminal_free_energy_relative_error_mean": 0.0055595519952476025,
+        "trajectory_pde_residual_relative_rms": 0.6513221263885498,
+        "trajectory_relative_l2_per_time": [
+          0.1584451049566269,
+          0.05882827565073967,
+          0.051845114678144455,
+          0.047606635838747025,
+          0.04438753053545952,
+          0.042464729398489,
+          0.041929539293050766,
+          0.04291445389389992,
+          0.04513850063085556,
+          0.04828163981437683,
+          0.05278816819190979
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.05831931531429291,
+        "terminal_relative_l2_mean": 0.05178961902856827,
+        "terminal_interface_fraction_mae": 0.002630615374073386,
+        "terminal_free_energy_relative_error_mean": 0.004817736800760031,
+        "trajectory_pde_residual_relative_rms": 0.6479321718215942,
+        "trajectory_relative_l2_per_time": [
+          0.1786513328552246,
+          0.05652880668640137,
+          0.0505051426589489,
+          0.046443965286016464,
+          0.043318647891283035,
+          0.04152164235711098,
+          0.040159452706575394,
+          0.04112401232123375,
+          0.0441359281539917,
+          0.04733390733599663,
+          0.05178961902856827
+        ]
+      },
+      "mean_active_rank": 6.181818181818182
+    },
+    {
+      "budget": 100,
+      "seed": 2,
+      "plain_continued_static": {
+        "trajectory_relative_l2_mean": 0.06466685980558395,
+        "terminal_relative_l2_mean": 0.05224362760782242,
+        "terminal_interface_fraction_mae": 0.0031616210471838713,
+        "terminal_free_energy_relative_error_mean": 0.005947935860604048,
+        "trajectory_pde_residual_relative_rms": 0.5909331440925598,
+        "trajectory_relative_l2_per_time": [
+          0.24821949005126953,
+          0.05844905972480774,
+          0.04979831725358963,
+          0.04498020559549332,
+          0.042224325239658356,
+          0.04114025458693504,
+          0.04105736315250397,
+          0.0418718196451664,
+          0.04397805035114288,
+          0.04737298563122749,
+          0.05224362760782242
+        ]
+      },
+      "stnlr": {
+        "trajectory_relative_l2_mean": 0.06438606232404709,
+        "terminal_relative_l2_mean": 0.05227900296449661,
+        "terminal_interface_fraction_mae": 0.0029724121559411287,
+        "terminal_free_energy_relative_error_mean": 0.005757954902946949,
+        "trajectory_pde_residual_relative_rms": 0.6037831902503967,
+        "trajectory_relative_l2_per_time": [
+          0.24031122028827667,
+          0.05903936177492142,
+          0.05025165155529976,
+          0.045777302235364914,
+          0.04305603355169296,
+          0.041115257889032364,
+          0.04165637493133545,
+          0.04247556999325752,
+          0.044554684311151505,
+          0.04773024842143059,
+          0.05227900296449661
+        ]
+      },
+      "mean_active_rank": 4.363636363636363
+    }
+  ],
+  "summary": {
+    "20": {
+      "mean_active_rank": {
+        "mean": 7.878787878787879,
+        "sd": 0.419891104865182
+      },
+      "trajectory_relative_l2_mean": {
+        "plain_continued_static_mean": 0.05806370824575424,
+        "plain_continued_static_sd": 0.0032856682339332407,
+        "stnlr_mean": 0.0589668353398641,
+        "stnlr_sd": 0.0042114675189748405,
+        "relative_improvement_percent_mean": -1.4976375644181006,
+        "relative_improvement_percent_sd": 1.6822009327122667,
+        "paired_wins": 1,
+        "pairs": 3
+      },
+      "terminal_relative_l2_mean": {
+        "plain_continued_static_mean": 0.0508056233326594,
+        "plain_continued_static_sd": 0.0020318986036666053,
+        "stnlr_mean": 0.05166494597991308,
+        "stnlr_sd": 0.0011685296658283757,
+        "relative_improvement_percent_mean": -1.755911303441657,
+        "relative_improvement_percent_sd": 2.894548165177745,
+        "paired_wins": 1,
+        "pairs": 3
+      },
+      "terminal_interface_fraction_mae": {
+        "plain_continued_static_mean": 0.0030049642082303762,
+        "plain_continued_static_sd": 0.0002057467192641144,
+        "stnlr_mean": 0.003082275390625,
+        "stnlr_sd": 3.811647641579903e-05,
+        "relative_improvement_percent_mean": -2.8366365189202,
+        "relative_improvement_percent_sd": 5.803735333937991,
+        "paired_wins": 1,
+        "pairs": 3
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "plain_continued_static_mean": 0.0058002060589691,
+        "plain_continued_static_sd": 0.000934222929564217,
+        "stnlr_mean": 0.006002197818209727,
+        "stnlr_sd": 0.0012073722253343492,
+        "relative_improvement_percent_mean": -3.14468155416906,
+        "relative_improvement_percent_sd": 6.4316728156374205,
+        "paired_wins": 1,
+        "pairs": 3
+      }
+    },
+    "50": {
+      "mean_active_rank": {
+        "mean": 8.242424242424242,
+        "sd": 1.8660368870715944
+      },
+      "trajectory_relative_l2_mean": {
+        "plain_continued_static_mean": 0.0580293374756972,
+        "plain_continued_static_sd": 0.003698361699366388,
+        "stnlr_mean": 0.05790606141090393,
+        "stnlr_sd": 0.00338373047002214,
+        "relative_improvement_percent_mean": 0.18696088816469966,
+        "relative_improvement_percent_sd": 1.3079260650200002,
+        "paired_wins": 2,
+        "pairs": 3
+      },
+      "terminal_relative_l2_mean": {
+        "plain_continued_static_mean": 0.05149426807959875,
+        "plain_continued_static_sd": 0.001853373527678893,
+        "stnlr_mean": 0.05113518486420313,
+        "stnlr_sd": 0.0005541626842901706,
+        "relative_improvement_percent_mean": 0.6351814142891313,
+        "relative_improvement_percent_sd": 2.612973454990755,
+        "paired_wins": 2,
+        "pairs": 3
+      },
+      "terminal_interface_fraction_mae": {
+        "plain_continued_static_mean": 0.0026224772445857525,
+        "plain_continued_static_sd": 0.000281181632832131,
+        "stnlr_mean": 0.0026611328745881715,
+        "stnlr_sd": 7.981388752711102e-05,
+        "relative_improvement_percent_mean": -2.2613698658923544,
+        "relative_improvement_percent_sd": 11.26649587580675,
+        "paired_wins": 1,
+        "pairs": 3
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "plain_continued_static_mean": 0.005940762814134359,
+        "plain_continued_static_sd": 0.00029707574391109424,
+        "stnlr_mean": 0.0057325782254338264,
+        "stnlr_sd": 0.0006287450236409401,
+        "relative_improvement_percent_mean": 3.6216373408155023,
+        "relative_improvement_percent_sd": 7.5229205735087055,
+        "paired_wins": 2,
+        "pairs": 3
+      }
+    },
+    "100": {
+      "mean_active_rank": {
+        "mean": 5.454545454545454,
+        "sd": 0.9620913858416694
+      },
+      "trajectory_relative_l2_mean": {
+        "plain_continued_static_mean": 0.06056912988424301,
+        "plain_continued_static_sd": 0.003643749516043503,
+        "stnlr_mean": 0.06034226343035698,
+        "stnlr_sd": 0.0035020327267408775,
+        "relative_improvement_percent_mean": 0.35922563405072455,
+        "relative_improvement_percent_sd": 1.4077679083496804,
+        "paired_wins": 2,
+        "pairs": 3
+      },
+      "terminal_relative_l2_mean": {
+        "plain_continued_static_mean": 0.051823392510414124,
+        "plain_continued_static_sd": 0.0012299683960125447,
+        "stnlr_mean": 0.05129818990826607,
+        "stnlr_sd": 0.0012982668943470699,
+        "relative_improvement_percent_mean": 1.012708445851942,
+        "relative_improvement_percent_sd": 0.9950865085504245,
+        "paired_wins": 2,
+        "pairs": 3
+      },
+      "terminal_interface_fraction_mae": {
+        "plain_continued_static_mean": 0.0028015136873970428,
+        "plain_continued_static_sd": 0.0005167122237311124,
+        "stnlr_mean": 0.0025817872180293002,
+        "stnlr_sd": 0.0004171876392756087,
+        "relative_improvement_percent_mean": 7.434299225112137,
+        "relative_improvement_percent_sd": 5.2721787594094955,
+        "paired_wins": 3,
+        "pairs": 3
+      },
+      "terminal_free_energy_relative_error_mean": {
+        "plain_continued_static_mean": 0.005894028581678867,
+        "plain_continued_static_sd": 0.0003110463935703743,
+        "stnlr_mean": 0.005189740254233281,
+        "stnlr_sd": 0.0004998766295529805,
+        "relative_improvement_percent_mean": 11.888335566099899,
+        "relative_improvement_percent_sd": 8.065897572484147,
+        "paired_wins": 3,
+        "pairs": 3
+      }
+    }
+  }
+}

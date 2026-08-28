@@ -1,0 +1,56 @@
+allen_cahn:
+  conditions:
+    - [0.022, 1.4]
+    - [0.022, 1.6]
+    - [0.028, 1.4]
+    - [0.028, 1.6]
+  grid: [64, 64]
+  output_times: [0.0, 0.06, 0.12, 0.18, 0.24, 0.30, 0.36, 0.42, 0.48, 0.54, 0.60]
+  solver_dt: 0.005
+  split: {train: 100, validation: 20, test: 40}
+  data_seed: 20260817
+cahn_hilliard:
+  conditions:
+    - [0.020, 1.0]
+    - [0.020, 1.4]
+    - [0.026, 1.0]
+    - [0.026, 1.4]
+  mobility: 0.01
+  grid: [64, 64]
+  output_times: [0.0, 0.06, 0.12, 0.18, 0.24, 0.30, 0.36, 0.42, 0.48, 0.54, 0.60]
+  solver_dt: 0.002
+  split: {train: 100, validation: 20, test: 40}
+  data_seed: 20260823
+pfhub3_type:
+  conditions: [standard, shifted]
+  production_grid: [192, 192]
+  surrogate_grid: [96, 96]
+  output_times: [0.0, 37.5, 75.0, 112.5, 150.0, 187.5, 225.0, 262.5, 300.0]
+  solver_dt: 0.005
+  split: {train: 20, validation: 4, test: 8}
+training:
+  seeds: [0, 1, 2]
+  optimizer: AdamW
+  learning_rate: 0.0003
+  pfhub_learning_rate: 0.0002
+  weight_decay: 0.0
+  gradient_norm: 1.0
+  static_steps: 1000
+  pfhub_static_steps: 1500
+  calibration_steps: 600
+  ranks: [4, 8, 16]
+  prefix_weights: [0.25, 0.5, 1.0]
+  lora_alpha: 1.0
+statistics:
+  bootstrap_replicates: 10000
+  bootstrap_seed: 20260825
+  hierarchy: [condition, training_seed, paired_test_trajectory]
+objective_ablation:
+  condition: [0.022, 1.4]
+  seeds: [0, 1, 2]
+  paired_start: static_rank16
+  calibration_steps: 600
+  maximum_rank: 16
+  candidate_ranks: [4, 8, 16]
+  variants: [full_stnlr, no_field_distillation, no_spectral_distillation, no_material_objectives]
+  reporting: [mean_active_rank, trajectory_relative_l2, terminal_relative_l2, interface_mae, free_energy_error, pde_residual]

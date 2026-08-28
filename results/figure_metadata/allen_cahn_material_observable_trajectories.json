@@ -1,0 +1,13 @@
+{
+  "target": "eps0022_lam14",
+  "seed": 0,
+  "test_count": 40,
+  "free_energy_mae_over_forecast_times": {
+    "static_rank7": 0.0005494817160069942,
+    "stnlr": 0.0004922240041196346
+  },
+  "interface_fraction_mae_over_forecast_times": {
+    "static_rank7": 0.0026812744140625,
+    "stnlr": 0.0025689697265625
+  }
+}

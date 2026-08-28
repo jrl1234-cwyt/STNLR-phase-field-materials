@@ -1,0 +1,27 @@
+{
+  "task": "dendrite",
+  "condition": "shifted",
+  "seed": 0,
+  "test_start": 24,
+  "test_count": 8,
+  "selected_local_index": 3,
+  "selected_global_index": 27,
+  "selection_rule": "closest to median combined terminal improvement among samples with both phase and temperature improvements",
+  "eligible_count": 5,
+  "selected_static_phase_terminal_relative_l2": 0.4426274001598358,
+  "selected_stnlr_phase_terminal_relative_l2": 0.4042472839355469,
+  "selected_static_temperature_terminal_relative_l2": 0.575325608253479,
+  "selected_stnlr_temperature_terminal_relative_l2": 0.4707474112510681,
+  "rank_trace": [
+    4,
+    8,
+    8,
+    4,
+    16,
+    8,
+    8,
+    8,
+    16
+  ],
+  "output": "figures/artwork/dendrite_representative_states.pdf"
+}

@@ -1,0 +1,520 @@
+{
+  "datasets": [
+    {
+      "path": "data/full/allen_cahn/eps0022_lam14.npz",
+      "bytes": 29102499,
+      "sha256": "c1ffd7254f1e6c75b353bbec6185ff4259e89b8d2f5c8364eb862369870cfd6a",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/allen_cahn/eps0022_lam16.npz",
+      "bytes": 29099772,
+      "sha256": "a11b9832d5920a4384dd8e69007109d0bd7d984d5c24c97cf4203e523098fd89",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/allen_cahn/eps0028_lam14.npz",
+      "bytes": 29094284,
+      "sha256": "d9e68e947a930deb581b72f6753f773143131c96be53fbc8c5acae77a6349c16",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/allen_cahn/eps0028_lam16.npz",
+      "bytes": 29094131,
+      "sha256": "e226da55bd78405627f72f81ae45d16dcf233ed11ef67409c19411d4171c0ff3",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/cahn_hilliard/eps0020_lam10.npz",
+      "bytes": 28973529,
+      "sha256": "5608d6625afbfc0c8705555196725b5c2f927ea1271d35a1b48001df359afc78",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "mobility": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/cahn_hilliard/eps0020_lam14.npz",
+      "bytes": 28947693,
+      "sha256": "63a8c6656bb141fb015e016fabbcc53b939d94e3725f8ad71163eba2d94f37a5",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "mobility": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/cahn_hilliard/eps0026_lam10.npz",
+      "bytes": 28895879,
+      "sha256": "026ce0dd2f9dea93b1635b191ef30a5f646e74c30c2218ad3ee2b05c81759f0b",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "mobility": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/cahn_hilliard/eps0026_lam14.npz",
+      "bytes": 28977546,
+      "sha256": "024630fc3ebda42200ac8c9c2aa7477e4832fcc5c740377fab740c27d52df0a8",
+      "arrays": {
+        "fields": {
+          "shape": [
+            160,
+            11,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "initial": {
+          "shape": [
+            160,
+            64,
+            64
+          ],
+          "dtype": "float32"
+        },
+        "epsilon": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "reaction": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "mobility": {
+          "shape": [
+            160
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            11
+          ],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/pfhub3/shifted.npz",
+      "bytes": 10272040,
+      "sha256": "f18643e18d008c3c95692e55a3374c410d20a7a317add0905be5fd092df0dd95",
+      "arrays": {
+        "initial": {
+          "shape": [
+            32,
+            2,
+            96,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "fields": {
+          "shape": [
+            32,
+            9,
+            2,
+            96,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            9
+          ],
+          "dtype": "float32"
+        },
+        "seed_radius": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "epsilon4": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "theta0": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diffusion": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "undercooling": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "dx": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "dt": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "w0": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "tau0": {
+          "shape": [],
+          "dtype": "float32"
+        }
+      }
+    },
+    {
+      "path": "data/full/pfhub3/standard.npz",
+      "bytes": 9386394,
+      "sha256": "cdc672585611f7c0cebcabb659de684f572b7ead04fa8588ae04a253f08e3d6f",
+      "arrays": {
+        "initial": {
+          "shape": [
+            32,
+            2,
+            96,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "fields": {
+          "shape": [
+            32,
+            9,
+            2,
+            96,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "times": {
+          "shape": [
+            9
+          ],
+          "dtype": "float32"
+        },
+        "seed_radius": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "epsilon4": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "theta0": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "diffusion": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "undercooling": {
+          "shape": [
+            32
+          ],
+          "dtype": "float32"
+        },
+        "dx": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "dt": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "w0": {
+          "shape": [],
+          "dtype": "float32"
+        },
+        "tau0": {
+          "shape": [],
+          "dtype": "float32"
+        }
+      }
+    }
+  ]
+}

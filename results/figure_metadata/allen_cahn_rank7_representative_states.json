@@ -1,0 +1,29 @@
+{
+  "task": "allen",
+  "target": "eps0022_lam14",
+  "seed": 0,
+  "test_start": 120,
+  "test_count": 40,
+  "selected_local_index": 13,
+  "selected_global_index": 133,
+  "selection_rule": "closest to the median positive trajectory improvement among samples with positive trajectory and terminal improvements",
+  "eligible_count": 40,
+  "selected_static_trajectory_relative_l2": 0.048908114433288574,
+  "selected_stnlr_trajectory_relative_l2": 0.04468916356563568,
+  "selected_static_terminal_relative_l2": 0.05353746935725212,
+  "selected_stnlr_terminal_relative_l2": 0.04941292852163315,
+  "rank_trace": [
+    4,
+    4,
+    4,
+    16,
+    4,
+    4,
+    4,
+    4,
+    4,
+    8,
+    8
+  ],
+  "output": "figures/artwork/allen_cahn_rank7_representative_states.pdf"
+}
