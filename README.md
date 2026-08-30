@@ -6,8 +6,8 @@ This package supports the manuscript *Physical-time-adaptive transfer of phase-f
 
 - `code/`: dataset generation, training, evaluation, uncertainty, solver-audit, and aggregation programs.
 - `data/full/`: Allen--Cahn, Cahn--Hilliard, and PFHub-3-type trajectory datasets.
-- `checkpoints/`: paired ST-NLR and comparison checkpoints for one representative condition of each system, including the Allen--Cahn rank-16 start used by the objective ablation.
-- `results/`: aggregate JSON records used by the tables and statistical statements.
+- `checkpoints/`: paired ST-NLR and comparison checkpoints for one representative condition of each system, including the Allen--Cahn rank-16 start and seed-0 strict AdaLoRA, DyLoRA, and TimeStep Master baselines.
+- `results/`: aggregate and paired per-sample JSON records used by the tables, figures, and statistical statements.
 - `figures/`: scripts used to regenerate manuscript figures from the aggregate records.
 - `environment/`: pinned Python/CUDA environment and container recipe.
 - `docs/`: dataset, model, reproducibility, and FAIR records.
@@ -30,6 +30,13 @@ python figures/make_objective_ablation_figure.py
 ```
 
 The Poseidon source and pretrained weights are external dependencies and are not redistributed. The download script fixes the source commit and records the expected pretrained-weight checksum.
+
+The fixed-prefix audit behind manuscript Figure 5 can be recomputed from the released representative checkpoint without retraining:
+
+```bash
+PYTHONPATH=code/materials_phasefield_stnlr_application_20260813/experiments:code \
+python code/materials_phasefield_stnlr_application_20260813/experiments/evaluate_fixed_prefix_pareto.py
+```
 
 ## Reproducing a dataset
 

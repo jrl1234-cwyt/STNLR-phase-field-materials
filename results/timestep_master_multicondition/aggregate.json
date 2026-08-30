@@ -1,0 +1,371 @@
+{
+  "status": "complete",
+  "protocol": {
+    "hierarchy": "target condition -> training seed -> paired test trajectory",
+    "targets": [
+      "eps0022_lam14",
+      "eps0022_lam16",
+      "eps0028_lam14",
+      "eps0028_lam16"
+    ],
+    "training_seeds": [
+      0,
+      1,
+      2
+    ],
+    "test_trajectories_per_cell": 40,
+    "bootstrap_repetitions": 10000,
+    "bootstrap_seed": 20260830
+  },
+  "completed_cells": [
+    "eps0022_lam14/seed0",
+    "eps0022_lam14/seed1",
+    "eps0022_lam14/seed2",
+    "eps0022_lam16/seed0",
+    "eps0022_lam16/seed1",
+    "eps0022_lam16/seed2",
+    "eps0028_lam14/seed0",
+    "eps0028_lam14/seed1",
+    "eps0028_lam14/seed2",
+    "eps0028_lam16/seed0",
+    "eps0028_lam16/seed1",
+    "eps0028_lam16/seed2"
+  ],
+  "missing": [],
+  "inference": {
+    "trajectory_relative_l2": {
+      "timestep_master_mean": 0.06335227275267244,
+      "stnlr_mean": 0.05998728686633209,
+      "relative_reduction_percent": 5.311547226533245,
+      "paired_wins_out_of_12": 12,
+      "hierarchical_bootstrap_95ci_percent": [
+        3.31393030188887,
+        7.641335584279058
+      ],
+      "bootstrap_probability_of_improvement": 1.0
+    },
+    "terminal_relative_l2": {
+      "timestep_master_mean": 0.05820400902690987,
+      "stnlr_mean": 0.05244270972131441,
+      "relative_reduction_percent": 9.898457858687708,
+      "paired_wins_out_of_12": 12,
+      "hierarchical_bootstrap_95ci_percent": [
+        7.562114738604091,
+        11.920830541020097
+      ],
+      "bootstrap_probability_of_improvement": 1.0
+    },
+    "terminal_interface_fraction_mae": {
+      "timestep_master_mean": 0.0029541015625000003,
+      "stnlr_mean": 0.0026977539062499997,
+      "relative_reduction_percent": 8.677685950413244,
+      "paired_wins_out_of_12": 9,
+      "hierarchical_bootstrap_95ci_percent": [
+        -4.026578705049149,
+        18.959663563904957
+      ],
+      "bootstrap_probability_of_improvement": 0.9134
+    },
+    "terminal_free_energy_relative_error": {
+      "timestep_master_mean": 0.005813886938494761,
+      "stnlr_mean": 0.00547032748084651,
+      "relative_reduction_percent": 5.909290312707733,
+      "paired_wins_out_of_12": 10,
+      "hierarchical_bootstrap_95ci_percent": [
+        1.518579723064787,
+        9.821491057222085
+      ],
+      "bootstrap_probability_of_improvement": 0.996
+    }
+  },
+  "pair_rows": [
+    {
+      "target": "eps0022_lam14",
+      "seed": 0,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.06161451255902648,
+        "stnlr": 0.058321414049714804,
+        "relative_reduction_percent": 5.344679966683013
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05462925350293517,
+        "stnlr": 0.049825947172939776,
+        "relative_reduction_percent": 8.792553480045845
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.002703857421875,
+        "stnlr": 0.002142333984375,
+        "relative_reduction_percent": 20.76749435665913
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.005739205563440919,
+        "stnlr": 0.004993522455333732,
+        "relative_reduction_percent": 12.992793163869798
+      }
+    },
+    {
+      "target": "eps0022_lam14",
+      "seed": 1,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.060123537015169856,
+        "stnlr": 0.05831931624561548,
+        "relative_reduction_percent": 3.000856002698491
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05644316738471389,
+        "stnlr": 0.05178961828351021,
+        "relative_reduction_percent": 8.244663290217774
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.002349853515625,
+        "stnlr": 0.002630615234375,
+        "relative_reduction_percent": -11.948051948051951
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.004873192732338794,
+        "stnlr": 0.004817725193788647,
+        "relative_reduction_percent": 1.1382176243935798
+      }
+    },
+    {
+      "target": "eps0022_lam14",
+      "seed": 2,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.0664245774038136,
+        "stnlr": 0.06438606148585677,
+        "relative_reduction_percent": 3.0689181589581387
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05812254948541522,
+        "stnlr": 0.05227900175377727,
+        "relative_reduction_percent": 10.053839316020161
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.003558349609375,
+        "stnlr": 0.002972412109375,
+        "relative_reduction_percent": 16.46655231560891
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.006168118369532749,
+        "stnlr": 0.005757960604387336,
+        "relative_reduction_percent": 6.649641601746435
+      }
+    },
+    {
+      "target": "eps0022_lam16",
+      "seed": 0,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.06158577343448997,
+        "stnlr": 0.06057460941374302,
+        "relative_reduction_percent": 1.6418792269005817
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05514280954375863,
+        "stnlr": 0.05251857852563262,
+        "relative_reduction_percent": 4.758972275512279
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.00284423828125,
+        "stnlr": 0.00269775390625,
+        "relative_reduction_percent": 5.150214592274675
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.006432854238664731,
+        "stnlr": 0.006336450227536261,
+        "relative_reduction_percent": 1.4986195482097653
+      }
+    },
+    {
+      "target": "eps0022_lam16",
+      "seed": 1,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.07902567209675908,
+        "stnlr": 0.07566311676055193,
+        "relative_reduction_percent": 4.2550164357856195
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.06031629433855414,
+        "stnlr": 0.0570075873285532,
+        "relative_reduction_percent": 5.485593978020665
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.00205078125,
+        "stnlr": 0.002777099609375,
+        "relative_reduction_percent": -35.41666666666666
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.006742184699396603,
+        "stnlr": 0.0068127324833767485,
+        "relative_reduction_percent": -1.0463638586830628
+      }
+    },
+    {
+      "target": "eps0022_lam16",
+      "seed": 2,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.0693764217197895,
+        "stnlr": 0.06721778661012649,
+        "relative_reduction_percent": 3.111482339607694
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05997019903734326,
+        "stnlr": 0.05356974955648184,
+        "relative_reduction_percent": 10.672716755326896
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.00360107421875,
+        "stnlr": 0.003240966796875,
+        "relative_reduction_percent": 9.999999999999998
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.007589081686455756,
+        "stnlr": 0.006639386640745215,
+        "relative_reduction_percent": 12.51396525887266
+      }
+    },
+    {
+      "target": "eps0028_lam14",
+      "seed": 0,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.059898379258811474,
+        "stnlr": 0.05677594216540456,
+        "relative_reduction_percent": 5.21289078610183
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05667134802788496,
+        "stnlr": 0.05141824278980493,
+        "relative_reduction_percent": 9.269419946557925
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.0031005859375,
+        "stnlr": 0.002520751953125,
+        "relative_reduction_percent": 18.700787401574804
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.005341764603508636,
+        "stnlr": 0.004666151657875162,
+        "relative_reduction_percent": 12.647748371197613
+      }
+    },
+    {
+      "target": "eps0028_lam14",
+      "seed": 1,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.05823131762444973,
+        "stnlr": 0.05279808109626174,
+        "relative_reduction_percent": 9.330437211172992
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05903007341548801,
+        "stnlr": 0.05102567607536912,
+        "relative_reduction_percent": 13.559863433980983
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.003466796875,
+        "stnlr": 0.0029296875,
+        "relative_reduction_percent": 15.49295774647887
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.003899824630207149,
+        "stnlr": 0.004381428644774132,
+        "relative_reduction_percent": -12.349376195959906
+      }
+    },
+    {
+      "target": "eps0028_lam14",
+      "seed": 2,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.061665382143110035,
+        "stnlr": 0.056143706664443016,
+        "relative_reduction_percent": 8.954254861913581
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05859838305041194,
+        "stnlr": 0.05099441092461347,
+        "relative_reduction_percent": 12.976419706422282
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.00341796875,
+        "stnlr": 0.0025634765625,
+        "relative_reduction_percent": 25.0
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.005284853841294535,
+        "stnlr": 0.004935953014501138,
+        "relative_reduction_percent": 6.601901155092928
+      }
+    },
+    {
+      "target": "eps0028_lam16",
+      "seed": 0,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.06088644973933697,
+        "stnlr": 0.05853154556825757,
+        "relative_reduction_percent": 3.8676982828873387
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.05788229983299971,
+        "stnlr": 0.052272097952663896,
+        "relative_reduction_percent": 9.692430840727132
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.002813720703125,
+        "stnlr": 0.002667236328125,
+        "relative_reduction_percent": 5.206073752711493
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.006297231149801519,
+        "stnlr": 0.005423278929083608,
+        "relative_reduction_percent": 13.878357010056027
+      }
+    },
+    {
+      "target": "eps0028_lam16",
+      "seed": 1,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.058471021708101034,
+        "stnlr": 0.05262972200289369,
+        "relative_reduction_percent": 9.990076339640986
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.06099145794287324,
+        "stnlr": 0.052982260938733816,
+        "relative_reduction_percent": 13.13167003097568
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.002423095703125,
+        "stnlr": 0.002642822265625,
+        "relative_reduction_percent": -9.068010075566736
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.004965949107099732,
+        "stnlr": 0.004708912899513962,
+        "relative_reduction_percent": 5.175973455271419
+      }
+    },
+    {
+      "target": "eps0028_lam16",
+      "seed": 2,
+      "trajectory_relative_l2": {
+        "timestep_master": 0.06292422832921148,
+        "stnlr": 0.058486140333116055,
+        "relative_reduction_percent": 7.053067020346941
+      },
+      "terminal_relative_l2": {
+        "timestep_master": 0.06065027276054025,
+        "stnlr": 0.05362934535369277,
+        "relative_reduction_percent": 11.57608546060055
+      },
+      "terminal_interface_fraction_mae": {
+        "timestep_master": 0.003118896484375,
+        "stnlr": 0.002587890625,
+        "relative_reduction_percent": 17.02544031311155
+      },
+      "terminal_free_energy_relative_error": {
+        "timestep_master": 0.00643238264019601,
+        "stnlr": 0.006170427019242197,
+        "relative_reduction_percent": 4.072450841416837
+      }
+    }
+  ]
+}

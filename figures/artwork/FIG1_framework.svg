@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="1600" height="880" viewBox="0 0 1600 880">
+     width="1700" height="880" viewBox="0 0 1700 880">
 
   <defs>
     <style>
@@ -168,7 +168,7 @@
   <!-- Main title -->
   <!-- ========================================================= -->
 
-  <text x="800" y="48"
+  <text x="850" y="48"
         text-anchor="middle"
         class="title">
     Physical-time-adaptive nested low-rank transfer to unseen material conditions
@@ -180,31 +180,31 @@
   <!-- ========================================================= -->
 
   <!-- Left step card -->
-  <rect x="55" y="80"
-        width="245" height="215"
+  <rect x="40" y="80"
+        width="330" height="215"
         rx="16"
         fill="#C8D6EA"
         stroke="#7C91B4"
         class="outer"/>
 
-  <ellipse cx="105" cy="119"
+  <ellipse cx="95" cy="119"
            rx="22" ry="13"
            fill="#6680AC"/>
 
-  <text x="105" y="125"
+  <text x="95" y="125"
         text-anchor="middle"
         class="number">
     1
   </text>
 
-  <text x="177.5" y="174"
+  <text x="205" y="174"
         text-anchor="middle"
         class="side-title">
-    <tspan x="177.5" dy="0">Material</tspan>
-    <tspan x="177.5" dy="29">trajectory</tspan>
+    <tspan x="205" dy="0">Material</tspan>
+    <tspan x="205" dy="29">trajectory</tspan>
   </text>
 
-  <text x="177.5" y="255"
+  <text x="205" y="255"
         text-anchor="middle"
         class="side-sub"
         fill="#59709B">
@@ -213,6 +213,7 @@
 
 
   <!-- Main blue panel -->
+  <g transform="translate(70,0)">
   <rect x="330" y="80"
         width="1215" height="215"
         rx="16"
@@ -228,8 +229,8 @@
 
 
   <!-- Target condition -->
-  <rect x="360" y="145"
-        width="240" height="125"
+  <rect x="350" y="135"
+        width="260" height="145"
         rx="13"
         fill="#E8EFF8"
         stroke="#99AAC5"
@@ -249,28 +250,28 @@
 
 
   <!-- Arrow -->
-  <line x1="608" y1="208"
-        x2="646" y2="208"
+  <line x1="616" y1="208"
+        x2="642" y2="208"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Free-energy functional -->
-  <rect x="650" y="145"
-        width="260" height="125"
+  <rect x="648" y="135"
+        width="280" height="145"
         rx="13"
         fill="#E8EFF8"
         stroke="#99AAC5"
         class="inner"/>
 
-  <text x="780" y="183"
+  <text x="788" y="183"
         text-anchor="middle"
         class="box-title-lg">
-    <tspan x="780" dy="0">Free-energy</tspan>
-    <tspan x="780" dy="25">functional</tspan>
+    <tspan x="788" dy="0">Free-energy</tspan>
+    <tspan x="788" dy="25">functional</tspan>
   </text>
 
-  <text x="780" y="239"
+  <text x="788" y="239"
         text-anchor="middle"
         class="formula">
     E[u; θ]
@@ -278,28 +279,28 @@
 
 
   <!-- Arrow -->
-  <line x1="918" y1="208"
-        x2="956" y2="208"
+  <line x1="934" y1="208"
+        x2="960" y2="208"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Phase-field dynamics -->
-  <rect x="960" y="145"
-        width="260" height="125"
+  <rect x="966" y="135"
+        width="280" height="145"
         rx="13"
         fill="#E8EFF8"
         stroke="#99AAC5"
         class="inner"/>
 
-  <text x="1090" y="183"
+  <text x="1106" y="183"
         text-anchor="middle"
         class="box-title-lg">
-    <tspan x="1090" dy="0">Phase-field</tspan>
-    <tspan x="1090" dy="25">dynamics</tspan>
+    <tspan x="1106" dy="0">Phase-field</tspan>
+    <tspan x="1106" dy="25">dynamics</tspan>
   </text>
 
-  <text x="1090" y="242"
+  <text x="1106" y="242"
         text-anchor="middle"
         class="formula">
     ∂q/∂τ = H(q; θ)
@@ -307,36 +308,38 @@
 
 
   <!-- Arrow -->
-  <line x1="1228" y1="208"
-        x2="1266" y2="208"
+  <line x1="1252" y1="208"
+        x2="1278" y2="208"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Microstructure -->
-  <rect x="1270" y="145"
-        width="245" height="125"
+  <rect x="1284" y="145"
+        width="247" height="125"
         rx="13"
         fill="#E8EFF8"
         stroke="#99AAC5"
         class="inner"/>
 
-  <text x="1392.5" y="193"
+  <text x="1407.5" y="193"
         text-anchor="middle"
         class="box-title">
     Microstructure
   </text>
 
-  <text x="1392.5" y="229"
+  <text x="1407.5" y="229"
         text-anchor="middle"
         class="formula">
     q(0) → q(τ₁) → q(τ₂)
   </text>
 
+  </g>
+
 
   <!-- Vertical arrow 1 -->
-  <line x1="177.5" y1="303"
-        x2="177.5" y2="336"
+  <line x1="205" y1="303"
+        x2="205" y2="336"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
@@ -347,31 +350,31 @@
   <!-- ========================================================= -->
 
   <!-- Left step card -->
-  <rect x="55" y="345"
-        width="245" height="215"
+  <rect x="40" y="345"
+        width="330" height="215"
         rx="16"
         fill="#EBCDBB"
         stroke="#BF8769"
         class="outer"/>
 
-  <ellipse cx="105" cy="384"
+  <ellipse cx="95" cy="384"
            rx="22" ry="13"
            fill="#B67555"/>
 
-  <text x="105" y="390"
+  <text x="95" y="390"
         text-anchor="middle"
         class="number">
     2
   </text>
 
-  <text x="177.5" y="439"
+  <text x="205" y="439"
         text-anchor="middle"
         class="side-title">
-    <tspan x="177.5" dy="0">Nested low-rank</tspan>
-    <tspan x="177.5" dy="29">transfer</tspan>
+    <tspan x="205" dy="0">Nested low-rank</tspan>
+    <tspan x="205" dy="29">transfer</tspan>
   </text>
 
-  <text x="177.5" y="520"
+  <text x="205" y="520"
         text-anchor="middle"
         class="side-sub"
         fill="#A16549">
@@ -380,6 +383,7 @@
 
 
   <!-- Main orange panel -->
+  <g transform="translate(70,0)">
   <rect x="330" y="345"
         width="1215" height="215"
         rx="16"
@@ -395,8 +399,8 @@
 
 
   <!-- Trainable input projection -->
-  <rect x="360" y="410"
-        width="255" height="125"
+  <rect x="350" y="400"
+        width="275" height="145"
         rx="13"
         fill="#F8E9DF"
         stroke="#D1A78F"
@@ -417,39 +421,39 @@
 
 
   <!-- Arrow -->
-  <line x1="623" y1="472.5"
-        x2="654" y2="472.5"
+  <line x1="631" y1="472.5"
+        x2="657" y2="472.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Frozen backbone with injected shared factor bank -->
-  <rect x="660" y="410"
-        width="350" height="125"
+  <rect x="663" y="400"
+        width="400" height="145"
         rx="13"
         fill="#F8E9DF"
         stroke="#D1A78F"
         class="inner"/>
 
-  <text x="835" y="446"
+  <text x="863" y="446"
         text-anchor="middle"
         class="box-title-lg">
     Frozen multi-PDE
   </text>
 
-  <text x="835" y="471"
+  <text x="863" y="471"
         text-anchor="middle"
         class="box-title-lg">
     backbone F0
   </text>
 
-  <text x="835" y="500"
+  <text x="863" y="500"
         text-anchor="middle"
         class="box-sub">
     shared bank in attention / MLP maps
   </text>
 
-  <text x="835" y="524"
+  <text x="863" y="524"
         text-anchor="middle"
         class="box-sub">
     r = {4, 8, 16}; τ ↦ r(τ)
@@ -457,28 +461,28 @@
 
 
   <!-- Arrow -->
-  <line x1="1018" y1="472.5"
-        x2="1049" y2="472.5"
+  <line x1="1070" y1="472.5"
+        x2="1096" y2="472.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Trainable output projection -->
-  <rect x="1055" y="410"
-        width="220" height="125"
+  <rect x="1102" y="400"
+        width="230" height="145"
         rx="13"
         fill="#F8E9DF"
         stroke="#D1A78F"
         class="inner"/>
 
-  <text x="1165" y="447"
+  <text x="1217" y="447"
         text-anchor="middle"
         class="box-title-lg">
-    <tspan x="1165" dy="0">Trainable output</tspan>
-    <tspan x="1165" dy="25">projection</tspan>
+    <tspan x="1217" dy="0">Trainable output</tspan>
+    <tspan x="1217" dy="25">projection</tspan>
   </text>
 
-  <text x="1165" y="510"
+  <text x="1217" y="510"
         text-anchor="middle"
         class="formula">
     features → q̂τ
@@ -486,36 +490,38 @@
 
 
   <!-- Arrow -->
-  <line x1="1283" y1="472.5"
-        x2="1314" y2="472.5"
+  <line x1="1339" y1="472.5"
+        x2="1365" y2="472.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Output -->
-  <rect x="1320" y="410"
-        width="195" height="125"
+  <rect x="1371" y="410"
+        width="160" height="125"
         rx="13"
         fill="#F8E9DF"
         stroke="#D1A78F"
         class="inner"/>
 
-  <text x="1417.5" y="459"
+  <text x="1451" y="459"
         text-anchor="middle"
         class="box-title-lg">
     Prediction
   </text>
 
-  <text x="1417.5" y="500"
+  <text x="1451" y="500"
         text-anchor="middle"
         class="formula">
     q̂τ
   </text>
 
+  </g>
+
 
   <!-- Vertical arrow 2 -->
-  <line x1="177.5" y1="568"
-        x2="177.5" y2="601"
+  <line x1="205" y1="568"
+        x2="205" y2="601"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
@@ -526,31 +532,31 @@
   <!-- ========================================================= -->
 
   <!-- Left step card -->
-  <rect x="55" y="610"
-        width="245" height="215"
+  <rect x="40" y="610"
+        width="330" height="215"
         rx="16"
         fill="#C9DDBF"
         stroke="#799969"
         class="outer"/>
 
-  <ellipse cx="105" cy="649"
+  <ellipse cx="95" cy="649"
            rx="22" ry="13"
            fill="#628653"/>
 
-  <text x="105" y="655"
+  <text x="95" y="655"
         text-anchor="middle"
         class="number">
     3
   </text>
 
-  <text x="177.5" y="687"
+  <text x="205" y="687"
         text-anchor="middle"
         class="side-title">
-    <tspan x="177.5" dy="0">Material-constrained</tspan>
-    <tspan x="177.5" dy="28">deployment</tspan>
+    <tspan x="205" dy="0">Material-constrained</tspan>
+    <tspan x="205" dy="28">deployment</tspan>
   </text>
 
-  <text x="177.5" y="795"
+  <text x="205" y="795"
         text-anchor="middle"
         class="side-sub"
         fill="#557A49">
@@ -559,6 +565,7 @@
 
 
   <!-- Main green panel -->
+  <g transform="translate(70,0)">
   <rect x="330" y="610"
         width="1215" height="215"
         rx="16"
@@ -574,32 +581,32 @@
 
 
   <!-- Material objectives -->
-  <rect x="360" y="675"
-        width="280" height="125"
+  <rect x="350" y="665"
+        width="310" height="145"
         rx="13"
         fill="#E7F0E2"
         stroke="#9CB794"
         class="inner"/>
 
-  <text x="500" y="714"
+  <text x="505" y="714"
         text-anchor="middle"
         class="box-title-lg">
     Material objectives
   </text>
 
-  <text x="500" y="744"
+  <text x="505" y="744"
         text-anchor="middle"
         class="box-sub-compact">
     field · interface · energy
   </text>
 
-  <text x="500" y="764"
+  <text x="505" y="764"
         text-anchor="middle"
         class="box-sub-compact">
     conservation · structure factor
   </text>
 
-  <text x="500" y="788"
+  <text x="505" y="788"
         text-anchor="middle"
         class="box-sub-compact">
     spectral distillation
@@ -607,33 +614,33 @@
 
 
   <!-- Arrow -->
-  <line x1="648" y1="737.5"
+  <line x1="666" y1="737.5"
         x2="692" y2="737.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Joint calibration -->
-  <rect x="700" y="675"
-        width="250" height="125"
+  <rect x="698" y="665"
+        width="280" height="145"
         rx="13"
         fill="#E7F0E2"
         stroke="#9CB794"
         class="inner"/>
 
-  <text x="825" y="714"
+  <text x="838" y="714"
         text-anchor="middle"
         class="box-title-lg">
     Joint calibration
   </text>
 
-  <text x="825" y="746"
+  <text x="838" y="746"
         text-anchor="middle"
         class="box-sub">
     rank-16 anchor
   </text>
 
-  <text x="825" y="770"
+  <text x="838" y="770"
         text-anchor="middle"
         class="box-sub">
     rank-4/8 distillation
@@ -641,8 +648,8 @@
 
 
   <!-- Arrow -->
-  <line x1="958" y1="737.5"
-        x2="1002" y2="737.5"
+  <line x1="984" y1="737.5"
+        x2="1010" y2="737.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
@@ -652,23 +659,23 @@
   <!-- Increased equation spacing -->
   <!-- ========================================================= -->
 
-  <rect x="1010" y="675"
-        width="250" height="125"
+  <rect x="1016" y="665"
+        width="280" height="145"
         rx="13"
         fill="#E7F0E2"
         stroke="#9CB794"
         class="inner"/>
 
   <!-- Title moved slightly upward -->
-  <text x="1135" y="701"
+  <text x="1156" y="701"
         text-anchor="middle"
         class="box-title-lg">
-    <tspan x="1135" dy="0">Validation</tspan>
-    <tspan x="1135" dy="24">tolerance</tspan>
+    <tspan x="1156" dy="0">Validation</tspan>
+    <tspan x="1156" dy="24">tolerance</tspan>
   </text>
 
   <!-- First equation -->
-  <text x="1135" y="753"
+  <text x="1156" y="753"
         text-anchor="middle"
         class="formula">
     Dⱼ,ₖ(r) ≤ εₖ
@@ -676,7 +683,7 @@
 
   <!-- Second equation:
        35 px below first equation -->
-  <text x="1135" y="788"
+  <text x="1156" y="788"
         text-anchor="middle"
         class="formula">
     rⱼ⋆ = min Fⱼ
@@ -684,36 +691,38 @@
 
 
   <!-- Arrow -->
-  <line x1="1268" y1="737.5"
-        x2="1312" y2="737.5"
+  <line x1="1302" y1="737.5"
+        x2="1328" y2="737.5"
         class="arrow"
         marker-end="url(#arrowhead)"/>
 
 
   <!-- Material output -->
-  <rect x="1320" y="675"
-        width="195" height="125"
+  <rect x="1334" y="675"
+        width="197" height="125"
         rx="13"
         fill="#E7F0E2"
         stroke="#9CB794"
         class="inner"/>
 
-  <text x="1417.5" y="714"
+  <text x="1432.5" y="714"
         text-anchor="middle"
         class="box-title-lg">
     Material output
   </text>
 
-  <text x="1417.5" y="748"
+  <text x="1432.5" y="748"
         text-anchor="middle"
         class="box-sub">
     preserved quality
   </text>
 
-  <text x="1417.5" y="774"
+  <text x="1432.5" y="774"
         text-anchor="middle"
         class="box-sub">
     lower active cost
   </text>
+
+  </g>
 
 </svg>

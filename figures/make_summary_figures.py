@@ -185,30 +185,42 @@ def data_budget() -> None:
 
 
 def pareto() -> None:
-    names = ["Dynamic ST-NLR", "All rank 8", "All rank 16"]
-    savings = np.array([58.31, 50.00, 0.00])
-    retention = np.array([98.88, 99.40, 100.00])
+    payload = json.loads((BUNDLE / "results/fixed_prefix_pareto.json").read_text())
+    strategies = payload["strategies"]
+    trace = np.asarray(payload["validation_selected_rank_trace"], dtype=int)
+    feasible_methods = [method for method in ("dynamic", "4", "8", "16")
+                        if strategies[method]["validation_feasible_under_timewise_2_percent_rule"]]
+    names = [strategies[method]["label"] for method in feasible_methods]
+    savings = np.asarray([
+        strategies[method]["active_capacity_saving_percent"] for method in feasible_methods
+    ])
+    ranks = np.asarray([strategies[method]["mean_active_rank"] for method in feasible_methods])
     fig, axes = plt.subplots(1, 2, figsize=(8.2, 3.3), constrained_layout=True)
     ax = axes[0]
-    labels = ["Dynamic ST-NLR\nmean rank 6.67", "All rank 8\nmean rank 8.00", "All rank 16\nmean rank 16.00"]
-    bars = ax.barh(np.arange(3), savings, color=[TEAL, GRAY, "#4C5961"], height=0.56)
-    ax.set_yticks(np.arange(3), labels); ax.invert_yaxis(); ax.set_xlim(0, 65)
+    labels = [f"{name}\nmean rank {rank:.2f}" for name, rank in zip(names, ranks)]
+    colors = [TEAL if method == "dynamic" else "#4C5961" for method in feasible_methods]
+    bars = ax.barh(np.arange(len(names)), savings, color=colors, height=0.56)
+    ax.set_yticks(np.arange(len(names)), labels); ax.invert_yaxis(); ax.set_xlim(0, 70)
     ax.set_xlabel("Active-capacity saving vs. all rank 16 (%)")
-    ax.set_title("(a) Feasible capacity under 2% tolerance", fontweight="bold")
+    ax.set_title("(a) Validation-feasible capacity", fontweight="bold")
     for bar, value in zip(bars, savings):
         ax.text(value + 1, bar.get_y() + bar.get_height()/2, f"{value:.2f}%",
-                va="center", fontweight="bold", color=TEAL if value == 58.31 else TEXT)
+                va="center", fontweight="bold", color=TEAL if value == savings.max() else TEXT)
     ax = axes[1]
-    ax.axhspan(98.0, 100.4, color="#EAF3EE", alpha=0.9)
-    for x, y, name, marker, color, size in zip(
-            savings, retention, names, ["*", "s", "D"], [TEAL, GRAY, "#4C5961"], [180, 70, 58]):
-        ax.scatter(x, y, marker=marker, s=size, color=color, edgecolor="white", zorder=3)
-        ax.text(x + 1.5, y - 0.12, f"{name}\n{y:.2f}%", fontsize=8.8,
-                fontweight="bold" if name == "Dynamic ST-NLR" else "normal")
-    ax.set_xlim(-4, 70); ax.set_ylim(97.8, 100.35)
-    ax.set_xlabel("Active-capacity saving (%)")
-    ax.set_ylabel("Worst-case material-quality retention (%)")
-    ax.set_title("(b) Quality--capacity frontier", fontweight="bold")
+    time_index = np.arange(len(trace))
+    ax.step(time_index, trace, where="mid", color=TEAL, linewidth=2.6,
+            label=f"Dynamic ST-NLR (mean {trace.mean():.2f})")
+    ax.axhline(16, color="#4C5961", linewidth=1.8, linestyle="--",
+               label="All rank 16")
+    ax.scatter(time_index, trace, s=28, color=TEAL, edgecolor="white", zorder=3)
+    ax.set_xticks(time_index)
+    ax.set_xlabel("Physical-time index")
+    ax.set_ylabel("Active rank")
+    ax.set_yticks([4, 8, 16])
+    ax.set_ylim(2.5, 17.5)
+    ax.set_title("(b) Frozen validation-selected schedule", fontweight="bold")
+    ax.legend(frameon=True, facecolor="white", edgecolor="none", framealpha=0.92,
+              fontsize=8.6, loc="center right")
     for ax in axes:
         ax.grid(True, color=GRID, linewidth=0.7); ax.set_axisbelow(True)
         ax.spines[["top", "right"]].set_visible(False)

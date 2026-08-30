@@ -9,11 +9,13 @@ This map identifies the release artifact behind every figure and table in the cu
 | Figure 2, time-resolved quality and rank | `results/figure_metadata/allen_cahn_time_resolved_quality.json`, `figures/make_time_resolved_quality_figure.py`, and final artwork |
 | Figure 3, Allen--Cahn states | `data/full/allen_cahn/eps0022_lam14.npz`, representative Allen--Cahn checkpoints, `figures/material_state_inference.py`, `figures/make_state_figures.py`, and final artwork |
 | Figure 4, free-energy and interface trajectories | Same representative Allen--Cahn data/checkpoints, `figures/make_material_observable_figure.py`, and final artwork |
-| Table 2, arithmetic and latency | `results/efficiency_latency.json` |
-| Figure 5, fixed-prefix Pareto relation | `results/static_rank_controls.json`, `figures/make_summary_figures.py` |
-| Table 3, dynamic-capacity controls | `results/dynamic_baselines.json` |
-| Table 4, Cahn--Hilliard transfer | `results/cahn_hilliard.json`, `results/paired_uncertainty.json` |
-| Table 5, PFHub-3-type transfer | `results/pfhub3.json`, `results/paired_uncertainty.json` |
+| Table 2, equal-storage continued-static control | `results/allen_cahn_bootstrap.json`, `results/static_rank_controls.json` |
+| Table 3, arithmetic and latency | `results/efficiency_latency.json` |
+| Figure 5, fixed-prefix audit | `results/fixed_prefix_pareto.json`, released Allen--Cahn data/checkpoint, `evaluate_fixed_prefix_pareto.py`, and `figures/make_summary_figures.py` |
+| Table 4, published dynamic-capacity baselines | `results/dynamic_baselines.json`; strict AdaLoRA and TimeStep Master runner/aggregator in `code/materials_phasefield_stnlr_application_20260813/experiments/train_poseidon_strict_published_baselines.py` and `aggregate_strict_published_baselines.py`; strict DyLoRA runner in `train_poseidon_rank_flexible_baselines.py` |
+| Table 5, four-condition TimeStep Master extension | `results/timestep_master_multicondition/aggregate.json`, its `PROTOCOL.md`, 12 paired per-sample cell records, `evaluate_timestep_master_per_sample.py`, and `aggregate_timestep_master_multicondition.py` |
+| Table 6, Cahn--Hilliard transfer | `results/cahn_hilliard.json`, `results/paired_uncertainty.json` |
+| Table 7, PFHub-3-type transfer | `results/pfhub3.json`, `results/paired_uncertainty.json` |
 | Table B.6, solver refinement | `results/reference_convergence_ac_ch.json`, `results/reference_convergence_pfhub_standard.json`, `results/reference_convergence_pfhub_shifted.json` |
 | Table C.7, full fine-tuning | `results/full_finetuning.json` |
 | Figure D.6 and Table D.8, objective ablation | `results/objective_ablation.json`, portable runner and aggregator under `code/`, and `figures/make_objective_ablation_figure.py` |

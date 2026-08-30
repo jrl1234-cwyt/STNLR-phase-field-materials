@@ -10,7 +10,7 @@ python figures/make_objective_ablation_figure.py
 python figures/make_time_resolved_quality_figure.py
 ```
 
-These commands regenerate the data-budget, fixed-prefix Pareto, objective-ablation, and time-resolved plots from `results/`. `prepare_figure1_svg.py` validates the editable Figure 1 source; the final source is `artwork/FIG1_framework.svg`.
+These commands regenerate the data-budget, fixed-prefix audit, objective-ablation, and time-resolved plots from `results/`. Figure 5 reads `results/fixed_prefix_pareto.json`; the corresponding evaluator records validation feasibility and independent test metrics before plotting. `prepare_figure1_svg.py` validates the editable Figure 1 source; the final source is `artwork/FIG1_framework.svg`.
 
 The material-observable and field-state figures require the bundled checkpoints and the POSEIDON dependency described in `docs/REPRODUCIBILITY.md`. They can be regenerated with
 

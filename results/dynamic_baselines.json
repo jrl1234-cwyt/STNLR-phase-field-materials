@@ -1,50 +1,58 @@
 {
-  "adalora": {
-    "completed_seeds": 3,
-    "trajectory_relative_l2_mean": {
-      "mean": 0.08836599501470725,
-      "std": 0.005665680610184136
-    },
-    "terminal_relative_l2_mean": {
-      "mean": 0.08004876660803954,
-      "std": 0.00540938415590185
-    },
-    "terminal_interface_fraction_mae": {
-      "mean": 0.00479990659126391,
-      "std": 0.0008892540322294441
-    },
-    "terminal_free_energy_relative_error_mean": {
-      "mean": 0.0073775408091023564,
-      "std": 0.00035951680957073444
-    },
-    "trajectory_pde_residual_relative_rms": {
-      "mean": 0.8048451890548071,
-      "std": 0.017959948537085244
-    },
-    "mean_active_rank": 4.359375
+  "protocol": {
+    "target": "Allen-Cahn, epsilon=0.022, lambda=1.4",
+    "paired_seeds": 3,
+    "quality_metrics": "mean and sample standard deviation over paired seeds",
+    "stnlr_adalora_dylora_updates": 600,
+    "timestep_master_updates": {
+      "expert_fostering": 600,
+      "router_assembly": 600
+    }
   },
-  "timestep_expert": {
-    "completed_seeds": 3,
-    "trajectory_relative_l2_mean": {
-      "mean": 0.06644810891399781,
-      "std": 0.0029294570515966396
+  "methods": {
+    "adalora": {
+      "paper": "AdaLoRA, ICLR 2023",
+      "implementation": "published SVD parameterization, triplet importance, smoothed sensitivity-uncertainty, cubic budget schedule, singular-value pruning, and orthogonality penalty",
+      "stored_rank_equivalent": 16,
+      "mean_active_rank": 4.359375,
+      "trajectory_relative_l2_mean": {"mean": 0.06646725783745448, "std": 0.0037091409868330407},
+      "terminal_relative_l2_mean": {"mean": 0.060121060659488045, "std": 0.0016400125165360526},
+      "terminal_interface_fraction_mae": {"mean": 0.0034830729321887097, "std": 0.000643923262712493},
+      "terminal_free_energy_relative_error_mean": {"mean": 0.0075754256298144656, "std": 0.0005459130133859687},
+      "trajectory_pde_residual_relative_rms": {"mean": 0.6583035588264465, "std": 0.004080196968699932}
     },
-    "terminal_relative_l2_mean": {
-      "mean": 0.06067104420314232,
-      "std": 0.001916607365871716
+    "dylora": {
+      "paper": "DyLoRA, EACL 2023",
+      "implementation": "uniform ranks 1-16 with the preceding prefix detached",
+      "stored_rank_equivalent": 16,
+      "mean_active_rank": {"mean": 6.1818181818181825, "std": 1.8895099718933204},
+      "trajectory_relative_l2_mean": {"mean": 0.07344962159792583, "std": 0.0016557651377119519},
+      "terminal_relative_l2_mean": {"mean": 0.0689290314912796, "std": 0.0017285474240472018},
+      "terminal_interface_fraction_mae": {"mean": 0.004066976020112634, "std": 0.00033676451342207247},
+      "terminal_free_energy_relative_error_mean": {"mean": 0.008920736766109863, "std": 0.003885706553573948}
     },
-    "terminal_interface_fraction_mae": {
-      "mean": 0.002990722695055107,
-      "std": 0.00041982472099413344
+    "timestep_master": {
+      "paper": "TimeStep Master, ICML 2025",
+      "implementation": "n1=8 fine-interval core experts, n2=1 global context expert, rank=alpha=4, followed by feature- and time-dependent router assembly",
+      "stored_rank_equivalent": 36,
+      "active_rank_equivalent": 8,
+      "router_parameters": 53952,
+      "trajectory_relative_l2_mean": {"mean": 0.06272087122003238, "std": 0.003292991226541347},
+      "terminal_relative_l2_mean": {"mean": 0.05639832466840744, "std": 0.001747080569586884},
+      "terminal_interface_fraction_mae": {"mean": 0.0028706868179142475, "std": 0.000621280710472147},
+      "terminal_free_energy_relative_error_mean": {"mean": 0.005593505998452504, "std": 0.0006596432938840383},
+      "trajectory_pde_residual_relative_rms": {"mean": 0.652456800142924, "std": 0.003161495925750886}
     },
-    "terminal_free_energy_relative_error_mean": {
-      "mean": 0.006934336347815891,
-      "std": 0.001116066980432792
-    },
-    "trajectory_pde_residual_relative_rms": {
-      "mean": 0.7457471241553625,
-      "std": 0.010315849122212626
-    },
-    "mean_active_rank": 4.0
+    "stnlr": {
+      "paper": "This work",
+      "implementation": "one shared rank-16 bank with validation-selected rank-4, rank-8, and rank-16 prefixes",
+      "stored_rank_equivalent": 16,
+      "mean_active_rank": {"mean": 5.454545454545454, "std": 0.9620913858416694},
+      "trajectory_relative_l2_mean": {"mean": 0.06034226343035698, "std": 0.0035020327267408775},
+      "terminal_relative_l2_mean": {"mean": 0.05129818990826607, "std": 0.0012982668943470699},
+      "terminal_interface_fraction_mae": {"mean": 0.0025817872180293002, "std": 0.0004171876392756087},
+      "terminal_free_energy_relative_error_mean": {"mean": 0.005189740254233281, "std": 0.0004998766295529805},
+      "trajectory_pde_residual_relative_rms": {"mean": 0.6126975019772847, "std": 0.03173096408896884}
+    }
   }
 }
