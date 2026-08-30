@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Circle
 
+plt.rcParams.update({"pdf.fonttype": 42, "ps.fonttype": 42})
+
 
 HERE = Path(__file__).resolve().parent
 BUNDLE = HERE.parent
