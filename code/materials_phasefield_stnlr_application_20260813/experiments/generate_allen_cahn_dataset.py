@@ -1,18 +1,3 @@
-#!/usr/bin/env python3
-"""Generate source and target 2-D Allen--Cahn snapshot distributions.
-
-The solver uses a periodic Fourier grid. Diffusion is treated implicitly and
-the local double-well reaction explicitly:
-
-    u_{n+1} = (I - dt * eps^2 * Laplacian)^{-1}
-              [u_n + dt * reaction * (u_n - u_n^3)].
-
-The source domain contains a family of broad-interface, moderate-reaction
-systems.  The target domain is a held-out narrow-interface, stronger-reaction
-system.  Every saved sample comes from an independent smooth random initial
-condition, so evaluation is permutation invariant.
-"""
-
 from __future__ import annotations
 
 import argparse
