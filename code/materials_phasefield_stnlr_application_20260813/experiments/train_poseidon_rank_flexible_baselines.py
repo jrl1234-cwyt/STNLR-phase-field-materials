@@ -1,15 +1,3 @@
-#!/usr/bin/env python3
-"""Strict rank-flexible LoRA controls for the Poseidon Allen--Cahn task.
-
-The controls preserve the defining training rules of DyLoRA and
-MatryoshkaLoRA while matching the ST-NLR backbone, static rank-16 starting
-point, material objectives, calibration updates, data split, and validation
-tolerances.  DyLoRA samples ranks 1--16 and freezes the preceding prefix.
-MatryoshkaLoRA uses the diagonal prefix aggregation in Algorithm 1 over
-training ranks {4, 8, 16}.  Both controls may select rank 4, 8, or 16 at each
-validation time before the rank trace is frozen for testing.
-"""
-
 from __future__ import annotations
 
 import argparse
