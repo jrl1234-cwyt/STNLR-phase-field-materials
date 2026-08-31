@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""Matched Poseidon-T adapter pilot for PFHub-3-type dendrite trajectories.
-
-The frozen multi-PDE backbone receives the initial phase/temperature pair and
-the normalized physical lead time.  Static continuation and the nested bank
-start from the same trained rank-16 checkpoint and receive the same additional
-optimization budget.  Validation data select the smallest admissible prefix at
-each output time; test data are used once for the final comparison.
-"""
-
 from __future__ import annotations
 
 import argparse
