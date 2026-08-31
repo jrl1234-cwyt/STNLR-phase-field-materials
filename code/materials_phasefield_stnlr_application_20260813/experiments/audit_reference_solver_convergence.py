@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""Paired grid/time-step convergence audit for the phase-field references.
-
-The same band-limited initial condition is spectrally resampled to every grid.
-Fine-grid trajectories are projected back to the production grid before error
-measurement, so grid effects are not confounded with different random fields.
-"""
-
 from __future__ import annotations
 
 import argparse
