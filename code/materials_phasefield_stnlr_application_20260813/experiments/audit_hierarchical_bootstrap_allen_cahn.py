@@ -1,11 +1,3 @@
-#!/usr/bin/env python3
-"""Hierarchical paired bootstrap for the final Allen--Cahn main comparison.
-
-The hierarchy follows target condition -> training seed -> paired test
-trajectory.  Predictions are recomputed from the exact final checkpoints and
-the frozen validation rank traces used in the manuscript.
-"""
-
 from __future__ import annotations
 
 import argparse
