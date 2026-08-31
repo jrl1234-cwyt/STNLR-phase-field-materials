@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""Generate reduced-domain PFHub Benchmark 3 anisotropic dendrite trajectories.
-
-The implementation follows the two-field formulation published by NIST PFHub:
-phi=-1/+1 denotes liquid/solid, U is nondimensional temperature, the gradient
-energy is orientation dependent, and latent heat couples phi_t back to U_t.
-The pilot preserves the PFHub equations and no-flux boundaries while using a
-smaller spatial domain and shorter terminal time than the 960^2, t=1500
-community reference calculation.
-"""
-
 from __future__ import annotations
 
 import argparse
