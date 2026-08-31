@@ -1,12 +1,3 @@
-#!/usr/bin/env python3
-"""Pilot Poseidon-T transfer experiment for the local Allen--Cahn trajectories.
-
-The pretrained ScOT backbone is kept fixed for the adapter variants.  Static
-LoRA or the same ordered nested ST-NLR bank is inserted into attention and MLP
-linear maps.  For ST-NLR, physical lead time controls the active prefix rank.
-Only the task-specific patch embedding/recovery and adapter tensors are trained.
-"""
-
 from __future__ import annotations
 
 import argparse
