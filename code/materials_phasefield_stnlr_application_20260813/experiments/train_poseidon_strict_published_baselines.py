@@ -1,22 +1,3 @@
-#!/usr/bin/env python3
-"""Published-method baselines for Poseidon Allen--Cahn transfer.
-
-This runner implements two controls from their defining papers:
-
-* AdaLoRA (ICLR 2023): SVD-parameterized increments, triplet importance
-  based on smoothed sensitivity times uncertainty, cubic global budget
-  scheduling, singular-value pruning, and orthogonality regularization.
-* TimeStep Master (ICML 2025): rank-4 experts over eight fine time
-  intervals plus one global context expert, followed by a second stage that
-  freezes all experts and learns feature-and-time-dependent asymmetric gates.
-
-The published algorithms are transferred to the phase-field setting while
-preserving the manuscript's paired rank-16 start, target heads, material
-objectives, data split, and random seeds.  The paired start is converted
-algebraically: AdaLoRA receives an exact SVD of every rank-16 static update;
-each TSM expert receives its best rank-4 approximation.
-"""
-
 from __future__ import annotations
 
 import argparse
