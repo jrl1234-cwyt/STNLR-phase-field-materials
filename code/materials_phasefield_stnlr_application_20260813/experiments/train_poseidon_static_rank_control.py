@@ -1,14 +1,3 @@
-#!/usr/bin/env python3
-"""Matched independently calibrated fixed-rank controls for Allen--Cahn.
-
-Each rank-r student is initialized from the first r factors of the exact
-rank-16 checkpoint used by ST-NLR, then receives the same 600-step material,
-field, teacher-distillation, and spectral-distillation budget as the continued
-static control.  The frozen Poseidon-T backbone and deterministic task heads
-are identical across ranks.  This isolates whether a single fixed low rank can
-replace validation-selected nested capacity.
-"""
-
 from __future__ import annotations
 
 import argparse
