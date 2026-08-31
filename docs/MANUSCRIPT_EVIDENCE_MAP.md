@@ -16,11 +16,11 @@ This map identifies the release artifact behind every figure and table in the cu
 | Table 5, four-condition TimeStep Master extension | `results/timestep_master_multicondition/aggregate.json`, its `PROTOCOL.md`, 12 paired per-sample cell records, `evaluate_timestep_master_per_sample.py`, and `aggregate_timestep_master_multicondition.py` |
 | Table 6, Cahn--Hilliard transfer | `results/cahn_hilliard.json`, `results/paired_uncertainty.json` |
 | Table 7, PFHub-3-type transfer | `results/pfhub3.json`, `results/paired_uncertainty.json` |
-| Table B.6, solver refinement | `results/reference_convergence_ac_ch.json`, `results/reference_convergence_pfhub_standard.json`, `results/reference_convergence_pfhub_shifted.json` |
-| Table C.7, full fine-tuning | `results/full_finetuning.json` |
-| Figure D.6 and Table D.8, objective ablation | `results/objective_ablation.json`, portable runner and aggregator under `code/`, and `figures/make_objective_ablation_figure.py` |
+| Table B.8, solver refinement | `results/reference_convergence_ac_ch.json`, `results/reference_convergence_pfhub_standard.json`, `results/reference_convergence_pfhub_shifted.json` |
+| Table C.9, full fine-tuning | `results/full_finetuning.json` |
+| Figure D.6 and Table D.10, objective ablation | `results/objective_ablation.json`, portable runner and aggregator under `code/`, and `figures/make_objective_ablation_figure.py` |
 | Figure E.7, data budget | `results/data_budget.json`, `figures/make_summary_figures.py` |
-| Table F.9, independent solver and noisy inputs | `results/external_solver_noise.json` |
+| Table F.11, independent solver and noisy inputs | `results/external_solver_noise.json` |
 | Figure G.8, two-field morphology | `data/full/pfhub3/`, representative PFHub checkpoints, `figures/material_state_inference.py`, `figures/make_state_figures.py`, and final artwork |
 
 All final artwork is stored in `figures/artwork/`. `MANIFEST.sha256` fixes the release state used for review.
