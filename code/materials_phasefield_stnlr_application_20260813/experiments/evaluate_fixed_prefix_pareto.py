@@ -1,13 +1,3 @@
-#!/usr/bin/env python3
-"""Reproduce the fixed-prefix quality--capacity audit in manuscript Figure 5.
-
-The audit uses the released Allen--Cahn checkpoint for the representative
-condition and seed.  The physical-time rank trace is read from the archived
-validation-frozen main-experiment record.  Rank 4, rank 8, rank 16, and the
-frozen dynamic trace are then evaluated on both the validation and test splits.
-No model parameters are updated by this script.
-"""
-
 from __future__ import annotations
 
 import argparse
