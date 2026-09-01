@@ -13,18 +13,23 @@ REPLACEMENTS: dict[str, str] = {}
 
 REQUIRED_TEXT = (
     "Physical-time-adaptive nested low-rank transfer",
-    "E[u; θ]",
-    "∂q/∂τ = H(q; θ)",
-    "Nested low-rank",
-    "r = {4, 8, 16}",
-    "τ ↦ r(τ)",
-    "shared bank in attention / MLP maps",
-    "q̂τ",
+    "MATERIAL TRAJECTORY",
+    "Target condition",
+    "Phase-field dynamics",
+    "ST-NLR TRANSFER ENGINE",
+    "TRAINABLE",
+    "FROZEN BACKBONE",
+    "Shared nested factor bank",
+    "rank 16",
+    "rank 8",
+    "rank 4",
+    "Time selector",
+    "MATERIAL-AWARE DEPLOYMENT",
+    "QUALITY CRITERIA",
+    "VALIDATION RULE",
     "structure factor",
-    "spectral distillation",
-    "D",
-    "min",
-    "rⱼ⋆ = min Fⱼ",
+    "material + spectral losses",
+    "one feasible prefix per physical time",
 )
 
 STYLE_REPLACEMENTS: dict[str, str] = {}
@@ -44,7 +49,7 @@ def normalize(source: Path, output: Path) -> None:
     for fragment in REQUIRED_TEXT:
         if fragment not in text:
             raise RuntimeError(f"Required manuscript term is missing: {fragment}")
-    if 'width="1600" height="880" viewBox="0 0 1600 880"' not in text:
+    if 'width="190mm" height="100.28mm" viewBox="0 0 1800 950"' not in text:
         raise RuntimeError("Unexpected Figure 1 canvas or viewBox")
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(text, encoding="utf-8")

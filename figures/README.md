@@ -1,6 +1,6 @@
 # Figure reproduction
 
-`artwork/` contains the exact figure files used by the current manuscript. Plot PDFs are vector artwork. The two representative-state PDFs embed their raster field maps above 1000 pixels per inch at manuscript size. Figure 1 is supplied as an editable SVG and vector PDF, together with 7480 x 4114 PNG/TIFF exports tagged at 1000 dpi.
+`artwork/` contains the exact figure files used by the current manuscript. Plot PDFs are vector artwork. The two representative-state PDFs embed their raster field maps above 1000 pixels per inch at manuscript size. Figure 1 is supplied as an editable SVG and vector PDF, together with 7491 x 3959 PNG/TIFF exports rendered at 1000 dpi.
 
 The lightweight aggregate plots can be regenerated on CPU with
 

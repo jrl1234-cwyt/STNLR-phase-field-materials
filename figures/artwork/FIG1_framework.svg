@@ -1,728 +1,132 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-     width="1700" height="880" viewBox="0 0 1700 880">
-
+<svg xmlns="http://www.w3.org/2000/svg" width="190mm" height="100.28mm" viewBox="0 0 1800 950" role="img" aria-labelledby="title desc">
+  <title id="title">Physical-time-adaptive nested low-rank transfer for phase-field evolution</title>
+  <desc id="desc">A concise three-stage framework: material trajectory, nested low-rank transfer inside a frozen backbone, and material-aware rank selection.</desc>
   <defs>
+    <linearGradient id="page" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FDFEFE"/><stop offset="1" stop-color="#F6F8FA"/></linearGradient>
+    <linearGradient id="bluePanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3F8FB"/><stop offset="1" stop-color="#E8F1F7"/></linearGradient>
+    <linearGradient id="warmPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FCF8F5"/><stop offset="1" stop-color="#F7EDE7"/></linearGradient>
+    <linearGradient id="greenPanel" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5F9F5"/><stop offset="1" stop-color="#EAF3EC"/></linearGradient>
+    <linearGradient id="rank16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAEAE1"/><stop offset="1" stop-color="#F1D4C5"/></linearGradient>
+    <linearGradient id="rank8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2D1BF"/><stop offset="1" stop-color="#E9B99F"/></linearGradient>
+    <linearGradient id="rank4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DFA17B"/><stop offset="1" stop-color="#C98159"/></linearGradient>
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2D4153" flood-opacity="0.09"/></filter>
+    <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#7195AE"/></marker>
+    <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#739879"/></marker>
+    <marker id="arrowFlowBlue" markerWidth="6" markerHeight="6" refX="5.3" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#7195AE"/></marker>
+    <marker id="arrowFlowGreen" markerWidth="6" markerHeight="6" refX="5.3" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#739879"/></marker>
+    <marker id="arrowSmallBlue" markerWidth="6" markerHeight="6" refX="5.2" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#7195AE"/></marker>
+    <marker id="arrowSmallGreen" markerWidth="6" markerHeight="6" refX="5.2" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#739879"/></marker>
+    <marker id="arrowSmallWarm" markerWidth="6" markerHeight="6" refX="5.2" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#C77D55"/></marker>
+    <marker id="arrowWarm" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#C77D55"/></marker>
+    <clipPath id="state1"><rect x="72" y="265" width="84" height="91" rx="13"/></clipPath>
+    <clipPath id="state2"><rect x="183" y="265" width="84" height="91" rx="13"/></clipPath>
+    <clipPath id="state3"><rect x="294" y="265" width="84" height="91" rx="13"/></clipPath>
     <style>
-      .title {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 31px;
-        font-weight: 700;
-        letter-spacing: 0.04px;
-        fill: #293945;
-      }
-
-      .section-title {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 25px;
-        font-weight: 700;
-        letter-spacing: -0.08px;
-      }
-
-      .side-title {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 25px;
-        font-weight: 700;
-        letter-spacing: -0.10px;
-        fill: #293945;
-      }
-
-      .side-sub {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 21px;
-        font-weight: 700;
-        letter-spacing: -0.03px;
-      }
-
-      .box-title {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: -0.08px;
-        fill: #293945;
-      }
-
-      .box-title-lg {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: -0.10px;
-        fill: #293945;
-      }
-
-      .box-sub {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 22px;
-        font-weight: 500;
-        letter-spacing: -0.03px;
-        fill: #465762;
-      }
-
-      .box-sub-compact {
-        font-family: Arial, "Microsoft YaHei", "Noto Sans SC", sans-serif;
-        font-size: 19px;
-        font-weight: 500;
-        letter-spacing: -0.08px;
-        fill: #465762;
-      }
-
-      /* ======================================================= */
-      /* Unified mathematical typography                          */
-      /* ======================================================= */
-
-      .formula {
-        font-family:
-          "Cambria Math",
-          "STIX Two Math",
-          "STIXGeneral",
-          "Times New Roman",
-          serif;
-        font-size: 21px;
-        font-style: italic;
-        font-weight: 400;
-        letter-spacing: 0;
-        fill: #46545d;
-      }
-
-      .math-inline {
-        font-family:
-          "Cambria Math",
-          "STIX Two Math",
-          "STIXGeneral",
-          "Times New Roman",
-          serif;
-        font-style: italic;
-        font-weight: 400;
-        letter-spacing: 0;
-        fill: #46545d;
-      }
-
-      /* Mathematical operators such as min are upright,
-         but use exactly the same family / weight / size. */
-      .math-op {
-        font-family:
-          "Cambria Math",
-          "STIX Two Math",
-          "STIXGeneral",
-          "Times New Roman",
-          serif;
-        font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0;
-      }
-
-      .math-sub {
-        font-family: inherit;
-        font-size: 72%;
-        font-style: inherit;
-        font-weight: inherit;
-        baseline-shift: sub;
-      }
-
-      .math-sup {
-        font-family: inherit;
-        font-size: 72%;
-        font-style: inherit;
-        font-weight: inherit;
-        baseline-shift: super;
-      }
-
-      .number {
-        font-family: Arial, "Microsoft YaHei", sans-serif;
-        font-size: 21px;
-        font-weight: 700;
-        fill: #ffffff;
-      }
-
-      .arrow {
-        stroke: #6d96ad;
-        stroke-width: 3.8;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        fill: none;
-      }
-
-      .outer {
-        stroke-width: 2.3;
-      }
-
-      .inner {
-        stroke-width: 1.7;
-      }
+      .title{font-family:Arial,"Liberation Sans",sans-serif;font-weight:700;fill:#26394B}.heading{font-family:Arial,"Liberation Sans",sans-serif;font-weight:700;fill:#30465A}.body{font-family:Arial,"Liberation Sans",sans-serif;font-weight:400;fill:#5C6F81}.label{font-family:Arial,"Liberation Sans",sans-serif;font-weight:700;fill:#43586B}.math{font-family:"DejaVu Sans",Arial,sans-serif;font-style:italic;fill:#42576A}.equation{font-family:Arial,"Liberation Sans",sans-serif;font-weight:400;fill:#3F6248}.white{font-family:Arial,"Liberation Sans",sans-serif;font-weight:700;fill:#FFF}.line{stroke-linecap:round;stroke-linejoin:round}
     </style>
-
-    <marker id="arrowhead"
-            markerWidth="7.5"
-            markerHeight="7.5"
-            refX="6.4"
-            refY="3.75"
-            orient="auto"
-            markerUnits="strokeWidth">
-      <path d="M 0 0 L 7.5 3.75 L 0 7.5 Z"
-            fill="#6d96ad"/>
-    </marker>
   </defs>
+  <rect width="1800" height="950" fill="url(#page)"/><rect width="1800" height="10" fill="#7F9DB2" opacity=".72"/>
+  <text x="900" y="63" text-anchor="middle" class="title" font-size="37">Physical-time-adaptive nested low-rank transfer for phase-field evolution</text>
 
+  <!-- Stage 1 -->
+  <g id="material-trajectory">
+    <rect x="30" y="112" width="380" height="560" rx="26" fill="url(#bluePanel)" stroke="#ADC2D2" stroke-width="2.4" filter="url(#shadow)"/>
+    <circle cx="69" cy="157" r="21" fill="#789AB3"/><text x="69" y="165" text-anchor="middle" class="white" font-size="22">1</text>
+    <text x="103" y="165" class="heading" font-size="25">MATERIAL TRAJECTORY</text>
+    <text x="69" y="207" class="body" font-size="18">Target condition and phase-field evolution</text>
+    <text x="69" y="245" class="label" font-size="17">PHASE-FIELD STATE</text>
 
-  <!-- ========================================================= -->
-  <!-- Main title -->
-  <!-- ========================================================= -->
+    <g clip-path="url(#state1)"><rect x="72" y="265" width="91" height="91" fill="#F8FAFB"/><path d="M58 288C80 257 119 259 130 288C140 315 116 340 82 332C56 326 43 307 58 288Z" fill="#9FC2D1"/><path d="M133 252C161 259 177 280 167 306C157 329 127 323 118 299C109 276 113 257 133 252Z" fill="#D8E7ED"/><path d="M125 333C148 316 174 329 172 351C169 372 139 379 121 360C109 348 112 340 125 333Z" fill="#7FAABE"/></g>
+    <rect x="72" y="265" width="84" height="91" rx="13" fill="none" stroke="#AFC5D3" stroke-width="1.8"/>
+    <g clip-path="url(#state2)"><rect x="180" y="265" width="91" height="91" fill="#F8FAFB"/><path d="M162 292C191 255 237 257 249 290C262 324 230 347 194 336C164 327 147 311 162 292Z" fill="#91B8C9"/><path d="M234 248C268 258 289 282 274 315C261 343 222 328 212 296C204 270 212 252 234 248Z" fill="#D6E6EC"/><path d="M244 334C272 314 298 333 291 361C284 385 249 386 231 363C220 349 230 340 244 334Z" fill="#79A5B9"/></g>
+    <rect x="183" y="265" width="84" height="91" rx="13" fill="none" stroke="#AFC5D3" stroke-width="1.8"/>
+    <g clip-path="url(#state3)"><rect x="288" y="265" width="91" height="91" fill="#F8FAFB"/><path d="M264 292C299 252 352 253 367 290C382 328 347 350 306 337C277 328 247 311 264 292Z" fill="#84ADBF"/><path d="M349 244C386 255 407 283 390 319C375 350 332 328 322 294C314 265 326 249 349 244Z" fill="#D1E3EA"/><path d="M356 337C389 312 423 337 411 370C400 399 358 390 338 363C328 350 340 343 356 337Z" fill="#709CB2"/></g>
+    <rect x="294" y="265" width="84" height="91" rx="13" fill="none" stroke="#AFC5D3" stroke-width="1.8"/>
+    <path d="M160 311H178" stroke="#7195AE" stroke-width="3" marker-end="url(#arrowSmallBlue)"/><path d="M271 311H289" stroke="#7195AE" stroke-width="3" marker-end="url(#arrowSmallBlue)"/>
+    <text x="114" y="383" text-anchor="middle" class="math" font-size="17">q(0)</text><text x="225" y="383" text-anchor="middle" class="math" font-size="17">q(τ₁)</text><text x="336" y="383" text-anchor="middle" class="math" font-size="17">q(τ₂)</text>
+    <rect x="56" y="415" width="328" height="96" rx="18" fill="#FFF" stroke="#C3D3DE" stroke-width="1.8"/>
+    <text x="81" y="449" class="label" font-size="18">Target condition</text><text x="81" y="488" class="math" font-size="20">θ = (ε, λ, M, <tspan font-style="normal">anisotropy</tspan>, ...)</text>
+    <rect x="56" y="525" width="328" height="114" rx="18" fill="#FFF" stroke="#C3D3DE" stroke-width="1.8"/>
+    <text x="81" y="562" class="label" font-size="18">Phase-field dynamics</text><text x="81" y="605" class="math" font-size="21">E[q; θ]  →  ∂q/∂τ = N(q; θ)</text>
+  </g>
+  <path d="M410 390H445" stroke="#7195AE" stroke-width="4" marker-end="url(#arrowFlowBlue)" class="line"/>
 
-  <text x="850" y="48"
-        text-anchor="middle"
-        class="title">
-    Physical-time-adaptive nested low-rank transfer to unseen material conditions
-  </text>
+  <!-- Stage 2 -->
+  <g id="transfer-engine">
+    <rect x="445" y="112" width="860" height="560" rx="26" fill="url(#warmPanel)" stroke="#D9B9A7" stroke-width="2.4" filter="url(#shadow)"/>
+    <circle cx="484" cy="157" r="21" fill="#C88A68"/><text x="484" y="165" text-anchor="middle" class="white" font-size="22">2</text>
+    <text x="518" y="165" class="heading" font-size="25">ST-NLR TRANSFER ENGINE</text><text x="484" y="207" class="body" font-size="18">Nested residuals are injected into a frozen multi-PDE backbone</text>
+    <rect x="680" y="235" width="438" height="170" rx="21" fill="#F5F7F8" stroke="#C6CDD3" stroke-width="2"/>
+    <rect x="692" y="246" width="216" height="40" rx="20" fill="#E2E6E9"/><circle cx="716" cy="266" r="5.5" fill="#87949E"/><text x="733" y="273" class="label" font-size="17">FROZEN BACKBONE</text>
+    <rect x="519" y="251" width="122" height="34" rx="17" fill="#F2D9CA"/><text x="580" y="274" text-anchor="middle" class="label" font-size="15">TRAINABLE</text>
+    <rect x="501" y="301" width="158" height="76" rx="15" fill="#FFFBF8" stroke="#D7AF98" stroke-width="1.8"/><text x="580" y="346" text-anchor="middle" class="label" font-size="19">State encoder</text>
+    <rect x="702" y="291" width="178" height="96" rx="16" fill="#FFF" stroke="#D0D6DB" stroke-width="1.8"/><text x="791" y="333" text-anchor="middle" class="label" font-size="19">Attention</text><text x="791" y="362" text-anchor="middle" class="body" font-size="17">frozen maps</text>
+    <rect x="920" y="291" width="178" height="96" rx="16" fill="#FFF" stroke="#D0D6DB" stroke-width="1.8"/><text x="1009" y="333" text-anchor="middle" class="label" font-size="19">MLP</text><text x="1009" y="362" text-anchor="middle" class="body" font-size="17">frozen maps</text>
+    <rect x="1139" y="251" width="110" height="34" rx="17" fill="#F2D9CA"/><text x="1194" y="274" text-anchor="middle" class="label" font-size="15">TRAINABLE</text>
+    <rect x="1139" y="301" width="110" height="76" rx="15" fill="#FFFBF8" stroke="#D7AF98" stroke-width="1.8"/><text x="1194" y="333" text-anchor="middle" class="label" font-size="18">State</text><text x="1194" y="359" text-anchor="middle" class="label" font-size="18">decoder</text>
+    <path d="M663 339H691" stroke="#8295A3" stroke-width="3" marker-end="url(#arrowSmallBlue)"/><path d="M884 339H912" stroke="#8295A3" stroke-width="3" marker-end="url(#arrowSmallBlue)"/><path d="M1102 339H1130" stroke="#8295A3" stroke-width="3" marker-end="url(#arrowSmallBlue)"/>
 
+    <!-- Straight injection arrows stay entirely in the gap between frames -->
+    <path d="M792 492V420" stroke="#C77D55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrowSmallWarm)" class="line"/><path d="M1010 492V420" stroke="#C77D55" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrowSmallWarm)" class="line"/>
+    <circle cx="792" cy="492" r="5" fill="#C77D55"/><circle cx="1010" cy="492" r="5" fill="#C77D55"/>
+    <rect x="831" y="428" width="140" height="34" rx="17" fill="#FCF4EF" stroke="#E1BDA8" stroke-width="1.4"/><text x="901" y="451" text-anchor="middle" class="label" font-size="16">factor injection</text>
 
-  <!-- ========================================================= -->
-  <!-- ROW 1 / STEP 1 -->
-  <!-- ========================================================= -->
+    <rect x="486" y="509" width="514" height="126" rx="20" fill="#FFF" stroke="#E1C6B7" stroke-width="1.8"/><text x="511" y="540" class="heading" font-size="21">Shared nested factor bank</text>
+    <rect x="552" y="568" width="390" height="46" rx="13" fill="url(#rank16)" stroke="#D39B7B" stroke-width="1.7"/><text x="928" y="560" text-anchor="end" class="label" font-size="16">rank 16</text>
+    <rect x="598" y="585" width="280" height="29" rx="11" fill="url(#rank8)" stroke="#C9845E" stroke-width="1.7"/><text x="865" y="579" text-anchor="end" class="label" font-size="16">rank 8</text>
+    <rect x="649" y="589" width="165" height="25" rx="9" fill="url(#rank4)" stroke="#B86B43" stroke-width="1.6"/><text x="731" y="607" text-anchor="middle" class="white" font-size="16">rank 4</text>
 
-  <!-- Left step card -->
-  <rect x="40" y="80"
-        width="330" height="215"
-        rx="16"
-        fill="#C8D6EA"
-        stroke="#7C91B4"
-        class="outer"/>
+    <rect x="1020" y="509" width="244" height="126" rx="20" fill="#FFF" stroke="#E1C6B7" stroke-width="1.8"/><text x="1044" y="540" class="heading" font-size="21">Time selector</text>
+    <path d="M1054 607H1234" stroke="#C9B3A7" stroke-width="2"/><path d="M1062 592H1098V592H1134V557H1170V592H1206V575H1230" fill="none" stroke="#BE744D" stroke-width="4" class="line"/>
+    <circle cx="1062" cy="592" r="5" fill="#CE8A65"/><circle cx="1098" cy="592" r="5" fill="#CE8A65"/><circle cx="1134" cy="557" r="5" fill="#B96C45"/><circle cx="1170" cy="592" r="5" fill="#CE8A65"/><circle cx="1206" cy="575" r="5" fill="#C47A54"/>
+    <text x="1041" y="596" text-anchor="end" class="body" font-size="15">r4</text><text x="1041" y="579" text-anchor="end" class="body" font-size="15">r8</text><text x="1041" y="561" text-anchor="end" class="body" font-size="15">r16</text>
+  </g>
+  <path d="M1305 390H1340" stroke="#739879" stroke-width="4" marker-end="url(#arrowFlowGreen)" class="line"/>
 
-  <ellipse cx="95" cy="119"
-           rx="22" ry="13"
-           fill="#6680AC"/>
-
-  <text x="95" y="125"
-        text-anchor="middle"
-        class="number">
-    1
-  </text>
-
-  <text x="205" y="174"
-        text-anchor="middle"
-        class="side-title">
-    <tspan x="205" dy="0">Material</tspan>
-    <tspan x="205" dy="29">trajectory</tspan>
-  </text>
-
-  <text x="205" y="255"
-        text-anchor="middle"
-        class="side-sub"
-        fill="#59709B">
-    Define the problem
-  </text>
-
-
-  <!-- Main blue panel -->
-  <g transform="translate(70,0)">
-  <rect x="330" y="80"
-        width="1215" height="215"
-        rx="16"
-        fill="#CDD9EA"
-        stroke="#7C91B4"
-        class="outer"/>
-
-  <text x="362" y="122"
-        class="section-title"
-        fill="#526A92">
-    a. Material free energy defines phase-field evolution
-  </text>
-
-
-  <!-- Target condition -->
-  <rect x="350" y="135"
-        width="260" height="145"
-        rx="13"
-        fill="#E8EFF8"
-        stroke="#99AAC5"
-        class="inner"/>
-
-  <text x="480" y="193"
-        text-anchor="middle"
-        class="box-title">
-    Target condition
-  </text>
-
-  <text x="480" y="229"
-        text-anchor="middle"
-        class="formula">
-    u₀, θ = (ε, λ, …)
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="616" y1="208"
-        x2="642" y2="208"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Free-energy functional -->
-  <rect x="648" y="135"
-        width="280" height="145"
-        rx="13"
-        fill="#E8EFF8"
-        stroke="#99AAC5"
-        class="inner"/>
-
-  <text x="788" y="183"
-        text-anchor="middle"
-        class="box-title-lg">
-    <tspan x="788" dy="0">Free-energy</tspan>
-    <tspan x="788" dy="25">functional</tspan>
-  </text>
-
-  <text x="788" y="239"
-        text-anchor="middle"
-        class="formula">
-    E[u; θ]
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="934" y1="208"
-        x2="960" y2="208"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Phase-field dynamics -->
-  <rect x="966" y="135"
-        width="280" height="145"
-        rx="13"
-        fill="#E8EFF8"
-        stroke="#99AAC5"
-        class="inner"/>
-
-  <text x="1106" y="183"
-        text-anchor="middle"
-        class="box-title-lg">
-    <tspan x="1106" dy="0">Phase-field</tspan>
-    <tspan x="1106" dy="25">dynamics</tspan>
-  </text>
-
-  <text x="1106" y="242"
-        text-anchor="middle"
-        class="formula">
-    ∂q/∂τ = H(q; θ)
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="1252" y1="208"
-        x2="1278" y2="208"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Microstructure -->
-  <rect x="1284" y="145"
-        width="247" height="125"
-        rx="13"
-        fill="#E8EFF8"
-        stroke="#99AAC5"
-        class="inner"/>
-
-  <text x="1407.5" y="193"
-        text-anchor="middle"
-        class="box-title">
-    Microstructure
-  </text>
-
-  <text x="1407.5" y="229"
-        text-anchor="middle"
-        class="formula">
-    q(0) → q(τ₁) → q(τ₂)
-  </text>
-
+  <!-- Stage 3 -->
+  <g id="deployment">
+    <rect x="1340" y="112" width="430" height="560" rx="26" fill="url(#greenPanel)" stroke="#ADC5B1" stroke-width="2.4" filter="url(#shadow)"/>
+    <circle cx="1379" cy="157" r="21" fill="#779B7D"/><text x="1379" y="165" text-anchor="middle" class="white" font-size="22">3</text>
+    <text x="1413" y="165" class="heading" font-size="21">MATERIAL-AWARE DEPLOYMENT</text><text x="1379" y="207" class="body" font-size="18">Choose the smallest material-feasible prefix</text>
+    <text x="1379" y="253" class="label" font-size="18">QUALITY CRITERIA</text>
+    <rect x="1379" y="272" width="100" height="38" rx="19" fill="#DCEADF"/><text x="1429" y="297" text-anchor="middle" class="label" font-size="16">field</text>
+    <rect x="1488" y="272" width="112" height="38" rx="19" fill="#DCEADF"/><text x="1544" y="297" text-anchor="middle" class="label" font-size="16">interface</text>
+    <rect x="1609" y="272" width="124" height="38" rx="19" fill="#DCEADF"/><text x="1671" y="297" text-anchor="middle" class="label" font-size="16">free energy</text>
+    <rect x="1417" y="321" width="130" height="38" rx="19" fill="#DCEADF"/><text x="1482" y="346" text-anchor="middle" class="label" font-size="16">conservation</text>
+    <rect x="1558" y="321" width="143" height="38" rx="19" fill="#DCEADF"/><text x="1630" y="346" text-anchor="middle" class="label" font-size="16">structure factor</text>
+    <path d="M1555 366V384" stroke="#739879" stroke-width="2.8" marker-end="url(#arrowSmallGreen)"/>
+    <rect x="1379" y="392" width="352" height="88" rx="18" fill="#FFF" stroke="#BDD0C0" stroke-width="1.8"/>
+    <text x="1555" y="420" text-anchor="middle" class="label" font-size="16">VALIDATION RULE</text>
+    <text x="1555" y="459" text-anchor="middle" class="equation" font-size="26">
+      <tspan font-style="italic">r</tspan><tspan baseline-shift="sub" font-size="16">j</tspan><tspan baseline-shift="super" font-size="16">⋆</tspan><tspan baseline-shift="baseline"> = min ℱ</tspan><tspan baseline-shift="sub" font-size="16">j</tspan>
+    </text>
+    <path d="M1555 488V506" stroke="#739879" stroke-width="2.8" marker-end="url(#arrowSmallGreen)"/>
+    <rect x="1379" y="513" width="156" height="78" rx="18" fill="#E4EFE6" stroke="#ADC5B1" stroke-width="1.8"/>
+    <text x="1457" y="541" text-anchor="middle" class="label" font-size="16">ACTIVE PREFIX</text>
+    <text x="1457" y="572" text-anchor="middle" class="equation" font-size="22"><tspan font-style="italic">r</tspan><tspan baseline-shift="sub" font-size="14">j</tspan><tspan baseline-shift="super" font-size="14">⋆</tspan></text>
+    <path d="M1540 552H1565" stroke="#739879" stroke-width="2.8" marker-end="url(#arrowSmallGreen)"/>
+    <rect x="1571" y="513" width="160" height="78" rx="18" fill="#E4EFE6" stroke="#ADC5B1" stroke-width="1.8"/>
+    <text x="1651" y="541" text-anchor="middle" class="label" font-size="16">PREDICTION</text>
+    <text x="1651" y="572" text-anchor="middle" class="equation" font-size="22"><tspan font-style="italic">q̂</tspan><tspan baseline-shift="sub" font-size="14">τ</tspan></text>
+    <rect x="1379" y="610" width="352" height="42" rx="19" fill="#FFF" opacity=".90"/><text x="1555" y="637" text-anchor="middle" class="label" font-size="17">one feasible prefix per physical time</text>
   </g>
 
+  <!-- Concise training/deployment ribbon -->
+  <g id="ribbon">
+    <rect x="30" y="715" width="1740" height="180" rx="26" fill="#FFF" stroke="#D8DEE3" stroke-width="2" filter="url(#shadow)"/><rect x="30" y="715" width="870" height="180" rx="26" fill="#FAF5F1"/><path d="M900 717V893" stroke="#D8DEE3" stroke-width="2"/>
+    <rect x="61" y="745" width="115" height="34" rx="17" fill="#D7A07D"/><text x="119" y="768" text-anchor="middle" class="white" font-size="16">TRAINING</text><text x="202" y="768" class="heading" font-size="21">Joint multi-prefix calibration</text>
+    <rect x="56" y="802" width="230" height="65" rx="17" fill="#FFF" stroke="#E0C5B5" stroke-width="1.7"/><text x="171" y="842" text-anchor="middle" class="label" font-size="18">rank-16 anchor</text>
+    <path d="M295 834H337" stroke="#C77D55" stroke-width="3" marker-end="url(#arrowSmallWarm)"/>
+    <rect x="349" y="802" width="226" height="65" rx="17" fill="#FFF" stroke="#E0C5B5" stroke-width="1.7"/><text x="462" y="842" text-anchor="middle" class="label" font-size="18">distill rank 8 / 4</text>
+    <path d="M587 834H629" stroke="#C77D55" stroke-width="3" marker-end="url(#arrowSmallWarm)"/>
+    <rect x="643" y="802" width="223" height="65" rx="17" fill="#FFF" stroke="#E0C5B5" stroke-width="1.7"/><text x="754" y="842" text-anchor="middle" class="label" font-size="17">material + spectral losses</text>
 
-  <!-- Vertical arrow 1 -->
-  <line x1="205" y1="303"
-        x2="205" y2="336"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-
-  <!-- ========================================================= -->
-  <!-- ROW 2 / STEP 2 -->
-  <!-- ========================================================= -->
-
-  <!-- Left step card -->
-  <rect x="40" y="345"
-        width="330" height="215"
-        rx="16"
-        fill="#EBCDBB"
-        stroke="#BF8769"
-        class="outer"/>
-
-  <ellipse cx="95" cy="384"
-           rx="22" ry="13"
-           fill="#B67555"/>
-
-  <text x="95" y="390"
-        text-anchor="middle"
-        class="number">
-    2
-  </text>
-
-  <text x="205" y="439"
-        text-anchor="middle"
-        class="side-title">
-    <tspan x="205" dy="0">Nested low-rank</tspan>
-    <tspan x="205" dy="29">transfer</tspan>
-  </text>
-
-  <text x="205" y="520"
-        text-anchor="middle"
-        class="side-sub"
-        fill="#A16549">
-    Allocate capacity
-  </text>
-
-
-  <!-- Main orange panel -->
-  <g transform="translate(70,0)">
-  <rect x="330" y="345"
-        width="1215" height="215"
-        rx="16"
-        fill="#EFD3C2"
-        stroke="#BF8769"
-        class="outer"/>
-
-  <text x="362" y="387"
-        class="section-title"
-        fill="#945E45">
-    b. Nested residuals are injected into a frozen pretrained backbone
-  </text>
-
-
-  <!-- Trainable input projection -->
-  <rect x="350" y="400"
-        width="275" height="145"
-        rx="13"
-        fill="#F8E9DF"
-        stroke="#D1A78F"
-        class="inner"/>
-
-  <text x="487.5" y="447"
-        text-anchor="middle"
-        class="box-title-lg">
-    <tspan x="487.5" dy="0">Trainable input</tspan>
-    <tspan x="487.5" dy="25">projection</tspan>
-  </text>
-
-  <text x="487.5" y="510"
-        text-anchor="middle"
-        class="formula">
-    q₀, τ → features
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="631" y1="472.5"
-        x2="657" y2="472.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Frozen backbone with injected shared factor bank -->
-  <rect x="663" y="400"
-        width="400" height="145"
-        rx="13"
-        fill="#F8E9DF"
-        stroke="#D1A78F"
-        class="inner"/>
-
-  <text x="863" y="446"
-        text-anchor="middle"
-        class="box-title-lg">
-    Frozen multi-PDE
-  </text>
-
-  <text x="863" y="471"
-        text-anchor="middle"
-        class="box-title-lg">
-    backbone F0
-  </text>
-
-  <text x="863" y="500"
-        text-anchor="middle"
-        class="box-sub">
-    shared bank in attention / MLP maps
-  </text>
-
-  <text x="863" y="524"
-        text-anchor="middle"
-        class="box-sub">
-    r = {4, 8, 16}; τ ↦ r(τ)
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="1070" y1="472.5"
-        x2="1096" y2="472.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Trainable output projection -->
-  <rect x="1102" y="400"
-        width="230" height="145"
-        rx="13"
-        fill="#F8E9DF"
-        stroke="#D1A78F"
-        class="inner"/>
-
-  <text x="1217" y="447"
-        text-anchor="middle"
-        class="box-title-lg">
-    <tspan x="1217" dy="0">Trainable output</tspan>
-    <tspan x="1217" dy="25">projection</tspan>
-  </text>
-
-  <text x="1217" y="510"
-        text-anchor="middle"
-        class="formula">
-    features → q̂τ
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="1339" y1="472.5"
-        x2="1365" y2="472.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Output -->
-  <rect x="1371" y="410"
-        width="160" height="125"
-        rx="13"
-        fill="#F8E9DF"
-        stroke="#D1A78F"
-        class="inner"/>
-
-  <text x="1451" y="459"
-        text-anchor="middle"
-        class="box-title-lg">
-    Prediction
-  </text>
-
-  <text x="1451" y="500"
-        text-anchor="middle"
-        class="formula">
-    q̂τ
-  </text>
-
+    <rect x="931" y="745" width="138" height="34" rx="17" fill="#78A080"/><text x="1000" y="768" text-anchor="middle" class="white" font-size="16">DEPLOYMENT</text><text x="1095" y="768" class="heading" font-size="21">Frozen physical-time schedule</text>
+    <rect x="926" y="802" width="251" height="65" rx="17" fill="#FFF" stroke="#BDD0C0" stroke-width="1.7"/><text x="1052" y="842" text-anchor="middle" class="label" font-size="18">evaluate ranks 4 / 8 / 16</text>
+    <path d="M1187 834H1229" stroke="#739879" stroke-width="3" marker-end="url(#arrowSmallGreen)"/>
+    <rect x="1240" y="802" width="223" height="65" rx="17" fill="#FFF" stroke="#BDD0C0" stroke-width="1.7"/><text x="1352" y="842" text-anchor="middle" class="label" font-size="18">freeze rank schedule</text>
+    <path d="M1475 834H1517" stroke="#739879" stroke-width="3" marker-end="url(#arrowSmallGreen)"/>
+    <rect x="1531" y="802" width="200" height="65" rx="17" fill="#E5F0E7" stroke="#ADC5B1" stroke-width="1.7"/><text x="1631" y="842" text-anchor="middle" class="label" font-size="18">activate one prefix</text>
   </g>
-
-
-  <!-- Vertical arrow 2 -->
-  <line x1="205" y1="568"
-        x2="205" y2="601"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-
-  <!-- ========================================================= -->
-  <!-- ROW 3 / STEP 3 -->
-  <!-- ========================================================= -->
-
-  <!-- Left step card -->
-  <rect x="40" y="610"
-        width="330" height="215"
-        rx="16"
-        fill="#C9DDBF"
-        stroke="#799969"
-        class="outer"/>
-
-  <ellipse cx="95" cy="649"
-           rx="22" ry="13"
-           fill="#628653"/>
-
-  <text x="95" y="655"
-        text-anchor="middle"
-        class="number">
-    3
-  </text>
-
-  <text x="205" y="687"
-        text-anchor="middle"
-        class="side-title">
-    <tspan x="205" dy="0">Material-constrained</tspan>
-    <tspan x="205" dy="28">deployment</tspan>
-  </text>
-
-  <text x="205" y="795"
-        text-anchor="middle"
-        class="side-sub"
-        fill="#557A49">
-    Select the prefix
-  </text>
-
-
-  <!-- Main green panel -->
-  <g transform="translate(70,0)">
-  <rect x="330" y="610"
-        width="1215" height="215"
-        rx="16"
-        fill="#CEDFC6"
-        stroke="#799969"
-        class="outer"/>
-
-  <text x="362" y="652"
-        class="section-title"
-        fill="#4E7344">
-    c. Smallest feasible prefix selected by material-quality tolerances
-  </text>
-
-
-  <!-- Material objectives -->
-  <rect x="350" y="665"
-        width="310" height="145"
-        rx="13"
-        fill="#E7F0E2"
-        stroke="#9CB794"
-        class="inner"/>
-
-  <text x="505" y="714"
-        text-anchor="middle"
-        class="box-title-lg">
-    Material objectives
-  </text>
-
-  <text x="505" y="744"
-        text-anchor="middle"
-        class="box-sub-compact">
-    field · interface · energy
-  </text>
-
-  <text x="505" y="764"
-        text-anchor="middle"
-        class="box-sub-compact">
-    conservation · structure factor
-  </text>
-
-  <text x="505" y="788"
-        text-anchor="middle"
-        class="box-sub-compact">
-    spectral distillation
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="666" y1="737.5"
-        x2="692" y2="737.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Joint calibration -->
-  <rect x="698" y="665"
-        width="280" height="145"
-        rx="13"
-        fill="#E7F0E2"
-        stroke="#9CB794"
-        class="inner"/>
-
-  <text x="838" y="714"
-        text-anchor="middle"
-        class="box-title-lg">
-    Joint calibration
-  </text>
-
-  <text x="838" y="746"
-        text-anchor="middle"
-        class="box-sub">
-    rank-16 anchor
-  </text>
-
-  <text x="838" y="770"
-        text-anchor="middle"
-        class="box-sub">
-    rank-4/8 distillation
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="984" y1="737.5"
-        x2="1010" y2="737.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- ========================================================= -->
-  <!-- Validation tolerance -->
-  <!-- Increased equation spacing -->
-  <!-- ========================================================= -->
-
-  <rect x="1016" y="665"
-        width="280" height="145"
-        rx="13"
-        fill="#E7F0E2"
-        stroke="#9CB794"
-        class="inner"/>
-
-  <!-- Title moved slightly upward -->
-  <text x="1156" y="701"
-        text-anchor="middle"
-        class="box-title-lg">
-    <tspan x="1156" dy="0">Validation</tspan>
-    <tspan x="1156" dy="24">tolerance</tspan>
-  </text>
-
-  <!-- First equation -->
-  <text x="1156" y="753"
-        text-anchor="middle"
-        class="formula">
-    Dⱼ,ₖ(r) ≤ εₖ
-  </text>
-
-  <!-- Second equation:
-       35 px below first equation -->
-  <text x="1156" y="788"
-        text-anchor="middle"
-        class="formula">
-    rⱼ⋆ = min Fⱼ
-  </text>
-
-
-  <!-- Arrow -->
-  <line x1="1302" y1="737.5"
-        x2="1328" y2="737.5"
-        class="arrow"
-        marker-end="url(#arrowhead)"/>
-
-
-  <!-- Material output -->
-  <rect x="1334" y="675"
-        width="197" height="125"
-        rx="13"
-        fill="#E7F0E2"
-        stroke="#9CB794"
-        class="inner"/>
-
-  <text x="1432.5" y="714"
-        text-anchor="middle"
-        class="box-title-lg">
-    Material output
-  </text>
-
-  <text x="1432.5" y="748"
-        text-anchor="middle"
-        class="box-sub">
-    preserved quality
-  </text>
-
-  <text x="1432.5" y="774"
-        text-anchor="middle"
-        class="box-sub">
-    lower active cost
-  </text>
-
-  </g>
-
 </svg>
