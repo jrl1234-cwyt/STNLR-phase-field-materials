@@ -160,11 +160,11 @@ def data_budget() -> None:
                 capsize=3.2, color=TEAL, label="Trajectory")
     ax.errorbar(budgets, terminal, yerr=terminal_sd, marker="s", linewidth=2.3,
                 capsize=3.2, color="#426E86", label="Terminal state")
-    ax.annotate("20 trajectories\n$\geq$99.3% field-quality retention",
+    ax.annotate("20 adaptation trajectories\n$\geq$99.3% field-quality retention",
                 xy=(20, terminal[0]), xytext=(35, 0.0552), fontsize=9.0,
                 color=TEAL, fontweight="bold",
                 arrowprops=dict(arrowstyle="->", color=TEAL, linewidth=1.2))
-    ax.set_xticks(budgets); ax.set_xlabel("Target trajectories")
+    ax.set_xticks(budgets); ax.set_xlabel("Adaptation trajectories")
     ax.set_ylabel("Relative $L_2$ (lower is better)")
     ax.set_title("(a) Field quality across data budgets", fontweight="bold")
     ax.legend(frameon=False, loc="upper right")
@@ -172,7 +172,7 @@ def data_budget() -> None:
     bars = ax.bar(np.arange(3), savings, width=0.58,
                   color=[TEAL, "#6FA58F", "#8CB9A6"], edgecolor="white")
     ax.set_xticks(np.arange(3), [str(n) for n in budgets])
-    ax.set_xlabel("Target trajectories")
+    ax.set_xlabel("Adaptation trajectories")
     ax.set_ylabel("Active-capacity saving vs. rank 16 (%)")
     ax.set_ylim(0, 75); ax.set_title("(b) Active-capacity reduction", fontweight="bold")
     for bar, value in zip(bars, savings):

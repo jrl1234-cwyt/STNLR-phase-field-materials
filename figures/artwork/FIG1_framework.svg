@@ -10,7 +10,6 @@
     <linearGradient id="rank16" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FAEAE1"/><stop offset="1" stop-color="#F1D4C5"/></linearGradient>
     <linearGradient id="rank8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F2D1BF"/><stop offset="1" stop-color="#E9B99F"/></linearGradient>
     <linearGradient id="rank4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DFA17B"/><stop offset="1" stop-color="#C98159"/></linearGradient>
-    <filter id="shadow" x="-15%" y="-15%" width="130%" height="145%"><feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#2D4153" flood-opacity="0.09"/></filter>
     <marker id="arrowBlue" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#7195AE"/></marker>
     <marker id="arrowGreen" markerWidth="10" markerHeight="10" refX="8.2" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L10 5 L0 10 Z" fill="#739879"/></marker>
     <marker id="arrowFlowBlue" markerWidth="6" markerHeight="6" refX="5.3" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6 Z" fill="#7195AE"/></marker>
@@ -31,7 +30,7 @@
 
   <!-- Stage 1 -->
   <g id="material-trajectory">
-    <rect x="30" y="112" width="380" height="560" rx="26" fill="url(#bluePanel)" stroke="#ADC2D2" stroke-width="2.4" filter="url(#shadow)"/>
+    <rect x="30" y="112" width="380" height="560" rx="26" fill="url(#bluePanel)" stroke="#ADC2D2" stroke-width="2.4"/>
     <circle cx="69" cy="157" r="21" fill="#789AB3"/><text x="69" y="165" text-anchor="middle" class="white" font-size="22">1</text>
     <text x="103" y="165" class="heading" font-size="25">MATERIAL TRAJECTORY</text>
     <text x="69" y="207" class="body" font-size="18">Target condition and phase-field evolution</text>
@@ -46,15 +45,15 @@
     <path d="M160 311H178" stroke="#7195AE" stroke-width="3" marker-end="url(#arrowSmallBlue)"/><path d="M271 311H289" stroke="#7195AE" stroke-width="3" marker-end="url(#arrowSmallBlue)"/>
     <text x="114" y="383" text-anchor="middle" class="math" font-size="17">q(0)</text><text x="225" y="383" text-anchor="middle" class="math" font-size="17">q(τ₁)</text><text x="336" y="383" text-anchor="middle" class="math" font-size="17">q(τ₂)</text>
     <rect x="56" y="415" width="328" height="96" rx="18" fill="#FFF" stroke="#C3D3DE" stroke-width="1.8"/>
-    <text x="81" y="449" class="label" font-size="18">Target condition</text><text x="81" y="488" class="math" font-size="20">θ = (ε, λ, M, <tspan font-style="normal">anisotropy</tspan>, ...)</text>
+    <text x="81" y="449" class="label" font-size="18">Target condition</text><text x="81" y="488" class="math" font-size="20">μ = (ε, λ, M, <tspan font-style="normal">anisotropy</tspan>, ...)</text>
     <rect x="56" y="525" width="328" height="114" rx="18" fill="#FFF" stroke="#C3D3DE" stroke-width="1.8"/>
-    <text x="81" y="562" class="label" font-size="18">Phase-field dynamics</text><text x="81" y="605" class="math" font-size="21">E[q; θ]  →  ∂q/∂τ = N(q; θ)</text>
+    <text x="81" y="562" class="label" font-size="18">Phase-field dynamics</text><text x="81" y="605" class="math" font-size="21">E[q; μ]  →  ∂q/∂τ = N(q; μ)</text>
   </g>
   <path d="M410 390H445" stroke="#7195AE" stroke-width="4" marker-end="url(#arrowFlowBlue)" class="line"/>
 
   <!-- Stage 2 -->
   <g id="transfer-engine">
-    <rect x="445" y="112" width="860" height="560" rx="26" fill="url(#warmPanel)" stroke="#D9B9A7" stroke-width="2.4" filter="url(#shadow)"/>
+    <rect x="445" y="112" width="860" height="560" rx="26" fill="url(#warmPanel)" stroke="#D9B9A7" stroke-width="2.4"/>
     <circle cx="484" cy="157" r="21" fill="#C88A68"/><text x="484" y="165" text-anchor="middle" class="white" font-size="22">2</text>
     <text x="518" y="165" class="heading" font-size="25">ST-NLR TRANSFER ENGINE</text><text x="484" y="207" class="body" font-size="18">Nested residuals are injected into a frozen multi-PDE backbone</text>
     <rect x="680" y="235" width="438" height="170" rx="21" fill="#F5F7F8" stroke="#C6CDD3" stroke-width="2"/>
@@ -86,7 +85,7 @@
 
   <!-- Stage 3 -->
   <g id="deployment">
-    <rect x="1340" y="112" width="430" height="560" rx="26" fill="url(#greenPanel)" stroke="#ADC5B1" stroke-width="2.4" filter="url(#shadow)"/>
+    <rect x="1340" y="112" width="430" height="560" rx="26" fill="url(#greenPanel)" stroke="#ADC5B1" stroke-width="2.4"/>
     <circle cx="1379" cy="157" r="21" fill="#779B7D"/><text x="1379" y="165" text-anchor="middle" class="white" font-size="22">3</text>
     <text x="1413" y="165" class="heading" font-size="21">MATERIAL-AWARE DEPLOYMENT</text><text x="1379" y="207" class="body" font-size="18">Choose the smallest material-feasible prefix</text>
     <text x="1379" y="253" class="label" font-size="18">QUALITY CRITERIA</text>
@@ -114,7 +113,7 @@
 
   <!-- Concise training/deployment ribbon -->
   <g id="ribbon">
-    <rect x="30" y="715" width="1740" height="180" rx="26" fill="#FFF" stroke="#D8DEE3" stroke-width="2" filter="url(#shadow)"/><rect x="30" y="715" width="870" height="180" rx="26" fill="#FAF5F1"/><path d="M900 717V893" stroke="#D8DEE3" stroke-width="2"/>
+    <rect x="30" y="715" width="1740" height="180" rx="26" fill="#FFF" stroke="#D8DEE3" stroke-width="2"/><rect x="30" y="715" width="870" height="180" rx="26" fill="#FAF5F1"/><path d="M900 717V893" stroke="#D8DEE3" stroke-width="2"/>
     <rect x="61" y="745" width="115" height="34" rx="17" fill="#D7A07D"/><text x="119" y="768" text-anchor="middle" class="white" font-size="16">TRAINING</text><text x="202" y="768" class="heading" font-size="21">Joint multi-prefix calibration</text>
     <rect x="56" y="802" width="230" height="65" rx="17" fill="#FFF" stroke="#E0C5B5" stroke-width="1.7"/><text x="171" y="842" text-anchor="middle" class="label" font-size="18">rank-16 anchor</text>
     <path d="M295 834H337" stroke="#C77D55" stroke-width="3" marker-end="url(#arrowSmallWarm)"/>
